@@ -135,6 +135,15 @@ nav ul .li-button-sign {
     background-color: RoyalBlue;
 }
 
+.icon-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.icon-konten1 {
+    width: 400px;
+}
+
 .konten-1-tile {
     height: 130px;
     left: 561px;
@@ -148,7 +157,7 @@ nav ul .li-button-sign {
 }
 
 .konten-1-desc {
-    height: 112px;
+    height: 142px;
     left: 561px;
     top: 1062px;
     font-family: 'Open Sans';
@@ -160,7 +169,8 @@ nav ul .li-button-sign {
 }
 
 .konten-2-tile {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
+    width: 140%;
     height: 65px;
     font-family: 'Open Sans';
     font-style: normal;
@@ -177,6 +187,8 @@ nav ul .li-button-sign {
 
 .konten-2-desc {
     height: 44px;
+    width: 140%;
+
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -224,8 +236,7 @@ nav ul .li-button-sign {
 }
 
 .konten-3-desc {
-    height: 112px;
-
+    height: 132px;
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: 400;
@@ -323,14 +334,12 @@ nav ul .li-button-sign {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-    display: flex;
+
     align-items: center;
     margin: 0 auto;
     text-align: center;
     color: #333333;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
+
 }
 
 .bd-placeholder-img {
@@ -541,6 +550,11 @@ nav ul .li-button-sign {
         height: 190px !important;
     }
 
+    .icon-konten1 {
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
 
 
     .logo {
@@ -603,6 +617,28 @@ nav ul .li-button-sign {
         font-size: 24px;
     }
 
+    .konten-1-tile {
+        height: 100px;
+        font-size: 39px;
+    }
+
+    .konten-1-desc {
+        height: 172px;
+    }
+
+    .konten-2-tile {
+        font-size: 39px;
+        height: 90px;
+    }
+
+    .konten-2-desc {
+        height: 80px;
+    }
+
+    .konten-3-desc {
+        height: 220px;
+    }
+
     .col-footer-image {
         height: 200px !important;
     }
@@ -617,4 +653,34 @@ nav ul .li-button-sign {
         top: -20px !important;
         position: relative;
     }
+}
+
+@media (max-width: 299px) {
+    .konten-1-tile {
+        height: 70px;
+        font-size: 32px;
+    }
+
+    .konten-1-desc {
+        height: 300px;
+    }
+
+    .konten-2-tile {
+        font-size: 32px;
+        height: 110px;
+    }
+
+    .konten-2-desc {
+        height: 140px;
+    }
+
+    .konten-3-tile {
+        font-size: 32px;
+        height: 110px;
+    }
+
+    .konten-3-desc {
+        height: 350px;
+    }
+
 }
