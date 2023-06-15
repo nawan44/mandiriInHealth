@@ -1,0 +1,141 @@
+<!-- <div class="sticky-top hidden-spacer"></div> -->
+<nav class="navbar navbar-expand-sm fixed-top navbar-light " style="padding: 5px 0; height: 70px">
+    <div class="container">
+        <!-- <a class="navbar-brand" href="#">Brand</a> -->
+        <div style="width: 70%">
+            <img width="100px" src="asset/image/Logo_Mandiri_Inhealth.png" />
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div style="width: 30%; float: right" class="collapse navbar-collapse" id="navbar1">
+            <ul class="navbar-nav" style="margin-right: 15px; float: right">
+                <li class="nav-item active">
+                    <a style="font-size: 12px" class="nav-link" href="#">
+                        <!-- <select style="background: transparent; border: none;" class="form-select"
+                                aria-label="Default select example"><i class="fa fa-caret-down" aria-hidden="true"></i>
+
+                                <option selected>Product Insurance</option>
+                                <option value="1">Product Insurance</option>
+                                <option value="2">Two</option>
+                                <option value="3">Three</option>
+                            </select> -->
+
+                        <button style="
+                    background: transparent;
+                    border: none;
+                    font-size: 16px;
+                    color: #fff;
+                  ">
+                            <i class="fa fa-caret-down" style="float: right; font-size: 22px; margin-left: 5px"
+                                aria-hidden="true"></i>
+                            Product Insurance
+                        </button>
+                    </a>
+                </li>
+                <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">Healthy Info</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Complaint Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li> -->
+            </ul>
+            <button class="signIn">
+                <i style="margin-right: 5px" class="fa fa-user-circle-o" aria-hidden="true"></i>
+                Sign In
+            </button>
+        </div>
+    </div>
+</nav>
+
+
+<header>
+    <!-- <div class="sticky-top hidden-spacer"></div> -->
+    <nav class="navbar navbar-expand-sm fixed-top navbar-light " style="padding: 5px 0; height: 70px">
+        <div class="container">
+            <!-- <a class="navbar-brand" href="#">Brand</a> -->
+            <div style="width: 70%">
+                <img width="100px" src="asset/image/Logo_Mandiri_Inhealth.png" />
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar1">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div style="width: 30%; float: right" class="collapse navbar-collapse" id="navbar1">
+                <ul class="navbar-nav" style="margin-right: 15px; float: right">
+                    <li class="nav-item active">
+                        <a style="font-size: 12px" class="nav-link" href="#">
+                            <!-- <select style="background: transparent; border: none;" class="form-select"
+                                    aria-label="Default select example"><i class="fa fa-caret-down" aria-hidden="true"></i>
+    
+                                    <option selected>Product Insurance</option>
+                                    <option value="1">Product Insurance</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select> -->
+
+                            <button style="
+                        background: transparent;
+                        border: none;
+                        font-size: 16px;
+                        color: #fff;
+                      ">
+                                <i class="fa fa-caret-down" style="float: right; font-size: 22px; margin-left: 5px"
+                                    aria-hidden="true"></i>
+                                Product Insurance
+                            </button>
+                        </a>
+                    </li>
+                    <!-- <li class="nav-item">
+                            <a class="nav-link" href="#">Healthy Info</a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">Complaint Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li> -->
+                </ul>
+                <button class="signIn">
+                    <i style="margin-right: 5px" class="fa fa-user-circle-o" aria-hidden="true"></i>
+                    Sign In
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="carousel-caption text-start">
+            <h1>Perlindungan terbaik dari kami semudah menjentikkan jari</h1>
+            <p class="opacity-75">
+                When the life too much things you need more than you have. Let’s us
+                help your life to easier with smart payment system.
+            </p>
+            <p>
+                <a class="btn btn-lg btn-primary" style="border-radius: 20px; background-color: #1443bd" href="#">Info
+                    Details
+                    <i style="margin-left: 5px" class="fa fa-caret-right" aria-hidden="true"></i></a>
+                <a class="btn btn-lg btn-primary" style="
+                    border-radius: 20px;
+                    color: #1443bd;
+                    background-color: #fff;
+                  " href="#" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Cek Premi</a>
+            </p>
+        </div>
+    </div>
+</header>
+
+
+<a href="#"><select style=" font-size:14px;background-color:  transparent; border: none; color: #fff;"
+        class="form-select" aria-label="Default select example">
+        <!-- <i style="color: #fff;" class="fa fa-caret-down" -->
+        aria-hidden="true">
+        <option selected>Product Insurance</option>
+        <option value="1">Product Insurance</option>
+        <option value="2">Two</option>
+        <option value="3">Three</option>
+        <!-- </i> -->
+
+
+    </select>
