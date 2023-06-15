@@ -48,6 +48,8 @@ nav {
     position: fixed;
     width: 100%;
     line-height: 60px;
+    z-index: 99 !important;
+
 }
 
 nav ul {
@@ -73,7 +75,7 @@ nav.blue ul {
 nav ul li {
     display: inline-block;
     padding: 16px 30px;
-    ;
+
 }
 
 nav ul li a {
@@ -363,6 +365,7 @@ nav ul .li-button-sign {
     color: #fff;
 }
 
+
 .modal-simulasi-left {
     float: left;
     width: 40%;
@@ -440,6 +443,21 @@ nav ul .li-button-sign {
 .modal-content {
     max-height: 500px !important;
     padding: 0;
+}
+
+.col-footer-image {
+    height: 200px !important;
+}
+
+.medsos {
+    margin-top: 1290px;
+
+}
+
+.footer-image {
+    width: 300px;
+    top: -120px;
+    position: relative;
 }
 
 .bg-icon {
@@ -543,7 +561,7 @@ nav ul .li-button-sign {
 
     nav ul {
         max-height: 0px;
-        background: #0E2C7A
+        background: #0E2C7A;
     }
 
 
@@ -576,6 +594,7 @@ nav ul .li-button-sign {
         height: 40px;
         display: block;
         background: #0E2C7A;
+
         padding: 17px 30px;
         font-size: 20px;
     }
@@ -584,4 +603,18 @@ nav ul .li-button-sign {
         font-size: 24px;
     }
 
+    .col-footer-image {
+        height: 200px !important;
+    }
+
+    .medsos {
+        margin-top: 1290px;
+
+    }
+
+    .footer-image {
+        width: 200px !important;
+        top: -20px !important;
+        position: relative;
+    }
 }
