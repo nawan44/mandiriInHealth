@@ -3,16 +3,6 @@ body {
     padding: 0;
 }
 
-/* header {
-    height: 750px;
-    width: 100%;
-    background-repeat: no-repeat;
-    /* min-height: 400px; */
-/* background-size: cover; */
-/* background-image: url('../image/Header1.png'); */
-/* background-image: url('https://images.unsplash.com/photo-1470434151738-dc5f4474c239?dpr=1&auto=format&crop=entropy&fit=crop&w=1500&h=1000&q=80&cs=tinysrgb'); */
-/* } */
-
 header {
     width: 100%;
     height: 100vh;
@@ -50,6 +40,13 @@ nav {
     line-height: 60px;
     z-index: 99 !important;
 
+}
+
+.nav-select {
+    font-size: 15px !important;
+    background-color: transparent;
+    border: none;
+    color: #fff !important;
 }
 
 nav ul {
@@ -103,7 +100,6 @@ nav ul .li-button-sign {
 .menu-icon {
     line-height: 60px;
     width: 100%;
-    /* background: #0E2C7A; */
     text-align: right;
     box-sizing: border-box;
     padding: 17px 20px;
@@ -130,7 +126,6 @@ nav ul .li-button-sign {
 
 }
 
-/* Darker background on mouse-over */
 .sign-in:hover {
     background-color: RoyalBlue;
 }
@@ -141,7 +136,7 @@ nav ul .li-button-sign {
 }
 
 .icon-konten1 {
-    width: 400px;
+    width: 350px;
 }
 
 .konten-1-tile {
@@ -208,7 +203,6 @@ nav ul .li-button-sign {
     font-weight: 700;
     font-size: 32px;
     line-height: 44px;
-    /* display: flex; */
     margin: 0 auto;
     align-items: center;
     text-align: center;
@@ -225,7 +219,6 @@ nav ul .li-button-sign {
     font-weight: 700;
     font-size: 24px;
     line-height: 33px;
-    /* display: flex; */
     margin: 15px 0;
     align-items: center;
     text-align: center;
@@ -250,6 +243,14 @@ nav ul .li-button-sign {
     flex-grow: 0;
 }
 
+.konten-3-img {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 150px;
+    height: 150px
+}
+
 .konten-4-tile {
     font-family: 'Open Sans';
     font-style: normal;
@@ -272,6 +273,33 @@ nav ul .li-button-sign {
     flex: none;
     order: 1;
     flex-grow: 0;
+}
+
+.konten-4-img {
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    width: 100px;
+    height: 100px;
+
+}
+
+.row-button {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px 0;
+}
+
+.button-premi {
+    margin-right: 30px;
+    border-radius: 20px;
+    color: #1443bd;
+    background-color: #fff;
+}
+
+.button-details {
+    border-radius: 20px;
+    background-color: #1443bd;
 }
 
 .konten-5-tile {
@@ -385,7 +413,6 @@ nav ul .li-button-sign {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-    /* z-index: 9; */
 }
 
 .modal-simulasi-right1 {
@@ -472,18 +499,23 @@ nav ul .li-button-sign {
 .bg-icon {
     top: -185;
     left: 15;
-    /* top: 306;
-    left: 873; */
-    /* z-index: -12; */
     width: 200px;
     position: relative;
     float: right;
 }
 
-@media (min-width: 768px) {
-    .bd-placeholder-img-lg {
-        font-size: 3.5rem;
-    }
+.footer-border {
+    border-left: 3px solid white;
+    float: left;
+    height: 60px;
+}
+
+.copy-right {
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 20px;
+    float: left;
 }
 
 .b-example-divider {
@@ -545,6 +577,35 @@ nav ul .li-button-sign {
     z-index: 1500;
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .konten-1-tile {
+        height: 130px;
+        font-size: 42px;
+    }
+
+    .konten-2-tile {
+        font-size: 42px;
+        height: 60px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+    }
+}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .konten-2-tile {
+        font-size: 39px;
+        height: 60px;
+        line-height: 40px;
+    }
+
+}
+
 @media(max-width: 599px) {
     nav {
         height: 190px !important;
@@ -556,11 +617,9 @@ nav ul .li-button-sign {
         margin: 0 auto;
     }
 
-
     .logo {
-        /* position: fixed; */
         top: 0;
-        padding: 10px 10px;
+        padding: 5px 10px;
         margin: 4px;
     }
 
@@ -570,19 +629,12 @@ nav ul .li-button-sign {
 
     .logo img {
         width: 70px;
-        /* top: 20px !important; */
     }
 
     nav ul {
         max-height: 0px;
         background: #0E2C7A;
     }
-
-
-    /* nav.blue ul {
-        height: 260px;
-        background: #0E2C7A !important;
-    } */
 
     .showing {
         max-height: 34em;
@@ -595,20 +647,10 @@ nav ul .li-button-sign {
         text-align: center;
     }
 
-    /* 
-    nav.blue.menu-icon {
-        height: 40px;
-        display: block;
-        background: #0E2C7A;
-        padding: 17px 30px;
-        font-size: 20px;
-    } */
-
     .menu-icon {
         height: 40px;
         display: block;
         background: #0E2C7A;
-
         padding: 17px 30px;
         font-size: 20px;
     }
@@ -618,7 +660,7 @@ nav ul .li-button-sign {
     }
 
     .konten-1-tile {
-        height: 100px;
+        height: 120px;
         font-size: 39px;
     }
 
@@ -628,7 +670,7 @@ nav ul .li-button-sign {
 
     .konten-2-tile {
         font-size: 39px;
-        height: 90px;
+        height: 60px;
     }
 
     .konten-2-desc {
@@ -637,6 +679,17 @@ nav ul .li-button-sign {
 
     .konten-3-desc {
         height: 220px;
+    }
+
+    .konten-3-img {
+        width: 70px !important;
+        height: 80px;
+    }
+
+    .konten-4-img {
+        padding-top: 10px;
+        width: 70px !important;
+        height: 80px;
     }
 
     .col-footer-image {
@@ -655,28 +708,60 @@ nav ul .li-button-sign {
     }
 }
 
-@media (max-width: 299px) {
+@media (min-width: 300px) and (max-width: 399px) {
     .konten-1-tile {
-        height: 70px;
+        height: 120px;
         font-size: 32px;
+        line-height: 35px;
     }
 
     .konten-1-desc {
-        height: 300px;
+        height: 275px;
     }
 
     .konten-2-tile {
         font-size: 32px;
-        height: 110px;
+        line-height: 35px;
+        height: 50px;
     }
 
     .konten-2-desc {
-        height: 140px;
+        height: 90px;
+    }
+
+    .konten-3-desc {
+        height: 320px;
+    }
+}
+
+@media (max-width: 299px) {
+    .konten-1-tile {
+        height: 110px;
+        line-height: 35px;
+        font-size: 32px;
+    }
+
+    .konten-1-desc {
+        height: 240px;
+        font-size: 14px;
+
+    }
+
+    .konten-2-tile {
+        font-size: 32px;
+        height: 80px;
+        line-height: 35px;
+
+    }
+
+    .konten-2-desc {
+        height: 130px;
     }
 
     .konten-3-tile {
         font-size: 32px;
-        height: 110px;
+        height: 40px;
+        line-height: 35px;
     }
 
     .konten-3-desc {
