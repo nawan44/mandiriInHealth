@@ -42,6 +42,7 @@ nav {
     color: #fff !important;
 }
 
+
 nav ul {
     line-height: 60px;
     list-style: none;
@@ -79,9 +80,22 @@ nav ul .li-button-sign {
     margin: 20px 0 !important;
 }
 
-a .form-select {
+.form-select {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
     color: #2596be;
+}
+
+select option {
+    background-color: #1443BD;
+}
+
+.col select option {
+    background-color: #1443BD;
+    color: #FFFFFF;
+}
+
+select option[selected] {
+    color: #FFFFFF !important;
 }
 
 .menu-icon {
@@ -170,6 +184,33 @@ a .form-select {
 .button-details {
     border-radius: 20px;
     background-color: #1443bd;
+}
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    margin-left: 10px;
+}
+
+.btn-xl:hover {
+    -webkit-transform: scale(1.1);
+    background: #1443BD;
+    color: #fff;
+}
+
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
 }
 
 .produk-button-premi {
