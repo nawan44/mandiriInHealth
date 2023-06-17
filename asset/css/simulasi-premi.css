@@ -1,0 +1,595 @@
+body {
+    height: 100%;
+    padding: 0;
+}
+
+/* START HEADER */
+header {
+    width: 100%;
+    height: 70vh;
+    background: url('../image/Header2.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+
+}
+
+.logo img {
+    width: 100px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    z-index: 99 !important;
+
+}
+
+.nav-select {
+    font-size: 15px !important;
+    background-color: transparent;
+    border: none;
+    color: #fff !important;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding: 7px 30px 10px 0px;
+    transition: 1s;
+}
+
+
+nav.blue ul {
+    height: 80px;
+    background: #0E2C7A !important;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 30px;
+
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul .li-button-sign {
+    height: 30px !important;
+    background-color: #26AE77 !important;
+    margin: 20px 0 !important;
+}
+
+a .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    color: #2596be;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 17px 20px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.hidden-spacer {
+    height: 56px
+}
+
+.sign-in {
+    height: 30px;
+    width: 100px;
+    background-color: #1443BD;
+    border: none;
+    color: white;
+    padding: 0px !important;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    vertical-align: middle !important;
+
+}
+
+.sign-in:hover {
+    background-color: RoyalBlue;
+}
+
+.icon-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+
+
+
+.row-button {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 50px 0;
+}
+
+.button-premi {
+    margin-right: 30px;
+    border-radius: 20px;
+    color: #1443bd;
+    background-color: #fff;
+}
+
+.button-details {
+    border-radius: 20px;
+    background-color: #1443bd;
+}
+
+.produk-button-premi {
+    margin-right: 30px;
+    border-radius: 20px;
+    color: #1443bd;
+    font-size: 12px;
+    background-color: #fff;
+}
+
+/* END HEADER */
+
+
+
+.bd-placeholder-img {
+    font-size: 1.125rem;
+    text-anchor: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+
+
+
+/* START PREMI */
+.simulasi-left {
+    float: left;
+    width: 40%;
+
+}
+
+.simulasi-left1 {
+    padding: 20px 0;
+    background-color: #F3F6FC;
+}
+
+.simulasi-left2 {
+    padding: 10px 30px;
+}
+
+.simulasi-right {
+    height: 520px;
+    padding: 20px;
+    float: left;
+    width: 60%;
+    background-color: #F3F6FC;
+
+}
+
+.simulasi-right1 {
+    background: #0E2C7A;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    height: 70px;
+}
+
+.left-simulasi-right1 {
+    float: left !important;
+    text-align: left;
+    width: 70px;
+    background-color: #0e2c7a;
+}
+
+.right-simulasi-right1 {
+    float: left;
+    width: 200px;
+    height: 60px;
+    color: #fff;
+}
+
+.simulasi-right2 {
+    border-radius: 0 0 5px 5px;
+    height: 70px;
+    background: #26AE77;
+
+}
+
+.right-simulasi-right2-1 {
+    width: 40%;
+    float: left;
+    color: #fff;
+    padding: 5px;
+}
+
+.right-simulasi-right2-2 {
+    padding-right: 10px;
+}
+
+.right-simulasi-right2-1 h5 {
+    color: red !important;
+    font-size: 8x !important;
+}
+
+.modal-button {
+    width: 150px;
+    background-color: #1443BD;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin: 30px 0;
+    /* padding: 3px 25px; */
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 12px;
+    position: relative;
+}
+
+/* END PREMI */
+.icon-frame-desc-2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    color: #333333;
+
+}
+
+.caption-dashboard {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #0E2C7A;
+}
+
+/* START MANFAAT DAN RESIKO */
+.manfaat {
+    width: 48%;
+    float: left;
+}
+
+.manfaat ul {
+    --icon-size: .8em;
+    --gutter: .5em;
+    padding: 0 0 0 var(--icon-size);
+}
+
+.manfaat ul li {
+    padding-left: var(--gutter);
+    padding-right: 10px;
+    margin: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.manfaat ul li::marker {
+    content: "\f058";
+    color: #A1B4E5;
+    font-family: FontAwesome;
+    font-size: var(--icon-size);
+}
+
+.manfaat-border {
+    border-right: 3px solid #E0E0E0;
+    float: left;
+    height: 100%;
+}
+
+.resiko {
+    width: 48%;
+    float: left;
+}
+
+.resiko ul {
+    --icon-size: .8em;
+    --gutter: .5em;
+    padding: 0 0 0 var(--icon-size);
+}
+
+.resiko ul li {
+    padding-left: var(--gutter);
+    margin: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.resiko ul li::marker {
+    content: "\f057";
+    color: #EFA299;
+    font-family: FontAwesome;
+    font-size: var(--icon-size);
+
+}
+
+
+/* END MANFAAT DAN RESIKO */
+
+/* START CAROUSEL */
+.text-jelajahi-produk {
+    float: right;
+    position: relative;
+    color: #FFFFFF;
+    font-size: 30px;
+    width: 100px;
+    left: -150px;
+    top: 80px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 65px;
+}
+
+.carousel-product {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+.carousel-caption1 {
+    text-align: right;
+    float: right;
+    top: 150px;
+    width: 200px;
+    left: 250px;
+}
+
+/* END CAROUSEL */
+
+/* START FOOTER */
+.col-footer-image {
+    height: 200px !important;
+}
+
+.medsos {
+    margin-top: 1290px;
+
+}
+
+.footer-image {
+    width: 300px;
+    top: -120px;
+    position: relative;
+}
+
+.bg-icon {
+    top: -150;
+    left: 25;
+    width: 200px;
+    position: relative;
+    float: right;
+}
+
+.bg-blue {
+    width: 100%;
+    height: 500px;
+    top: 1980px;
+    background: #0E2C7A;
+    position: absolute;
+    z-index: -10;
+}
+
+.footer-border {
+    border-left: 3px solid white;
+    float: left;
+    height: 60px;
+}
+
+.copy-right {
+    float: left;
+    color: #fff;
+    font-size: 14px;
+    padding-top: 20px;
+    float: left;
+}
+
+/* END FOOTER */
+
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .text-jelajahi-produk {
+        font-size: 30px;
+        left: -20px;
+        top: -180px;
+        line-height: 30px;
+    }
+
+    .bg-blue {
+
+        height: 700px;
+        top: 2600px;
+        background: #0E2C7A;
+        position: absolute;
+        z-index: -10;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 70px;
+        width: 200px;
+        left: 70px;
+    }
+
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .simulasi-left {
+        float: left;
+        width: 100%;
+    }
+
+    .simulasi-right {
+        float: left;
+        width: 100%;
+    }
+
+    .bg-blue {
+        width: 100%;
+        height: 800px;
+        top: 2930px;
+    }
+
+    .carousel-product {
+        top: 80;
+        width: 100% !important;
+    }
+
+    .text-jelajahi-produk {
+        font-size: 30px;
+        left: 50px;
+        top: -180px;
+        line-height: 30px;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 70px;
+        width: 200px;
+        left: 70px;
+    }
+
+}
+
+@media (max-width: 599px) {
+    .simulasi-left {
+        float: left;
+        width: 100%;
+    }
+
+    .simulasi-right {
+        float: left;
+        width: 100%;
+    }
+
+    .bg-blue {
+        width: 100%;
+        height: 900px;
+        top: 3380px !important;
+    }
+
+    .text-jelajahi-produk {
+        font-size: 30px;
+        left: -150px;
+        top: 100px;
+        line-height: 30px;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 70px;
+        width: 200px;
+        left: 70px;
+    }
+
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    .simulasi-left {
+        float: left;
+        width: 100%;
+    }
+
+    .simulasi-right {
+        float: left;
+        width: 100%;
+    }
+
+    .bg-blue {
+        width: 100%;
+        height: 800px;
+        top: 3730px;
+        position: absolute;
+    }
+
+    .text-jelajahi-produk {
+        font-size: 30px;
+        left: 150px;
+        top: -180px;
+        line-height: 30px;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 30px;
+        width: 200px;
+        left: 20px;
+    }
+
+}
+
+@media (max-width: 299px) {
+    .simulasi-right {
+        float: left;
+        width: 100%;
+
+    }
+
+    .simulasi-right {
+        float: left;
+        width: 100%;
+
+    }
+
+    .bg-blue {
+        width: 100%;
+        height: 400px;
+        top: 4130px;
+        position: absolute;
+    }
+
+    .carousel-product {
+        width: 100% !important;
+        background-color: #D61600;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 30px;
+        width: 200px;
+        left: 20px;
+    }
+
+    .text-jelajahi-produk {
+        font-size: 30px;
+        left: 150px;
+        top: -180px;
+        line-height: 30px;
+    }
+}
