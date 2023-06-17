@@ -123,7 +123,35 @@ a .form-select {
 }
 
 
+.bg-simulasi1 {
+    padding-top: 400;
+    left: 0;
+    float: left;
+    width: 500px;
+    position: absolute;
+    float: left;
+    z-index: -10 !important;
 
+}
+
+.bg-simulasi1 img {
+    opacity: 0.1;
+}
+
+.bg-simulasi2 {
+    padding-top: 200;
+    right: 0;
+    float: right;
+    width: 700px;
+    position: absolute;
+    float: left;
+    z-index: -10 !important;
+
+}
+
+.bg-simulasi2 img {
+    opacity: 0.1;
+}
 
 
 .row-button {
@@ -170,6 +198,7 @@ a .form-select {
 .simulasi-left {
     float: left;
     width: 40%;
+    background-color: #fff;
 
 }
 
@@ -180,6 +209,7 @@ a .form-select {
 
 .simulasi-left2 {
     padding: 10px 30px;
+    background-color: #fff;
 }
 
 .simulasi-right {
@@ -488,6 +518,77 @@ a .form-select {
 }
 
 @media (max-width: 599px) {
+    .bg-simulasi1 {
+        padding-top: 900;
+        width: 300px !important;
+    }
+
+    .bg-simulasi1 img {
+        width: 400px !important;
+    }
+
+    .bg-simulasi2 {
+        padding-top: 400px;
+        width: 400px !important;
+
+    }
+
+    .bg-simulasi2 img {
+        width: 400px !important;
+    }
+
+    nav {
+        height: 190px !important;
+    }
+
+    .icon-konten1 {
+        width: 200px;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .logo {
+        top: 0;
+        padding: 5px 10px;
+        margin: 4px;
+    }
+
+    .fa-bars {
+        color: #fff;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #0E2C7A;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .menu-icon {
+        height: 40px;
+        display: block;
+        background: #0E2C7A;
+        padding: 17px 30px;
+        font-size: 20px;
+    }
+
+    .menu-icon i {
+        font-size: 24px;
+    }
+
     .simulasi-left {
         float: left;
         width: 100%;
@@ -552,6 +653,24 @@ a .form-select {
         left: 20px;
     }
 
+    .bg-simulasi1 {
+        padding-top: 900;
+        width: 300px !important;
+    }
+
+    .bg-simulasi1 img {
+        width: 400px !important;
+    }
+
+    .bg-simulasi2 {
+        width: 200px !important;
+
+    }
+
+    .bg-simulasi2 img {
+        width: 200px !important;
+    }
+
 }
 
 @media (max-width: 299px) {
@@ -591,5 +710,23 @@ a .form-select {
         left: 150px;
         top: -180px;
         line-height: 30px;
+    }
+
+    .bg-simulasi1 {
+        padding-top: 400;
+        width: 200px !important;
+    }
+
+    .bg-simulasi1 img {
+        width: 200px !important;
+    }
+
+    .bg-simulasi2 {
+        padding-top: 200;
+        width: 200px !important;
+    }
+
+    .bg-simulasi2 img {
+        width: 200px !important;
     }
 }
