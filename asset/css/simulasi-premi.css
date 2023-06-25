@@ -300,6 +300,20 @@ select option[selected] {
     padding: 7px 0;
 }
 
+.select-text-manfaat {
+    float: right !important;
+    color: #1443BD !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    background: transparent !important;
+    border: none !important;
+}
+
+.hr-border {
+    border: 1px solid #E0E0E0;
+    margin: 3px 0 7px 0
+}
+
 .right-simulasi-right2-1 h5 {
     color: red !important;
     font-size: 8x !important;
@@ -312,7 +326,6 @@ select option[selected] {
     font-weight: 700;
     font-size: 18px;
     line-height: 26px;
-
     align-items: center;
     margin: 0 auto;
     text-align: center;
@@ -598,7 +611,6 @@ select option[selected] {
     .bg-simulasi2 {
         padding-top: 400px;
         width: 400px !important;
-
     }
 
     .bg-simulasi2 img {
@@ -769,6 +781,7 @@ select option[selected] {
         font-size: 24px;
     }
 
+
     .simulasi-left {
         float: left;
         width: 100%;
@@ -890,7 +903,6 @@ select option[selected] {
 
     .right-simulasi-right2-2 {
         width: 100%;
-        background-color: red !important;
     }
 
     .text-jelajahi-produk {
@@ -1037,7 +1049,6 @@ select option[selected] {
 
     .right-simulasi-right2-2 {
         width: 100%;
-        background-color: red !important;
     }
 
     .row-manfaat-text {

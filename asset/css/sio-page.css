@@ -136,14 +136,13 @@ select option[selected] {
 }
 
 .bg-sio1 {
-    padding-top: 400;
+    padding-top: 900 !important;
     left: 0;
     float: left;
-    width: 500px;
+    width: 900px;
     position: absolute;
     float: left;
     z-index: -10 !important;
-
 }
 
 .bg-sio1 img {
@@ -151,14 +150,12 @@ select option[selected] {
 }
 
 .bg-sio2 {
-    padding-top: 200;
+    padding-top: 900;
     right: 0;
     float: right;
     width: 700px;
     position: absolute;
-    float: left;
     z-index: -10 !important;
-
 }
 
 .bg-sio2 img {
@@ -208,36 +205,46 @@ select option[selected] {
     float: left;
     width: 30%;
     background-color: #fff;
-
+    height: 500px;
+    padding: 10px;
 }
 
 .sio-right {
     padding: 20px;
     float: left;
     width: 70%;
-    background-color: #F3F6FC;
-
 }
 
-.sio-right1 {
+.sio-left1 {
     background: #0E2C7A;
     border-radius: 5px 5px 0 0;
     padding: 10px;
     height: 70px;
 }
 
-.left-sio-right1 {
+.left-sio-left1 {
     float: left !important;
     text-align: left;
-    width: 70px;
+    width: 30%;
     background-color: #0e2c7a;
 }
 
-.right-sio-right1 {
+.right-sio-left1 {
     float: left;
-    width: 200px;
+    width: 70%;
     height: 60px;
     color: #fff;
+}
+
+.right-sio-left1-text1 {
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+.right-sio-left1-text2 {
+    font-size: 16px;
+    padding-left: 2px;
+    font-weight: bold;
 }
 
 .sio-right2 {
@@ -274,10 +281,44 @@ select option[selected] {
     text-align: left;
 }
 
-
 .right-sio-right2-1 h5 {
     color: red !important;
     font-size: 8x !important;
+}
+
+.row-manfaat-title {
+    color: #000;
+    margin-top: 30px;
+    height: 30px;
+    font-size: 11px;
+    padding: 0 5px;
+}
+
+.row-manfaat-text {
+    width: 80%;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hr-border {
+    border: 1px solid #E0E0E0;
+    margin: 3px 0 7px 0
+}
+
+.text-manfaat {
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.select-text-manfaat {
+    float: right !important;
+    color: #1443BD !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    background: transparent !important;
+    border: none !important;
 }
 
 /* END PREMI */
@@ -386,25 +427,10 @@ select option[selected] {
 }
 
 .read {
-    background: #1443BD;
+    background: #70BD44;
     color: #FFFFFF;
 }
 
-/* 
-.read2 {
-    background: #1443BD;
-    color: #FFFFFF;
-}
-
-.read3 {
-    background: #1443BD;
-    color: #FFFFFF;
-}
-
-.read4 {
-    background: #1443BD;
-    color: #FFFFFF;
-} */
 .dis-button1-ya {
     background: #777777;
     color: #FFFFFF;
@@ -507,14 +533,22 @@ select option[selected] {
     border: 2px solid #777777 !important;
 }
 
+.step-paragraph {
+    font-size: 16px;
+    text-align: left;
+
+}
+
+
 .step-paragraph-active {
     background: #70BD44;
-
+    border: 3px solid #1443BD;
+    border-radius: 5px;
 }
 
 .step-paragraph-disabled {
     background-color: #777777;
-    color: #FFFFFF;
+    color: #000;
 }
 
 /* not important */
@@ -690,14 +724,14 @@ select option[selected] {
 }
 
 .modal-button-edit {
-    width: 150px;
-    background-color: #fff;
+    width: 250px;
+    background-color: #F3F6FC;
     border: none;
     color: #1443BD;
     margin: 0 auto;
     text-align: center;
     margin: 30px 0;
-    padding: 3px 25px;
+    padding: 5px 25px;
     font-size: 14px;
     cursor: pointer;
     border-radius: 12px;
@@ -755,10 +789,18 @@ select option[selected] {
 
 
 @media (min-width: 992px) {
+    .bg-sio1 {
+        padding-top: 400px;
+        width: 400px !important;
+    }
+
+    .bg-sio1 img {
+        width: 400px !important;
+    }
+
     .bg-sio2 {
         padding-top: 400px;
         width: 400px !important;
-
     }
 
     .bg-sio2 img {
@@ -770,17 +812,51 @@ select option[selected] {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .bg-sio1 {
+        padding-top: 400px;
+        width: 400px !important;
+    }
+
+    .bg-sio1 img {
+        width: 400px !important;
+    }
 
     .bg-sio2 {
         padding-top: 400px;
         width: 400px !important;
-
     }
 
     .bg-sio2 img {
         width: 400px !important;
     }
 
+    .sio-left {
+        height: 620px;
+    }
+
+    .fa-line2 {
+        display: none;
+    }
+
+    .sio-right2 {
+        border-radius: 0 0 5px 5px;
+        height: 120px;
+        background: #26AE77;
+    }
+
+    .right-sio-right2-1 {
+        width: 100%;
+        float: left;
+    }
+
+    .right-sio-right2-2 {
+        width: 100%;
+        float: left;
+    }
+
+    .modal-button-edit {
+        width: 150px;
+    }
 }
 
 @media (min-width: 768px) {}
@@ -815,6 +891,9 @@ select option[selected] {
         width: 100%;
     }
 
+    .fa-line2 {
+        display: none;
+    }
 
 }
 
@@ -897,7 +976,6 @@ select option[selected] {
     .sio-right {
         float: left;
         width: 100%;
-
     }
 
     .premi-th {
@@ -907,7 +985,6 @@ select option[selected] {
 
     .premi-disc {
         width: 30% !important;
-
     }
 
     .simulcol-footer-imageasi-right {
@@ -915,6 +992,50 @@ select option[selected] {
         width: 100%;
     }
 
+    .stepText h5 {
+        font-size: 14px;
+    }
+
+    .stepText h6 {
+        font-size: 10px;
+    }
+
+    .step-paragraph {
+        font-size: 13px;
+    }
+
+    .read1 button {
+        width: 70px !important;
+        font-size: 12px;
+    }
+
+    .read2 button {
+        width: 70px !important;
+        font-size: 12px;
+    }
+
+    .read3 button {
+        width: 70px !important;
+        font-size: 12px;
+    }
+
+    .read4 button {
+        width: 70px !important;
+        font-size: 12px;
+    }
+
+    textarea,
+    textarea::placeholder {
+        font-size: 12px;
+    }
+
+    .fa-line1 {
+        display: none;
+    }
+
+    .fa-line2 {
+        display: none;
+    }
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
@@ -922,7 +1043,6 @@ select option[selected] {
     .sio-right {
         float: left;
         width: 100%;
-        height: 620px;
     }
 
     .sio-left {
@@ -930,12 +1050,12 @@ select option[selected] {
         width: 100%;
     }
 
-    .left-sio-right1 {
+    .left-sio-left1 {
         width: 30%;
         float: left;
     }
 
-    .right-sio-right1 {
+    .right-sio-left1 {
         float: left;
         width: 70%;
     }
@@ -953,6 +1073,10 @@ select option[selected] {
         background-color: red !important;
     }
 
+    .col-3 {
+        width: 50%;
+        margin-top: 10px;
+    }
 
     .bg-sio1 {
         padding-top: 900;
@@ -998,11 +1122,9 @@ select option[selected] {
         width: 200px !important;
     }
 
-
-    .sio-right {
-        float: left;
-        width: 100%;
-        height: 680px;
+    .col-3 {
+        width: 50%;
+        margin-top: 10px;
     }
 
     .sio-right {
@@ -1010,12 +1132,17 @@ select option[selected] {
         width: 100%;
     }
 
-    .left-sio-right1 {
+    .sio-right {
+        float: left;
+        width: 100%;
+    }
+
+    .left-sio-left1 {
         width: 30%;
         float: left;
     }
 
-    .right-sio-right1 {
+    .right-sio-left1 {
         float: left;
         width: 70%;
     }
