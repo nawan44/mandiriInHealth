@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
         rel="stylesheet" />
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
+        rel="stylesheet">
     <title>Data Diri</title>
 </head>
 
@@ -33,12 +36,11 @@
                     <li><a href="#"> </a></li>
                     <li><a href="#"> </a></li>
                     <li> <a href="#">
-                            <select class="form-select nav-select" aria-label="Default select example"
-                                aria-hidden="true">
-                                <option selected>Product Insurance</option>
-                                <option value="1">Product Insurance 1</option>
-                                <option value="2">Product Insurance 2</option>
-                                <option value="3">Product Insurance 3</option>
+                            <select class="form-select nav-select" aria-label="Default select example">
+                                <option value="" selected disabled>Silahkan Dipilih</option>
+                                <option value="Product Insurance 1">Product Insurance 1</option>
+                                <option value="Product Insurance 2">Product Insurance 2</option>
+                                <option value="Product Insurance 3">Product Insurance 3</option>
                             </select></a>
                     </li>
                     <li> <button class="sign-in">
@@ -68,11 +70,12 @@
                         <select class="one text-white"
                             style=" font-size:13px; font-weight: bold; background: transparent; border: 1px solid #26AE77 ;"
                             class="form-select" aria-label="Default select example">
-                            <option selected>Premi Tahunan</option>
-                            <option value="1">Premi Bulanan</option>
-                            <option value="2">Premi Harian</option>
+                            <option value="" selected disabled>Silahkan Dipilih</option>
+                            <option value="Premi Tahunan">Premi Tahunan</option>
+                            <option value="Premi Bulanan">Premi Bulanan</option>
+                            <option value="Premi Harian">Premi Harian</option>
                         </select>
-                        <div class="row">
+                        <div class="row " >
                             <div class="col-8 premi-th">
                                 Rp 4.000.000
                             </div>
@@ -99,10 +102,10 @@
                     <div class="col text-manfaat">Kamar & Akomodasi
                     </div>
                     <div class="col">
-                        <select class="one select-text-manfaat " class="form-select "
-                            aria-label="Default select example">
-                            <option selected>Rp 2.000.000</option>
-                            <option value="1">Rp 3.000.000</option>
+                        <select class="one select-text-manfaat" class="form-select" aria-label="Default select example">
+                            <option value="" selected disabled>Silahkan Dipilih</option>
+                            <option value="Rp 2.000.000">Rp 2.000.000</option>
+                            <option value="Rp 3.000.000">Rp 3.000.000</option>
                         </select>
                     </div>
                 </div>
@@ -112,8 +115,9 @@
                     <div class="col">
                         <select class="select-text-manfaat one" class="form-select "
                             aria-label="Default select example">
-                            <option selected>Rp 4.000.000</option>
-                            <option value="1">Rp 5.000.000</option>
+                            <option value="" selected disabled>Silahkan Dipilih</option>
+                            <option value="Rp 4.000.000">Rp 4.000.000</option>
+                            <option value="Rp 5.000.000">Rp 5.000.000</option>
                         </select>
                     </div>
                 </div>
@@ -121,10 +125,10 @@
                 <div class="row my-2 px-2">
                     <div class="text-manfaat col">Biaya Pembedahan</div>
                     <div class="col">
-                        <select class="one select-text-manfaat " class="form-select "
-                            aria-label="Default select example">
-                            <option selected>Sesuai Tagihan</option>
-                            <option value="1">Tidak Sesuai</option>
+                        <select class="one select-text-manfaat" class="form-select" aria-label="Default select example">
+                            <option value="" selected disabled>Silahkan Dipilih</option>
+                            <option value="Sesuai Tagihan">Sesuai Tagihan</option>
+                            <option value="Tidak Sesuai">Tidak Sesuai</option>
                         </select>
                     </div>
                 </div>
@@ -134,10 +138,10 @@
                         Kunjungan Dokter
                     </div>
                     <div class="col" style=" z-index: 12;">
-                        <select class="one  select-text-manfaat" class="form-select "
-                            aria-label="Default select example">
-                            <option selected>Sesuai Tagihan</option>
-                            <option value="1">Tidak Sesuai</option>
+                        <select class="one select-text-manfaat" class="form-select" aria-label="Default select example">
+                            <option value="" selected disabled>Silahkan Dipilih</option>
+                            <option value="Sesuai Tagihan">Sesuai Tagihan</option>
+                            <option value="Tidak Sesuai">Tidak Sesuai</option>
                         </select>
                     </div>
 
@@ -289,6 +293,70 @@
                                 <label for="noKtp">Nomor KTP</label>
                                 <input type="number" class="form-control" id="noKtp" placeholder="No. KTP">
                             </div>
+                            <div class="form-group mb-4 row">
+                                <div class="col-6">
+                                    <label for="tanggalLahir">Tanggal Lahir</label>
+                                    <input id="datepicker" type="date" name="tanggalLahir" class="  form-control">
+                                </div>
+                                <div class="col-6">
+                                    <label for="tempatLahir">Tempat Lahir</label>
+                                    <input placeholder="Tempat Lahir" type="text" name="tempatLahir"
+                                        class="form-control">
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 row">
+                                <div class="col-6">
+                                    <label for="jenisKelamin">Jenis Kelamin</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Laki-laki">Laki - laki</option>
+                                        <option value="Perempuan">Perempuan</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label for="statusPerkawinan">Status Perkawinan</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Sudah Kawin">Sudah Kawin</option>
+                                        <option value="Belum Kawin">Belum Kawin</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group mb-4 row">
+                                <div class="col-12 mb-4">
+                                    <label for="statusPerkawinan">
+                                        Alamat Korespondensi <span style="color: #777777;">(sesuai identitas)</span>
+                                    </label>
+                                    <textarea class="form-select"
+                                        placeholder="Jalan, nomor rumah/unit, RT/RW, kelurahan, kecamatan, "></textarea>
+                                </div>
+                                <div class="col-4">
+                                    <label for="provinsi">Provinsi</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Jakarta">Jakarta</option>
+                                        <option value="Jawa Barat">Jawa Barat</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="kota">Kota</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Jakarta Selatan">Jakarta Selatan</option>
+                                        <option value="Bekasi">Bekasi</option>
+                                    </select>
+                                </div>
+                                <div class="col-4">
+                                    <label for="kodePos">Kode Pos</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="12345">12345</option>
+                                        <option value="67890">67890</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <hr class="hr-border" />
+
                             <div class="my-4" style="color:#1443BD;">
                                 <h5><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                                     <span class="pl-4 font-weight-bold">Kontak</span>
@@ -328,16 +396,88 @@
                                 <label for="perusahaan">Perusahaan</label>
                                 <input type="text" class="form-control" id="perusahaan" placeholder="Perusahaan">
                             </div>
+                            <div class="my-4 row">
+                                <div class="col-6">
+                                    <label for="jabatan">Jabatan</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Jabatan1">Jabatan1</option>
+                                        <option value="Jabatan2">Jabatan2</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label for="bidangUsaha">Bidang Usaha</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Bidang Usaha1">Bidang Usaha1</option>
+                                        <option value="Bidang Usaha2">Bidang Usaha2</option>
+                                    </select>
+                                </div>
+                            </div>
                     </div>
-                    <div class="row mt-3 read3 p-3" style="background-color: #F3F6FC;">
+                    <div class="row mb-4 read3 pb-3" style=" background-color: #F3F6FC;">
                         <div class="my-4" style="color:#1443BD;">
                             <h5><i class="fa fa-file-text" aria-hidden="true"></i>
                                 <span class="pl-4 font-weight-bold">Ahli Waris</span>
                             </h5>
+                            <p style="color: #777777; font-size: 14px;">Tambahkan Ahli Waris (Penerima Manfaat) untuk
+                                menerima santunan
+                                kematian
+                                atau cacat tetap karena kecelakaan. (opsional)</p>
                         </div>
+                        <div class="row mt-3 ahliwaris-hide " id="ahliwaris-hide">
+                            <div class="row">
+                                <div class="col-6 h6">Ahli Waris 1</div>
+                                <div class="col-6">
+                                    <i onclick="hideDiv()" class="fa fa-trash-o h6" style="float: right; color: red;"
+                                        aria-hidden="true">Hapus</i>
+                                </div>
+                            </div>
+                            <div class="row my-4">
+                                <label for="namaLengkap">Nama Lengkap</label>
+                                <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap">
+                            </div>
+                            <div class="row my-4">
+                                <div class="col-6">
+                                    <label for="ahliwarisJenisKelamin">Jenis Kelamin</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Laki-laki">Laki - laki</option>
+                                        <option value="Perempuan">Perempuan</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label for="ahliwarisTanggalLahir">Tanggal Lahir</label>
+                                    <input id="datepicker" type="date" name="ahliwarisTanggalLahir"
+                                        class="  form-control">
+                                </div>
+                            </div>
+                            <div class="row my-4 mb-5">
+                                <div class="col-6">
+                                    <label for="ahliwarisHubungan">Hubungan</label>
+                                    <select class="form-select">
+                                        <option value="" selected disabled>Silahkan Dipilih</option>
+                                        <option value="Keluarga">Keluarga</option>
+                                        <option value="Bukan Keluarga">Bukan Keluarga</option>
+                                    </select>
+                                </div>
+                                <div class="col-6">
+                                    <label for="ahliwarisPresentase">Presentase</label>
+                                    <div class="input-group">
+                                        <input type="number" name="ahliwarisPresentase" class="form-control">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text">%</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a id="next6" onclick="showDiv()" class="btn-block btn-lanjut">
+                            <i class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
+                            Tambah Ahli Waris
+                        </a>
                     </div>
-
-                    <div class="row mt-4">
+                    <div class="row mt-5">
                         <a href="sio-page.html" id="next6" class="btn-kembali">Kembali</a>
                         <button id="next6" class="btn-lanjut">Lanjut</button>
                     </div>
@@ -450,237 +590,24 @@
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
     <script>
+        //HEADER
         $(document).ready(function () {
             $(".menu-icon").on("click", function () {
                 $("nav ul").toggleClass("showing");
             });
         });
-
-
         $(window).on("scroll", function () {
             if ($(window).scrollTop() >= 500) {
                 $('nav').addClass('blue');
             }
-
             else {
                 $('nav').removeClass('blue');
             }
         })
-        // ------------step-wizard-------------
-        $('document').ready(function () {
-            var count = 0;
-            $('.step').each(function () {
-                count++;
 
-            });
-            $('.step-paragraph').each(function () {
-                count++;
-
-            });
-            var i = 0;
-            //NEXT
-            $('#next1').on('click', function () {
-                $('.disabled2').removeClass('disabled2');
-                $('.btn-ya1').addClass('dis-button1-ya');
-                $('.btn-tidak1').addClass('dis-button1-tidak');
-                $('.btn-ya1').removeClass('btn-ya1');
-                $('.btn-tidak1').removeClass('btn-tidak1');
-                $('.dis-button2-ya').addClass('btn-ya2');
-                $('.dis-button2-tidak').addClass('btn-tidak2');
-
-                $('.read1').addClass('read');
-                $('.step-paragraph-active').removeClass('step-paragraph-active');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', false);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', false);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-            });
-
-            $('#next2').on('click', function () {
-                $('.disabled3').removeClass('disabled3');
-                $('.btn-tidak1').addClass('dis-button1-tidak');
-                $('.btn-ya2').addClass('dis-button2-ya');
-                $('.btn-tidak2').addClass('dis-button2-tidak');
-                $('.btn-ya2').removeClass('btn-ya2');
-                $('.btn-tidak1').removeClass('btn-tidak1');
-                $('.btn-tidak2').removeClass('btn-tidak2');
-                $('.dis-button3-ya').addClass('btn-ya3');
-                $('.dis-button3-tidak').addClass('btn-tidak3');
-
-                $('.read1').addClass('read');
-                $('.read2').addClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', false);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', false);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#next3').on('click', function () {
-                $('.disabled4').removeClass('disabled4');
-                $('.btn-ya3').addClass('dis-button3-ya');
-                $('.btn-tidak3').addClass('dis-button3-tidak');
-                $('.btn-ya3').removeClass('btn-ya3');
-                $('.btn-tidak3').removeClass('btn-tidak3');
-                $('.btn-tidak2').removeClass('btn-tidak2');
-                $('.btn-tidak2').addClass('dis-button2-tidak');
-                $('.dis-button4-ya').addClass('btn-ya4');
-                $('.dis-button4-tidak').addClass('btn-tidak4');
-
-                $('.read1').addClass('read');
-                $('.read2').addClass('read');
-                $('.read3').addClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', false);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', false);
-
-
-            });
-            $('#next4').on('click', function () {
-                $('.btn-ya4').addClass('dis-button4-ya');
-                $('.btn-ya4').removeClass('btn-ya4');
-                $('.dis-button3-tidak').addClass('dis-button3-tidak');
-                $('.btn-tidak3').removeClass('btn-tidak3');
-                $('.btn-ya3').removeClass('btn-ya3');
-                $('.dis-button4-tidak').addClass('btn-tidak4');
-                $('.disabled5').removeClass('disabled5');
-
-                $('.read1').addClass('read');
-                $('.read2').addClass('read');
-                $('.read3').addClass('read');
-                $('.read4').addClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-                $('#next5').prop('disabled', false);
-                $('#next6').prop('disabled', false);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', false);
-
-            });
-            $('#prev1').on('click', function () {
-                $('.dis-button1-ya').addClass('btn-ya1');
-                $('.btn-ya2').addClass('dis-button2-ya');
-                $('.btn-ya2').removeClass('btn-ya2');
-
-                $('.read1').addClass('step-paragraph-active');
-
-                $('.read1').removeClass('read');
-                $('.read2').removeClass('read');
-                $('.read3').removeClass('read');
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', false);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', false);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#prev2').on('click', function () {
-                $('.disabled1').removeClass('disabled1');
-                $('.dis-button1-tidak').addClass('btn-tidak1');
-                $('.dis-button2-ya').addClass('btn-ya2');
-                $('.btn-tidak2').addClass('dis-button2-tidak');
-                $('.btn-tidak2').removeClass('btn-tidak2');
-                $('.btn-ya3').addClass('dis-button3-ya');
-                $('.btn-ya3').removeClass('btn-ya3');
-
-                $('.read2').removeClass('read');
-                $('.read3').removeClass('read');
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', false);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', false);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#prev3').on('click', function () {
-                $('.disabled2').removeClass('disabled2');
-                $('.dis-button2-tidak').addClass('btn-tidak2');
-                $('.dis-button3-ya').addClass('btn-ya3');
-                $('.btn-tidak3').addClass('dis-button3-tidak');
-                $('.btn-tidak3').removeClass('btn-tidak3');
-                $('.btn-ya4').addClass('dis-button4-ya');
-                $('.btn-ya2').addClass('dis-button2-ya');
-                $('.btn-ya4').removeClass('btn-ya4');
-
-                $('.read3').removeClass('read');
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', false);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', false);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#prev4').on('click', function () {
-                $('.disabled3').removeClass('disabled3');
-                $('.dis-button3-tidak').addClass('btn-tidak3');
-                $('.dis-button4-ya').addClass('btn-ya4');
-                $('.btn-tidak4').addClass('dis-button4-tidak');
-                $('.btn-tidak4').removeClass('btn-tidak4');
-
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', false);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', false);
-                $('#prev4').prop('disabled', true);
-
-            });
-        });
-        function hideDiv(num) {
-            document.getElementById('no4-hide').style.display = 'none';
-        }
-        function showDiv(num) {
-            document.getElementById('no4-hide').style.display = 'block';
-        }
     </script>
     <script>
+        //NOMOR HP
         var no_hp = window.intlTelInput(document.querySelector("#no-hp"), {
             separateDialCode: true,
             preferredCountries: ["id"],
@@ -722,8 +649,27 @@
             alert(full_number)
 
         });
-    </script>
 
+
+    </script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
+        </script>
+    <script type="text/javascript">
+        //AHLI WARIS
+        $('.datepicker').datepicker({
+            format: "mm : dd : yyyy",
+        });
+
+    </script>
+    <script>
+        //AHLI WARIS
+        function hideDiv(num) {
+            document.getElementById('ahliwaris-hide').style.display = 'none';
+        }
+        function showDiv(num) {
+            document.getElementById('ahliwaris-hide').style.display = 'block';
+        }</script>
 </body>
 
 </html>

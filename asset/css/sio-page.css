@@ -673,6 +673,10 @@ select option[selected] {
     color: #1443BD;
 }
 
+#ahliwaris-hide {
+    display: none !important;
+}
+
 /*----------step-wizard------------*/
 
 /* START FOOTER */
@@ -784,8 +788,17 @@ select option[selected] {
         width: 400px !important;
     }
 
+    .row-manfaat-title {
+        width: 100%;
+    }
 
+    .sio-right2 {
+        height: 100px;
+    }
 
+    .right-sio-right2-1 .row {
+        width: 200%;
+    }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
