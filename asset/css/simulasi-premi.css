@@ -1,145 +1,7 @@
-body {
-    height: 100%;
-    padding: 0;
-}
-
-/* START HEADER */
-header {
-    width: 100%;
-    height: 70vh;
-    background: url('../image/Header2.png') no-repeat 50% 50%;
-    background-size: cover;
-}
-
-.logo {
-    line-height: 60px;
-    position: fixed;
-    float: left;
-    margin: 16px 46px;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    letter-spacing: 2px;
-
-}
-
-.logo img {
-    width: 100px;
-}
-
-nav {
-    position: fixed;
-    width: 100%;
-    line-height: 60px;
-    z-index: 99 !important;
-
-}
-
-.nav-select {
-    font-size: 15px !important;
-    background-color: transparent;
-    border: none;
-    color: #fff !important;
-}
-
-
-nav ul {
-    line-height: 60px;
-    list-style: none;
-    background: rgba(0, 0, 0, 0);
-    overflow: hidden;
-    color: #fff;
-    padding: 0;
-    text-align: right;
-    margin: 0;
-    padding: 7px 30px 10px 0px;
-    transition: 1s;
-}
-
-
-nav.blue ul {
-    height: 80px;
-    background: #0E2C7A !important;
-}
-
-nav ul li {
-    display: inline-block;
-    padding: 16px 30px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-size: 18px;
-}
-
-nav ul .li-button-sign {
-    height: 30px !important;
-    background-color: #26AE77 !important;
-    margin: 20px 0 !important;
-}
-
-.form-select {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-    color: #FFFFFF;
-}
-
-.col .form-select {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
-    color: #000000;
-}
-
-select option {
-    background-color: #1443BD;
-}
-
-.col select option {
-    background-color: #1443BD;
-    color: #FFFFFF;
-}
-
-select option[selected] {
-    color: #FFFFFF !important;
-}
-
-.menu-icon {
-    line-height: 60px;
-    width: 100%;
-    text-align: right;
-    box-sizing: border-box;
-    padding: 17px 20px;
-    cursor: pointer;
-    color: #fff;
-    display: none;
-}
-
-.hidden-spacer {
-    height: 56px
-}
-
-.sign-in {
-    height: 30px;
-    width: 100px;
-    background-color: #1443BD;
-    border: none;
-    color: white;
-    padding: 0px !important;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 20px;
-    vertical-align: middle !important;
-
-}
-
-.sign-in:hover {
-    background-color: RoyalBlue;
-}
-
 .icon-center {
     text-align: center;
     margin: 0 auto;
 }
-
 
 .bg-simulasi1 {
     padding-top: 400;
@@ -149,7 +11,6 @@ select option[selected] {
     position: absolute;
     float: left;
     z-index: -10 !important;
-
 }
 
 .bg-simulasi1 img {
@@ -164,7 +25,6 @@ select option[selected] {
     position: absolute;
     float: left;
     z-index: -10 !important;
-
 }
 
 .bg-simulasi2 img {
@@ -197,14 +57,6 @@ select option[selected] {
     text-align: center;
     font-size: 12px;
     line-height: 1.42857;
-}
-
-.produk-button-premi {
-    margin-right: 30px;
-    border-radius: 20px;
-    color: #1443bd;
-    font-size: 12px;
-    background-color: #fff;
 }
 
 /* END HEADER */
@@ -275,7 +127,7 @@ select option[selected] {
     padding-right: 10px;
 }
 
-.premi-th {
+.premi-th-simulasi {
     color: red;
     font-size: 15px;
     font-weight: bold;
@@ -284,7 +136,7 @@ select option[selected] {
     text-align: right;
 }
 
-.premi-disc {
+.premi-disc-simulasi {
     color: red;
     font-size: 8px;
     padding: 3px 0px 0px 2px;
@@ -307,11 +159,6 @@ select option[selected] {
     font-weight: bold;
     background: transparent !important;
     border: none !important;
-}
-
-.hr-border {
-    border: 1px solid #E0E0E0;
-    margin: 3px 0 7px 0
 }
 
 .right-simulasi-right2-1 h5 {
@@ -407,7 +254,6 @@ select option[selected] {
 /* END MANFAAT DAN RESIKO */
 
 /* START CAROUSEL */
-
 .row-jelajahi {
     background: #0E2C7A;
     min-height: 300px;
@@ -474,45 +320,6 @@ select option[selected] {
 
 /* END CAROUSEL */
 
-/* START FOOTER */
-.text-body-secondary {
-    color: #fff !important;
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 22px;
-}
-
-.modal-button {
-    width: 150px;
-    background-color: #1443BD;
-    border: none;
-    color: white;
-    margin: 0 auto;
-    text-align: center;
-    margin: 30px 0;
-    padding: 3px 25px;
-    font-size: 14px;
-    cursor: pointer;
-    border-radius: 12px;
-    position: relative;
-}
-
-.col-footer-image {
-    height: 200px !important;
-}
-
-.medsos {
-    margin-top: 1290px;
-}
-
-.footer-image {
-    width: 300px;
-    top: -120px;
-    position: relative;
-}
-
 .bg-icon {
     top: -185;
     left: 15;
@@ -521,39 +328,12 @@ select option[selected] {
     float: right;
 }
 
-.footer-logo {
-    width: 20%;
-    float: left;
-}
-
-.footer-copy {
-    width: 75%;
-    float: left;
-}
-
-.footer-border {
-    border-right: 3px solid white;
-    text-align: center;
-    margin: 0 auto;
-    height: 60px;
-}
-
-.copy-right {
-    color: #fff;
-    font-size: 14px;
-    padding-top: 20px;
-    margin-left: 10px;
-    text-align: left !important;
-}
-
-/* END FOOTER */
 
 
 @media (min-width: 992px) {
     .bg-simulasi2 {
         padding-top: 400px;
         width: 400px !important;
-
     }
 
     .bg-simulasi2 img {
@@ -729,59 +509,6 @@ select option[selected] {
         width: 400px !important;
     }
 
-    nav {
-        height: 190px !important;
-    }
-
-    .icon-konten1 {
-        width: 200px;
-        text-align: center;
-        margin: 0 auto;
-    }
-
-    .logo {
-        top: 0;
-        padding: 5px 10px;
-        margin: 4px;
-    }
-
-    .fa-bars {
-        color: #fff;
-    }
-
-    .logo img {
-        width: 70px;
-    }
-
-    nav ul {
-        max-height: 0px;
-        background: #0E2C7A;
-    }
-
-    .showing {
-        max-height: 34em;
-    }
-
-    nav ul li {
-        box-sizing: border-box;
-        width: 100%;
-        padding: 24px;
-        text-align: center;
-    }
-
-    .menu-icon {
-        height: 40px;
-        display: block;
-        background: #0E2C7A;
-        padding: 17px 30px;
-        font-size: 20px;
-    }
-
-    .menu-icon i {
-        font-size: 24px;
-    }
-
-
     .simulasi-left {
         float: left;
         width: 100%;
@@ -790,22 +517,15 @@ select option[selected] {
     .simulasi-right {
         float: left;
         width: 100%;
-
     }
 
-    .premi-th {
+    .premi-th-simulasi {
         color: red;
         width: 70%;
     }
 
-    .premi-disc {
+    .premi-disc-simulasi {
         width: 30% !important;
-
-    }
-
-    .simulcol-footer-imageasi-right {
-        float: left;
-        width: 100%;
     }
 
     .row-jelajahi {
@@ -860,7 +580,6 @@ select option[selected] {
         width: 200px;
         left: 180px;
     }
-
 }
 
 @media (min-width: 300px) and (max-width: 399px) {
@@ -981,10 +700,6 @@ select option[selected] {
         font-size: 32px;
         line-height: 32px;
         float: left;
-    }
-
-    .footer-image {
-        width: 200px;
     }
 }
 
@@ -1124,9 +839,5 @@ select option[selected] {
         font-size: 32px;
         line-height: 32px;
         float: left;
-    }
-
-    .footer-image {
-        width: 200px !important;
     }
 }

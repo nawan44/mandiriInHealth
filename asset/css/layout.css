@@ -1,0 +1,744 @@
+/*MAIN */
+body {
+    height: 100%;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 70vh;
+    background: url('../image/Header2.png') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.line {
+    border-top: 1px solid #70BD44;
+    padding-top: 20px;
+    width: 94%;
+    left: 31px;
+    position: relative;
+}
+
+.col .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    color: #000000;
+}
+
+.col-4 .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    color: #000000;
+}
+
+.col-4 select option {
+    background-color: #1443BD;
+    color: #fff;
+}
+
+/*START NAV */
+nav {
+    position: fixed;
+    width: 100%;
+    line-height: 60px;
+    z-index: 99 !important;
+}
+
+.nav-select {
+    font-size: 15px !important;
+    background-color: transparent;
+    border: none;
+    color: #fff !important;
+}
+
+nav ul {
+    line-height: 60px;
+    list-style: none;
+    background: rgba(0, 0, 0, 0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: right;
+    margin: 0;
+    padding: 7px 30px 10px 0px;
+    transition: 1s;
+}
+
+nav.blue ul {
+    height: 80px;
+    background: #0E2C7A !important;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 16px 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+nav ul .li-button-sign {
+    height: 30px !important;
+    background-color: #26AE77 !important;
+    margin: 20px 0 !important;
+}
+
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    color: #FFFFFF;
+}
+
+.menu-icon {
+    line-height: 60px;
+    width: 100%;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 17px 20px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.logo {
+    line-height: 60px;
+    position: fixed;
+    float: left;
+    margin: 16px 46px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+.logo img {
+    width: 100px;
+}
+
+.sign-in {
+    height: 30px;
+    width: 100px;
+    background-color: #1443BD;
+    border: none;
+    color: white;
+    padding: 0px !important;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 20px;
+    vertical-align: middle !important;
+}
+
+.sign-in:hover {
+    background-color: RoyalBlue;
+}
+
+select option {
+    background-color: #1443BD;
+}
+
+.col select option {
+    background-color: #1443BD;
+    color: #FFFFFF;
+}
+
+select option[selected] {
+    color: #FFFFFF !important;
+}
+
+/* END NAV */
+
+/* START PREMI */
+.col-6 .form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23000000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m2 5 6 6 6-6'/%3e%3c/svg%3e");
+    color: #000000;
+}
+
+.col-6 select option {
+    background-color: #1443BD;
+    color: #fff;
+}
+
+.main-left {
+    float: left;
+    width: 30%;
+    background-color: #fff;
+    height: 500px;
+    padding: 10px;
+}
+
+.main-right {
+    padding: 20px;
+    float: left;
+    width: 70%;
+}
+
+.main-left1 {
+    background: #0E2C7A;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    height: 70px;
+}
+
+.left-main-left1 {
+    float: left !important;
+    text-align: left;
+    width: 30%;
+    background-color: #0e2c7a;
+}
+
+.right-main-left1 {
+    float: left;
+    width: 70%;
+    height: 60px;
+    color: #fff;
+}
+
+.right-main-left1-text1 {
+    font-size: 12px;
+    padding-left: 2px;
+}
+
+.right-main-left1-text2 {
+    font-size: 16px;
+    padding-left: 2px;
+    font-weight: bold;
+}
+
+.main-right2 {
+    border-radius: 0 0 5px 5px;
+    height: 70px;
+    background: #26AE77;
+    padding: 20px 0 0 5px !important;
+}
+
+.right-main-right2-1 {
+    width: 40%;
+    float: left;
+    color: #fff;
+    padding: 5px;
+}
+
+.right-main-right2-2 {
+    padding-right: 10px;
+}
+
+.premi-th {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px 5px;
+    text-decoration: line-through;
+    text-align: left;
+    width: 80%;
+}
+
+.premi-th span {
+    color: red;
+    font-size: 8px;
+    padding: 3px 0px 0px 10px;
+    text-align: left;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.right-main-right2-1 h5 {
+    color: red !important;
+    font-size: 8x !important;
+}
+
+.row-manfaat-title {
+    color: #000;
+    margin-top: 30px;
+    height: 30px;
+    font-size: 11px;
+    padding: 0 5px;
+}
+
+.row-manfaat-text {
+    width: 80%;
+    float: left;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.hr-border {
+    border: 1px solid #E0E0E0;
+    margin: 25px 0 5px 0
+}
+
+.text-manfaat {
+    color: #000;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.select-text-manfaat {
+    float: right !important;
+    color: #1443BD !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    background: transparent !important;
+    border: none !important;
+}
+
+.count-premi {
+    float: right;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+/* END PREMI */
+
+/* START STEP WIZARD */
+
+.stepText {
+    text-align: center;
+}
+
+.stepText h5 {
+    color: #1443BD;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.stepText h6 {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    color: #777777;
+}
+
+
+.step-icon {
+    width: 30%;
+    float: left;
+}
+
+.step {
+    width: 50px;
+    height: 50px;
+    border: 6px solid #1443BD;
+    border-radius: 100px;
+    transition: 0.4s;
+    text-align: center !important;
+    margin: 0 auto;
+}
+
+.step i {
+    font-size: 30px !important;
+    color: #1443BD;
+    padding: 5 0 0 0;
+}
+
+.line-icon {
+    width: 70%;
+    float: left;
+
+}
+
+.fa-line1 {
+    margin: 22px 0 0 0;
+    padding: 0 !important;
+    float: left;
+    width: 100%;
+    border: 1px solid #26AE77;
+}
+
+.fa-line2 {
+    margin: 22px 0;
+    width: 100%;
+    border: 1px solid #26AE77;
+}
+
+.active {
+    background: #70BD44;
+    width: 50px;
+    height: 50px;
+}
+
+/* END STEP WIZARD */
+
+
+/* START FOOTER */
+.text-body-secondary {
+    color: #fff !important;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.modal-button {
+    width: 150px;
+    background-color: #1443BD;
+    border: none;
+    color: white;
+    margin: 0 auto;
+    text-align: center;
+    margin: 30px 0;
+    padding: 3px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 12px;
+    position: relative;
+}
+
+.modal-button-edit {
+    width: 250px;
+    background-color: #F3F6FC;
+    border: none;
+    color: #1443BD;
+    margin: 0 auto;
+    text-align: center;
+    margin: 30px 0;
+    padding: 5px 25px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 12px;
+    position: relative;
+}
+
+.col-footer-image {
+    height: 200px !important;
+}
+
+.medsos {
+    margin-top: 1290px;
+}
+
+.footer-image {
+    width: 300px;
+    top: -120px;
+    position: relative;
+}
+
+.footer-logo {
+    width: 20%;
+    float: left;
+}
+
+.footer-copy {
+    width: 75%;
+    float: left;
+}
+
+.footer-border {
+    border-right: 3px solid white;
+    text-align: center;
+    margin: 0 auto;
+    height: 60px;
+}
+
+.copy-right {
+    color: #fff;
+    font-size: 14px;
+    padding-top: 20px;
+    margin-left: 10px;
+    text-align: left !important;
+}
+
+/* END FOOTER */
+
+
+
+/* START BUTTON */
+.btn-lanjut {
+    width: 200px;
+    border: 2px solid #1443BD;
+    background-color: #1443BD;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-lanjut:hover {
+    background-color: #fff;
+    border: 2px solid #1443BD;
+    color: #1443BD;
+}
+
+.btn-kembali {
+    width: 200px;
+    border: 2px solid #1443BD;
+    background-color: #F3F6FC;
+    color: #1443BD;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-kembali:hover {
+    background-color: #fff;
+    border: 2px solid #1443BD;
+    color: #1443BD;
+}
+
+/* END BUTTON */
+
+@media (min-width: 992px) {
+    .main-right2 {
+        padding: 15px 0 0 5px !important;
+        height: 100px;
+    }
+
+    .main-left {
+        height: 100%;
+    }
+
+    .right-main-right2-1 .row {
+        width: 200%;
+    }
+
+    .row-manfaat-title {
+        width: 100%;
+    }
+
+    .premi-th {
+        padding: 0 0 0 5px;
+    }
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .fa-line2 {
+        display: none;
+    }
+
+    .main-left {
+        height: 620px;
+    }
+
+    .main-right2 {
+        border-radius: 0 0 5px 5px;
+        height: 120px;
+        background: #26AE77;
+    }
+
+    .right-main-right2-1 {
+        width: 100%;
+        float: left;
+    }
+
+    .right-main-right2-2 {
+        width: 100%;
+        float: left;
+    }
+
+    .modal-button-edit {
+        width: 150px;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .main-left {
+        float: left;
+        width: 100%;
+    }
+
+    .main-right {
+        float: left;
+        width: 100%;
+    }
+
+    .main-right2 {
+        padding: 10px 0 0 5px !important;
+    }
+
+    .fa-line2 {
+        display: none;
+    }
+}
+
+@media (max-width: 599px) {
+    nav {
+        height: 190px !important;
+    }
+
+    nav ul {
+        max-height: 0px;
+        background: #0E2C7A;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px;
+        text-align: center;
+    }
+
+    .logo {
+        top: 0;
+        padding: 5px 10px;
+        margin: 4px;
+    }
+
+    .fa-bars {
+        color: #fff;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .showing {
+        max-height: 34em;
+    }
+
+    .menu-icon {
+        height: 40px;
+        display: block;
+        background: #0E2C7A;
+        padding: 17px 30px;
+        font-size: 20px;
+    }
+
+    .menu-icon i {
+        font-size: 24px;
+    }
+
+    .main-left {
+        float: left;
+        width: 100%;
+    }
+
+    .main-right {
+        float: left;
+        width: 100%;
+    }
+
+    .main-right2 {
+        padding: 5px 0 !important;
+    }
+
+    .premi-th {
+        color: red;
+        width: 100%;
+        padding-left: 15px;
+    }
+
+    .count-premi {
+        font-size: 20px;
+    }
+
+    .stepText h5 {
+        font-size: 14px;
+    }
+
+    .stepText h6 {
+        font-size: 10px;
+    }
+
+    .fa-line1 {
+        display: none;
+    }
+
+    .fa-line2 {
+        display: none;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    .main-right {
+        float: left;
+        width: 100%;
+    }
+
+    .main-left {
+        float: left;
+        width: 100%;
+    }
+
+    .left-main-left1 {
+        width: 30%;
+        float: left;
+    }
+
+    .right-main-left1 {
+        float: left;
+        width: 70%;
+    }
+
+    .main-right2 {
+        height: 110px;
+    }
+
+    .right-main-right2-1 {
+        width: 100%;
+    }
+
+    .right-main-right2-2 {
+        width: 100%;
+        background-color: red !important;
+    }
+
+    .premi-th {
+        width: 100%;
+        font-size: 12px;
+        padding: 0 0 0 15px;
+    }
+
+    .footer-image {
+        width: 200px;
+    }
+}
+
+@media (max-width: 299px) {
+    .premi-th {
+        width: 100%;
+        font-size: 11px;
+        font-weight: bold;
+        padding: 0 0 0 10px;
+    }
+
+    .count-premi {
+        font-size: 18px;
+    }
+
+    .main-right {
+        float: left;
+        width: 100%;
+    }
+
+    .main-right {
+        float: left;
+        width: 100%;
+    }
+
+    .left-main-left1 {
+        width: 30%;
+        float: left;
+    }
+
+    .right-main-left1 {
+        float: left;
+        width: 70%;
+    }
+
+    .main-right2 {
+        height: 110px;
+    }
+
+    .right-main-right2-1 {
+        width: 100%;
+    }
+
+    .right-main-right2-2 {
+        width: 100%;
+        background-color: red !important;
+    }
+
+    .footer-image {
+        width: 200px !important;
+    }
+}
