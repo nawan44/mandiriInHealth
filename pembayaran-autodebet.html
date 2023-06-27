@@ -13,7 +13,7 @@
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
         rel="stylesheet">
-    <title>Data Diri Sama- Pemegang Polis Calon Tertanggung</title>
+    <title>Pembayaran - Autodebet</title>
 </head>
 
 <body>
@@ -175,7 +175,7 @@
                                     <div class="fa-line1"></div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="step active">
+                                    <div class="step">
                                         <i class="fa fa-user" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -190,7 +190,7 @@
                                     <div class="fa-line1"></div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="step">
+                                    <div class="step active">
                                         <i class="fa fa-money" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -264,223 +264,193 @@
                     </div>
                     <div class="row mt-3 read1 p-3" style="background-color: #F3F6FC;">
                         <div class="my-2" style="color:#1443BD;">
-                            <h5><i class="fa fa-user-circle mr-3" aria-hidden="true"></i>
-                                <span class="pl-4 font-weight-bold">Data Calon Pemegang Polis</span>
+                            <h5><img src="asset/icon/fun-icon.svg" />
+                                <span class="pl-4 font-weight-bold">Sumber Dana Pembayaran Premi</span>
                             </h5>
                         </div>
-                        <p class="mt-2">Apakah calon pemegang Polis adalah orang yang sama dengan calon
-                            tertanggung?</p>
+                        <div class="mt-2">Tujuan pengajuan asuransi</div>
+                        <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
+                        <div class="row mt-2 mb-2">
+                            <div class="col-4"><label>
+                                    <input class="form-check-input" type="checkbox" value="proteksi">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Proteksi
+                                </label></div>
+                            <div class="col-4"> <label>
+                                    <input class="form-check-input" type="checkbox" value="lainnya">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Lainnya
+                                </label></div>
+                        </div>
+                        <div class="mt-2">Sumber penghasilan pembayar premi </div>
+                        <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
                         <div class="row mt-2">
-                            <a href="data-diri-sama.html" id="next6" class="btn-ya">Ya</a>
-                            <a href="data-diri-beda.html" id="next6" class="btn-tidak">Tidak</a>
+                            <div class="col-4">
+                                <label>
+                                    <input class="form-check-input" type="checkbox" value="gaji">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Gaji
+                                </label>
+
+                            </div>
+                            <div class="col-4"> <label>
+                                    <input class="form-check-input" type="checkbox" value="pasangan">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Pasangan (suami/istri)
+                                </label></div>
+                            <div class="col-4"> <label>
+                                    <input class="form-check-input" type="checkbox" value="hasilInvestasi">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Hasil investasi
+                                </label></div>
+                        </div>
+                        <div class="row mt-2 mb-2">
+                            <div class="col-4">
+                                <label>
+                                    <input class="form-check-input" type="checkbox" value="bisnisPribadi">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Bisnis pribadi
+                                </label>
+
+                            </div>
+                            <div class="col-4"> <label>
+                                    <input class="form-check-input" type="checkbox" value="bonus">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Bonus/Insentif/Komisi
+                                </label></div>
+                            <div class="col-4"> <label>
+                                    <input class="form-check-input" type="checkbox" value="lainnya">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Lainnya
+                                </label></div>
+                        </div>
+                        <div class="mt-2">Jumlah penghasilan kotor per tahun </div>
+                        <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
+                        <div class="row align-items-end mt-2">
+                            <div class="col-4">
+                                <label>
+                                    <input type="radio" name="o3" value="">
+                                    &#60; Rp10 juta
+                                </label>
+                                <div class="radio mt-3 mb-3">
+                                    <label>
+                                        <input type="radio" name="o3" value="">
+                                        Rp25 juta - Rp50 juta
+
+                                    </label>
+                                </div>
+                                <label>
+                                    <input type="radio" name="o3" value="">
+                                    Rp100 juta - Rp250 juta
+                                </label>
+
+                            </div>
+                            <div class="col-4">
+                                <label>
+                                    <input type="radio" name="o3" value="">
+                                    Rp10 juta - Rp25 juta
+                                </label>
+                                <div class="radio mt-3 mb-3">
+                                    <label>
+                                        <input type="radio" name="o3" value="">
+                                        Rp50 juta - Rp100 juta
+                                    </label>
+                                </div>
+                                <label>
+                                    <input type="radio" name="o3" value="">
+                                    Rp250 juta - Rp500 juta
+                                </label>
+                            </div>
+                            <div class="col-4">
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="o3" value="">
+                                        Lainnya
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="row mt-3 read2 p-3" style="background-color: #F3F6FC;">
                         <div class="my-4" style="color:#1443BD;">
-                            <h5><i class="fa fa-address-book-o" aria-hidden="true"></i>
-                                <span class="pl-4 font-weight-bold">Informasi Data Diri Pemegang Polis</span>
+                            <h5><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
+                                <span class="pl-4 font-weight-bold">Cara Pembayaran Premi
+                                </span>
                             </h5>
                         </div>
-                        <form>
-                            <div class="form-group mb-4">
-                                <label for="namaLengkap">Nama Lengkap</label>
-                                <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap">
-                            </div>
-                            <div class="form-group mb-4">
-                                <label for="noBpjs">Nomor Kartu BPJS</label>
-                                <input type="number" class="form-control" id="noBpjs" placeholder="1124 - 1154 - 1154">
-                            </div>
-                            <div class="form-group mb-4">
-                                <label for="noKtp">Nomor KTP</label>
-                                <input type="number" class="form-control" id="noKtp" placeholder="No. KTP">
-                            </div>
-                            <div class="form-group mb-4 row">
-                                <div class="col-6">
-                                    <label for="tanggalLahir">Tanggal Lahir</label>
-                                    <input id="datepicker" type="date" name="tanggalLahir" class="  form-control">
-                                </div>
-                                <div class="col-6">
-                                    <label for="tempatLahir">Tempat Lahir</label>
-                                    <input placeholder="Tempat Lahir" type="text" name="tempatLahir"
-                                        class="form-control">
-                                </div>
-                            </div>
-                            <div class="form-group mb-4 row">
-                                <div class="col-6">
-                                    <label for="jenisKelamin">Jenis Kelamin</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Laki-laki">Laki - laki</option>
-                                        <option value="Perempuan">Perempuan</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <label for="statusPerkawinan">Status Perkawinan</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Sudah Kawin">Sudah Kawin</option>
-                                        <option value="Belum Kawin">Belum Kawin</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group mb-4 row">
-                                <div class="col-12 mb-4">
-                                    <label for="statusPerkawinan">
-                                        Alamat Korespondensi <span style="color: #777777;">(sesuai identitas)</span>
-                                    </label>
-                                    <textarea class="form-select"
-                                        placeholder="Jalan, nomor rumah/unit, RT/RW, kelurahan, kecamatan, "></textarea>
-                                </div>
-                                <div class="col-4">
-                                    <label for="provinsi">Provinsi</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Jakarta">Jakarta</option>
-                                        <option value="Jawa Barat">Jawa Barat</option>
-                                    </select>
-                                </div>
-                                <div class="col-4">
-                                    <label for="kota">Kota</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Jakarta Selatan">Jakarta Selatan</option>
-                                        <option value="Bekasi">Bekasi</option>
-                                    </select>
-                                </div>
-                                <div class="col-4">
-                                    <label for="kodePos">Kode Pos</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="12345">12345</option>
-                                        <option value="67890">67890</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <hr class="hr-border" />
+                        <div class="mt-2">Cara Bayar</div>
+                        <div class="row  mt-2">
+                            <div class="col-4">
+                                <label>
+                                    <input type="radio" name="o3" value="">
+                                    Tahunan
+                                </label>
+                                <div class="radio mt-3 mb-3">
+                                    <label>
+                                        <input type="radio" name="o3" value="">
+                                        Triwulan
 
-                            <div class="my-4" style="color:#1443BD;">
-                                <h5><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
-                                    <span class="pl-4 font-weight-bold">Kontak</span>
-                                </h5>
-                            </div>
-                            <div class="my-3">
-                                <label for="no-hp">Nomor HP</label>
-                                <p>
-                                    <input type="tel" class="form-control" name="no-hp[main]" id="no-hp" />
-                                </p>
-                            </div>
-                            <div class="my-3">
-                                <label for="no-telepon-rumah">Nomor Telepon Rumah</label>
-                                <p>
-                                    <input type="tel" class="form-control" name="no-telepon-rumah[main]"
-                                        id="no-telepon-rumah" />
-                                </p>
-                            </div>
-                            <div class="my-3">
-                                <label for="no-telepon-kantor">Nomor Telepon Kantor</label>
-                                <p>
-                                    <input type="tel" class="form-control" name="no-telepon-kantor[main]"
-                                        id="no-telepon-kantor" />
-                                </p>
-                            </div>
-                            <label for="email1">Alamat Email</label>
-                            <input type="email" class="form-control" id="email1" placeholder="Enter email">
-                            <hr class="hr-border" />
-                            <div class="my-4" style="color:#1443BD;">
-                                <h5><i class="fa fa-building-o" aria-hidden="true"></i>
-                                    <span class="pl-4 font-weight-bold">Pekerjaan</span>
-                                </h5>
-                            </div>
-                            <label for="pekerjaan">Pekerjaan</label>
-                            <input type="text" class="form-control" id="pekerjaan" placeholder="Pekerjaan">
-                            <div class="mt-3">
-                                <label for="perusahaan">Perusahaan</label>
-                                <input type="text" class="form-control" id="perusahaan" placeholder="Perusahaan">
-                            </div>
-                            <div class="my-4 row">
-                                <div class="col-6">
-                                    <label for="jabatan">Jabatan</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Jabatan1">Jabatan1</option>
-                                        <option value="Jabatan2">Jabatan2</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <label for="bidangUsaha">Bidang Usaha</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Bidang Usaha1">Bidang Usaha1</option>
-                                        <option value="Bidang Usaha2">Bidang Usaha2</option>
-                                    </select>
+                                    </label>
                                 </div>
                             </div>
+                            <div class="col-4">
+                                <label>
+                                    <input type="radio" name="o3" value="">
+                                    Semester
+                                </label>
+                                <div class="radio mt-3 mb-3">
+                                    <label>
+                                        <input type="radio" name="o3" value="">
+                                        Bulanan
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-2">Cara Bayar</div>
+                        <div class="row  mt-2">
+                            <label>
+                                <input type="radio" name="o3" value="">
+                                Autodebet Kartu Kredit
+                            </label>
+                            <div class="radio mt-3 mb-3">
+                                <label>
+                                    <input type="radio" name="o3" value="">
+                                    Autodebet Rekening
+                                </label>
+                                <p style="margin: 0;">
+                                    <small style="color: #F5CB39; font-size: 10px;">Wajib melampirkan
+                                        Surat Kuasa Debet
+                                        Rekening (SKDR)
+                                    </small>
+                                </p>
+
+                            </div>
+                            <label>
+                                <input type="radio" name="o3" value="">
+                                Transfer Virtual Account
+                            </label>
+                            <small style="color: #F5CB39; font-size: 10px;">Wajib melampirkan
+                                Pembayaran premi asuransi akan dianggap sah apabila sudah diterima penuh oleh
+                                Mandiri Inhealth
+                            </small>
+                        </div>
                     </div>
-                    <div class="row mb-4 read3 pb-3" style=" background-color: #F3F6FC;">
-                        <div class="my-4" style="color:#1443BD;">
-                            <h5><i class="fa fa-file-text" aria-hidden="true"></i>
-                                <span class="pl-4 font-weight-bold">Ahli Waris</span>
-                            </h5>
-                            <p style="color: #777777; font-size: 14px;">Tambahkan Ahli Waris (Penerima Manfaat) untuk
-                                menerima santunan
-                                kematian
-                                atau cacat tetap karena kecelakaan. (opsional)</p>
-                        </div>
-                        <div class="row mt-3 ahliwaris-hide " id="ahliwaris-hide">
-                            <div class="row">
-                                <div class="col-6 h6">Ahli Waris 1</div>
-                                <div class="col-6">
-                                    <i onclick="hideDiv()" class="fa fa-trash-o h6" style="float: right; color: red;"
-                                        aria-hidden="true">Hapus</i>
-                                </div>
-                            </div>
-                            <div class="row my-4">
-                                <label for="namaLengkap">Nama Lengkap</label>
-                                <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap">
-                            </div>
-                            <div class="row my-4">
-                                <div class="col-6">
-                                    <label for="ahliwarisJenisKelamin">Jenis Kelamin</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Laki-laki">Laki - laki</option>
-                                        <option value="Perempuan">Perempuan</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <label for="ahliwarisTanggalLahir">Tanggal Lahir</label>
-                                    <input id="datepicker" type="date" name="ahliwarisTanggalLahir"
-                                        class="  form-control">
-                                </div>
-                            </div>
-                            <div class="row my-4 mb-5">
-                                <div class="col-6">
-                                    <label for="ahliwarisHubungan">Hubungan</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Keluarga">Keluarga</option>
-                                        <option value="Bukan Keluarga">Bukan Keluarga</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <label for="ahliwarisPresentase">Presentase</label>
-                                    <div class="input-group">
-                                        <input type="number" name="ahliwarisPresentase" class="form-control">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <a id="next6" onclick="showDiv()" class="btn-block btn-lanjut">
-                            <i class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
-                            Tambah Ahli Waris
-                        </a>
+                    <div class="form-group mb-4">
+                        <label for="namaPemilikRekening">Nama Pemilik Rekening</label>
+                        <input type="text" class="form-control" id="namaPemilikRekening" placeholder="Nama di Kartu
+                        ">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="namaBank">Nama Bank</label>
+                        <input type="text" class="form-control" id="namaBank" placeholder="Nama Bank">
+                    </div>
+                    <div class="form-group mb-4">
+                        <label for="noRekening">Nomor Rekening</label>
+                        <input type="text" class="form-control" id="Rekening" placeholder="Nomor Rekening">
                     </div>
                     <div class="row mt-5">
-                        <a href="sio-page.html" id="next6" class="btn-kembali">Kembali</a>
-                        <a href="pembayaran-autodebet.html" id="next6" class="btn-lanjut">Lanjut</a>
+                        <a href="data-diri-sama.html" id="next6" class="btn-kembali">Kembali</a>
+                        <button id="next6" class="btn-lanjut">Lanjut</button>
                     </div>
                     </form>
 
@@ -607,70 +577,6 @@
         })
 
     </script>
-    <script>
-        //NOMOR HP
-        var no_hp = window.intlTelInput(document.querySelector("#no-hp"), {
-            separateDialCode: true,
-            preferredCountries: ["id"],
-            hiddenInput: "full",
-            utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
-        });
-
-        $("form").submit(function () {
-            var full_number = no_hp.getNumber(intlTelInputUtils.numberFormat.E164);
-            $("input[name='no-hp[full]'").val(full_number);
-            alert(full_number)
-
-        });
-        // PHP Code
-        // $phone_number = $_REQUEST['phone_number']['full'];
-        var no_telepon_rumah = window.intlTelInput(document.querySelector("#no-telepon-rumah"), {
-            separateDialCode: true,
-            preferredCountries: ["id"],
-            hiddenInput: "full",
-            utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
-        });
-
-        $("form").submit(function () {
-            var full_number = no_telepon_rumah.getNumber(intlTelInputUtils.numberFormat.E164);
-            $("input[name='no-telepon-rumah[full]'").val(full_number);
-            alert(full_number)
-
-        });
-        var no_telepon_kantor = window.intlTelInput(document.querySelector("#no-telepon-kantor"), {
-            separateDialCode: true,
-            preferredCountries: ["id"],
-            hiddenInput: "full",
-            utilsScript: "//cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/utils.js"
-        });
-
-        $("form").submit(function () {
-            var full_number = no_telepon_kantor.getNumber(intlTelInputUtils.numberFormat.E164);
-            $("input[name='no-telepon-kantor[full]'").val(full_number);
-            alert(full_number)
-
-        });
-
-
-    </script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
-        </script>
-    <script type="text/javascript">
-        //AHLI WARIS
-        $('.datepicker').datepicker({
-            format: "mm : dd : yyyy",
-        });
-
-    </script>
-    <script>
-        //AHLI WARIS
-        function hideDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'none';
-        }
-        function showDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'block';
-        }</script>
 </body>
 
 </html>
