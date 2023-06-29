@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="asset/css/layout.css" rel="stylesheet" />
     <link href="asset/css/data-diri.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
@@ -13,7 +14,7 @@
     <link
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
         rel="stylesheet">
-    <title>Pembayaran - Autodebet</title>
+    <title>Surat Pernyataan-Autodebet</title>
 </head>
 
 <body>
@@ -54,19 +55,19 @@
 
     <main class="mb-5 container">
         <div class="row mb-3 mt-3" style="z-index: 10; position: relative;">
-            <div class=" data-diri-left g-0 border rounded mb-4">
-                <div class="data-diri-left1">
-                    <div class="left-data-diri-left1">
+            <div class=" main-left g-0 border rounded mb-4">
+                <div class="main-left1">
+                    <div class="left-main-left1">
                         <img src="asset/icon/health2.svg" width=" 45px" />
                     </div>
-                    <div class="right-data-diri-left1">
-                        <div class="row text-white right-data-diri-left1-text1">Mandiri Inhealth</div>
-                        <div class="row text-white right-data-diri-left1-text2">MyCare
+                    <div class="right-main-left1">
+                        <div class="row text-white right-main-left1-text1">Mandiri Inhealth</div>
+                        <div class="row text-white right-main-left1-text2">MyCare
                             Ultimate</div>
                     </div>
                 </div>
-                <div class="data-diri-right2 px-2">
-                    <div class="right-data-diri-right2-1">
+                <div class="main-right2 px-2">
+                    <div class="right-main-right2-1">
                         <select class="one text-white"
                             style=" font-size:13px; font-weight: bold; background: transparent; border: 1px solid #26AE77 ;"
                             class="form-select" aria-label="Default select example">
@@ -75,15 +76,14 @@
                             <option value="Premi Bulanan">Premi Bulanan</option>
                             <option value="Premi Harian">Premi Harian</option>
                         </select>
-                        <div class="row ">
+                        <div class="row float-left ">
                             <div class="col-8 premi-th">
-                                Rp 4.000.000
+                                Rp 4.000.000<span class=" col-4 premi-disc">
+                                    50% Off</span>
                             </div>
-                            <div class=" col-4 premi-disc">
-                                50% Off</div>
                         </div>
                     </div>
-                    <div class="right-data-diri-right2-2">
+                    <div class="right-main-right2-2">
                         <div class="text-white pt-2" style="float: right; font-size:25px; font-weight: bold;">
                             Rp 2.000.000
                         </div>
@@ -153,7 +153,7 @@
                     </div>
                 </div>
             </div>
-            <div class="data-diri-right ">
+            <div class="main-right mb-5">
                 <div class="container">
                     <div class="row mb-2 mt-5 text-center" style="margin: 0 auto;">
                         <div class="col-3">
@@ -190,7 +190,7 @@
                                     <div class="fa-line1"></div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="step active">
+                                    <div class="step">
                                         <i class="fa fa-money" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -205,7 +205,7 @@
                                     <div class="fa-line1"></div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="step">
+                                    <div class="step active">
                                         <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -262,200 +262,103 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-3 read1 p-3" style="background-color: #F3F6FC;">
-                        <div class="my-2" style="color:#1443BD;">
-                            <h5><img src="asset/icon/fun-icon.svg" />
-                                <span class="pl-4 font-weight-bold">Sumber Dana Pembayaran Premi</span>
-                            </h5>
+                    <div class="row py-3 px-3 mt-3" style="padding: 50px; background-color: #F3F6FC;">
+                        <div class="my-3" style="font-weight: bold;">
+                            Dengan ini Saya/Kami Calon Pemegang Polis dan/atau Calon Tertanggung (“Saya/Kami”)
+                            menyatakan
+                            bahwa:
                         </div>
-                        <div class="mt-2">Tujuan pengajuan asuransi</div>
-                        <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                        <div class="row mt-2 mb-2 btn-group" role="group">
-                            <div class="col-4"><label>
-                                    <input class="form-check-input" type="checkbox" value="proteksi">
-                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                    Proteksi
-                                </label></div>
-                            <div class="col-4"> <label>
-                                    <input class="form-check-input" type="checkbox" value="lainnya">
-                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                    Lainnya
-                                </label></div>
+                        <div style="background-color: #F3F6FC; font-size: 16px; line-height: 24px; font-weight: 400;">
+                            <ol>
+                                <li>
+                                    Agen Asuransi telah menjelaskan mengenai produk, fitur, dan manfaat asuransi PT
+                                    Asuransi
+                                    Jiwa Inhealth Indonesia (Penanggung) termasuk di dalamnya mengenai
+                                </li>
+                                <li>
+                                    kondisi sebelum kepesertaan (pre-existing condition), masa tunggu (waiting period),
+                                    dan
+                                    pengecualian (exclution condition).</li>
+                                <li>Agen Asuransi telah menjelaskan mengenai hak-hak yang diperoleh Saya/Kami dalam
+                                    Pemrosesan Informasi atau Data Pribadi yang ada di dalam Surat Permintaan</li>
+                                <li>Asuransi Jiwa (SPAJ) termasuk pengkinian data.</li>
+                                <li> Saya/Kami telah membaca, mengerti, menjawab dan mengisi semua pertanyaan pada SPAJ
+                                    ini
+                                    beserta lampirannya dengan lengkap dan benar, sesuai keadaan sebenarnya.</li>
+                                <li>Saya/Kami dengan ini mengizinkan dan menyetujui Penanggung untuk menggunakan,
+                                    memberikan
+                                    informasi atau keterangan atas data/informasi Saya/Kami atau data Tertanggung
+                                    (sesuai
+                                    yang tercantum dalam SPAJ ini atau dokumen lain yang terkait dengan penutupan
+                                    asuransi
+                                    ini), kepada pihak-pihak yang lain (termasuk tetapi tidak terbatas pada perusahaan
+                                    reasuransi, perusahaan asuransi, bank, Mandiri Grup dan afiliasinya, lembaga, atau
+                                    badan
+                                    hukum lain baik di dalam maupun di luar negeri) yang memiliki hubungan kerja sama
+                                    dengan
+                                    Penanggung dalam rangka pengajuan SPAJ ini, pembayaran klaim, pelayanan nasabah,
+                                    penggunaan aplikasi yang bekerjasama dengan pihak lain maupun penawaran produk lain
+                                    kepada Saya/Kami. Saya/Kami juga mengerti bahwa Saya/Kami berhak melakukan koreksi
+                                    atau
+                                    penambahan atas informasi dan keterangan dengan menghubungi Penanggung. Dalam hal
+                                    terdapat perubahan data/informasi Saya/Kami akan meng- hubungi Penanggung.</li>
+                                <li>
+                                    Saya/Kami telah mendapatkan penjelasan lengkap terkait dengan polis dan/atau
+                                    penggantian
+                                    Polis (pooling, churning atau twisting) dan memahami segala kewajiban dan risiko
+                                    yang
+                                    timbul.</li>
+                                <li>Saya/Kami memahami bahwa untuk tujuan audit dan/atau melakukan proses klaim,
+                                    dan/atau
+                                    keperluan lain yang dibutuhkan oleh Penanggung Indonesia terhadap pengajuan klaim
+                                    Saya/Kami yang telah berhasil dilakukan, Saya/Kami dapat diminta oleh Penanggung
+                                    untuk
+                                    menyerahkan salah satu atau semua dokumen klaim yang asli dan/atau dokumen pendukung
+                                    dari perawatan medis/layanan terkait dan/atau dokumen pendukung lainnya yang telah
+                                    dikirimkan ke Penanggung ("Dokumen Asli") dalam jangka waktu seperti yang
+                                    diberitahukan,
+                                    dihitung sejak tanggal penyelesaian klaim. Jika Saya/Kami menerima permintaan
+                                    tersebut,
+                                    Saya/ Kami berjanji dan setuju untuk segera menyerahkan Dokumen Asli ke Penanggung.
+                                    Jika
+                                    Saya/Kami gagal untuk menyetujui permintaan tersebut atau Dokumen Asli yang
+                                    dikirimkan
+                                    ternyata tidak benar, palsu atau menyesatkan, Penanggung memiliki semua hak termasuk
+                                    namun tidak terbatas untuk tidak menerima pengajuan klaim lebih lanjut dari
+                                    Saya/Kami.</li>
+                                <li>Saya/Kami menyetujui bahwa pertanggungan akan berlaku apabila SPAJ ini telah
+                                    disetujui
+                                    dan premi pertama telah dibayarkan lunas sesuai dengan periode pem- bayaran yang
+                                    disepakati kepada Penanggung.</li>
+                                <li>Saya/Kami menyetujui apabila terjadi pembatalan Asuransi, maka dengan ini Saya/Kami
+                                    bersedia membayar biaya yang telah dikeluarkan oleh Pihak Penanggung.</li>
+                                <li>Saya/Kami menyetujui bahwa pembayaran klaim akan dibayarkan ke rekening Pemegang
+                                    Polis
+                                    atau Pembayar Premi.</li>
+                                <li>Saya/Kami menyetujui bahwa untuk Asuransi Jiwa, selama bukti kesehatan (sesuai
+                                    dengan
+                                    ketentuan underwriting) belum disetujui oleh Penanggung, maka Asuransi Jiwa akan
+                                    dipertanggungkan sebesar Batas Pertanggungan Bebas seperti yang tercantum dalam
+                                    Proposal.</li>
+                                <li>Saya/Kami telah memberikan dan melakukan verifikasi atas seluruh salinan dari
+                                    dokumen
+                                    dan informasi atau data yang diberikan sehubungan dengan penutupan polis ini dan
+                                    Saya/Kami menyatakan bahwa salinan dan dokumen dan informasi atau data tersebut
+                                    adalah
+                                    sesuai asli dan masih berlaku.</li>
+                                <li> Saya/Kami tunduk kepada Peraturan Perundangan yang berlaku di Indonesia.
+                                </li>
+                            </ol>
                         </div>
-                        <div class="mt-2">Sumber penghasilan pembayar premi </div>
-                        <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                        <div class="btn-group" role="group">
-                            <div class="row mt-2">
-                                <div class="col-4">
-                                    <label>
-                                        <input class="form-check-input" type="checkbox" value="gaji">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Gaji
-                                    </label>
-
-                                </div>
-                                <div class="col-4"> <label>
-                                        <input class="form-check-input" type="checkbox" value="pasangan">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Pasangan (suami/istri)
-                                    </label></div>
-                                <div class="col-4"> <label>
-                                        <input class="form-check-input" type="checkbox" value="hasilInvestasi">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Hasil investasi
-                                    </label></div>
-                            </div>
-                            <div class="row mt-2 mb-2">
-                                <div class="col-4">
-                                    <label>
-                                        <input class="form-check-input" type="checkbox" value="bisnisPribadi">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Bisnis pribadi
-                                    </label>
-
-                                </div>
-                                <div class="col-4"> <label>
-                                        <input class="form-check-input" type="checkbox" value="bonus">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Bonus/Insentif/Komisi
-                                    </label></div>
-                                <div class="col-4"> <label>
-                                        <input class="form-check-input" type="checkbox" value="lainnya">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Lainnya
-                                    </label></div>
-                            </div>
-                        </div>
-
-                        <div class="mt-2">Jumlah penghasilan kotor per tahun </div>
-                        <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                        <div class="row align-items-end mt-2 btn-group" role="group">
-                            <div class="col-4">
-                                <label>
-                                    <input type="radio" name="o3" value="">
-                                    &#60; Rp10 juta
-                                </label>
-                                <div class="radio mt-3 mb-3">
-                                    <label>
-                                        <input type="radio" name="o3" value="">
-                                        Rp25 juta - Rp50 juta
-
-                                    </label>
-                                </div>
-                                <label>
-                                    <input type="radio" name="o3" value="">
-                                    Rp100 juta - Rp250 juta
-                                </label>
-
-                            </div>
-                            <div class="col-4">
-                                <label>
-                                    <input type="radio" name="o3" value="">
-                                    Rp10 juta - Rp25 juta
-                                </label>
-                                <div class="radio mt-3 mb-3">
-                                    <label>
-                                        <input type="radio" name="o3" value="">
-                                        Rp50 juta - Rp100 juta
-                                    </label>
-                                </div>
-                                <label>
-                                    <input type="radio" name="o3" value="">
-                                    Rp250 juta - Rp500 juta
-                                </label>
-                            </div>
-                            <div class="col-4">
-                                <div class="radio">
-                                    <label>
-                                        <input type="radio" name="o3" value="">
-                                        Lainnya
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mt-3 read2 p-3" style="background-color: #F3F6FC;">
-                        <div class="my-4" style="color:#1443BD;">
-                            <h5><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
-                                <span class="pl-4 font-weight-bold">Cara Pembayaran Premi
-                                </span>
-                            </h5>
-                        </div>
-                        <div class="mt-2">Cara Bayar</div>
-                        <div class="row mt-2 btn-group" role="group">
-                            <div class="col-4">
-                                <label>
-                                    <input type="radio" name="o3" value="">
-                                    Tahunan
-                                </label>
-                                <div class="radio mt-3 mb-3">
-                                    <label>
-                                        <input type="radio" name="o3" value="">
-                                        Triwulan
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <label>
-                                    <input type="radio" name="o3" value="">
-                                    Semester
-                                </label>
-                                <div class="radio mt-3 mb-3">
-                                    <label>
-                                        <input type="radio" name="o3" value="">
-                                        Bulanan
-                                    </label>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mt-2">Cara Bayar</div>
-                        <div class="row mt-2 btn-group" role="group">
-                            <label>
-                                <input type="radio" name="o3" value="">
-                                Autodebet Kartu Kredit
-                            </label>
-                            <div class="radio mt-3 mb-3">
-                                <label>
-                                    <input type="radio" name="o3" value="">
-                                    Autodebet Rekening
-                                </label>
-                                <p style="margin: 0;">
-                                    <small style="color: #F5CB39; font-size: 10px;">Wajib melampirkan
-                                        Surat Kuasa Debet
-                                        Rekening (SKDR)
-                                    </small>
-                                </p>
-
-                            </div>
-                            <label>
-                                <input type="radio" name="o3" value="">
-                                Transfer Virtual Account
-                            </label>
-                            <small style="color: #F5CB39; font-size: 10px;">Wajib melampirkan
-                                Pembayaran premi asuransi akan dianggap sah apabila sudah diterima penuh oleh
-                                Mandiri Inhealth
-                            </small>
-                        </div>
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="namaPemilikRekening">Nama Pemilik Rekening</label>
-                        <input type="text" class="form-control" id="namaPemilikRekening" placeholder="Nama di Kartu
-                        ">
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="namaBank">Nama Bank</label>
-                        <input type="text" class="form-control" id="namaBank" placeholder="Nama Bank">
-                    </div>
-                    <div class="form-group mb-4">
-                        <label for="noRekening">Nomor Rekening</label>
-                        <input type="text" class="form-control" id="Rekening" placeholder="Nomor Rekening">
+                        <div
+                            style="font-weight: bold; background-color: #F3F6FC; font-size: 16px; line-height: 21.79px; ">
+                            Dengan memberikan persetujuan melalui tombol 'Setuju', Anda menunjukkan kesepakatan penuh
+                            terhadap pernyataan yang telah dijelaskan sebelumnya. </div>
                     </div>
                     <div class="row mt-5">
-                        <a href="data-diri-sama.html" id="next6" class="btn-kembali">Kembali</a>
-                        <button id="next6" class="btn-lanjut">Lanjut</button>
+                        <a href="pembayaran.html" id="next6" class="btn-kembali">Kembali</a>
+                        <input type="button" class="btn-lanjut" value="Setuju" id="val-button">
                     </div>
-                    </form>
-
                 </div>
             </div>
         </div>

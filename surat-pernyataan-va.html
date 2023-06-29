@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="asset/css/sio-page.css" rel="stylesheet" />
     <link href="asset/css/layout.css" rel="stylesheet" />
+    <link href="asset/css/data-diri.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>SIO Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
+        rel="stylesheet" />
+    <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
+        rel="stylesheet">
+    <title>Surat Pernyataan-Virtual Account</title>
 </head>
 
 <body>
-    <div class="bg-sio1">
-        <img src="asset/icon/bg-sio1.svg" />
+    <div class="bg-data-diri1">
+        <img src="asset/icon/bg-data-diri1.svg" />
     </div>
-    <div class="bg-sio2">
-        <img src="asset/icon/bg-sio2.svg" />
+    <div class="bg-data-diri2">
+        <img src="asset/icon/bg-data-diri2.svg" />
     </div>
     <header>
         <nav class="navbar-expand-xl">
@@ -32,8 +37,7 @@
                     <li><a href="#"> </a></li>
                     <li><a href="#"> </a></li>
                     <li> <a href="#">
-                            <select class="form-select nav-select" aria-label="Default select example"
-                                aria-hidden="true">
+                            <select class="form-select nav-select" aria-label="Default select example">
                                 <option value="" selected disabled>Silahkan Dipilih</option>
                                 <option value="Product Insurance 1">Product Insurance 1</option>
                                 <option value="Product Insurance 2">Product Insurance 2</option>
@@ -98,8 +102,7 @@
                     <div class="col text-manfaat">Kamar & Akomodasi
                     </div>
                     <div class="col">
-                        <select class="one select-text-manfaat " class="form-select "
-                            aria-label="Default select example">
+                        <select class="one select-text-manfaat" class="form-select" aria-label="Default select example">
                             <option value="" selected disabled>Silahkan Dipilih</option>
                             <option value="Rp 2.000.000">Rp 2.000.000</option>
                             <option value="Rp 3.000.000">Rp 3.000.000</option>
@@ -122,8 +125,7 @@
                 <div class="row my-2 px-2">
                     <div class="text-manfaat col">Biaya Pembedahan</div>
                     <div class="col">
-                        <select class="one select-text-manfaat " class="form-select "
-                            aria-label="Default select example">
+                        <select class="one select-text-manfaat" class="form-select" aria-label="Default select example">
                             <option value="" selected disabled>Silahkan Dipilih</option>
                             <option value="Sesuai Tagihan">Sesuai Tagihan</option>
                             <option value="Tidak Sesuai">Tidak Sesuai</option>
@@ -136,8 +138,7 @@
                         Kunjungan Dokter
                     </div>
                     <div class="col" style=" z-index: 12;">
-                        <select class="one  select-text-manfaat" class="form-select "
-                            aria-label="Default select example">
+                        <select class="one select-text-manfaat" class="form-select" aria-label="Default select example">
                             <option value="" selected disabled>Silahkan Dipilih</option>
                             <option value="Sesuai Tagihan">Sesuai Tagihan</option>
                             <option value="Tidak Sesuai">Tidak Sesuai</option>
@@ -152,14 +153,14 @@
                     </div>
                 </div>
             </div>
-            <div class="main-right ">
+            <div class="main-right mb-5">
                 <div class="container">
                     <div class="row mb-2 mt-5 text-center" style="margin: 0 auto;">
                         <div class="col-3">
                             <div class="row">
                                 <div class="col-4 "></div>
                                 <div class=" col-4 ">
-                                    <div class="step active">
+                                    <div class="step">
                                         <i class="fa fa-plus" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -204,7 +205,7 @@
                                     <div class="fa-line1"></div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="step">
+                                    <div class="step active">
                                         <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                     </div>
                                 </div>
@@ -261,71 +262,142 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row mt-3  p-3" style="background-color: #F3F6FC;">
-                        <ol>
-                            <li class="step-paragraph">
-                                Apakah Anda pernah atau sedang menderita Kanker, Hepatitis B/C, Diabetes/Kencing
-                                Manis, Penyakit Jantung, Gagal Ginjal, Tekanan Darah Tinggi, Hemodialisa (Cuci
-                                Darah), Stroke, TBC, Cacat Bwaan?
-                            </li>
-                        </ol>
-                        <div class="col-2"></div>
-                        <div class="col-8 text-center">
-                            <button id="next1" class="btn-ya1  ">Ya</button>
-                            <button id="prev1" disabled class="btn-tidak1 disabled1 ">Tidak</button>
+                    <div class="row py-3 px-3 mt-3" style="padding: 50px; background-color: #F3F6FC;">
+                        <div class="my-3" style="font-weight: bold;">
+                            Dengan ini Saya/Kami Calon Pemegang Polis dan/atau Calon Tertanggung (“Saya/Kami”)
+                            menyatakan
+                            bahwa:
                         </div>
-                        <div class="col-2"></div>
+                        <div style="background-color: #F3F6FC; font-size: 16px; line-height: 24px; font-weight: 400;">
+                            <ol>
+                                <li>
+                                    Agen Asuransi telah menjelaskan mengenai produk, fitur, dan manfaat asuransi PT
+                                    Asuransi
+                                    Jiwa
+                                    Inhealth Indonesia (Penanggung) termasuk di dalamnya mengenai
+                                </li>
+                                <li>
+                                    kondisi sebelum kepesertaan (pre-existing condition), masa tunggu (waiting period),
+                                    dan
+                                    pengecualian (exclution condition).</li>
+                                <li>
+                                    Agen Asuransi telah menjelaskan mengenai hak-hak yang diperoleh Saya/Kami dalam
+                                    Pemrosesan
+                                    Informasi atau Data Pribadi yang ada di dalam Surat Permintaan</li>
+                                <li>
+                                    Asuransi Jiwa (SPAJ) termasuk pengkinian data.</li>
+                                <li>Saya/Kami telah membaca, mengerti, menjawab dan mengisi semua pertanyaan pada SPAJ
+                                    ini
+                                    beserta lampirannya dengan lengkap dan benar, sesuai keadaan sebenarnya.</li>
+                                <li>
+                                    Saya/Kami dengan ini mengizinkan dan menyetujui Penanggung untuk menggunakan,
+                                    memberikan
+                                    informasi atau keterangan atas data/informasi Saya/Kami atau data Tertanggung
+                                    (sesuai
+                                    yang tercantum dalam SPAJ ini atau dokumen lain yang terkait dengan penutupan
+                                    asuransi
+                                    ini),
+                                    kepada pihak-pihak yang lain (termasuk tetapi tidak terbatas pada perusahaan
+                                    reasuransi,
+                                    perusahaan asuransi, bank, Mandiri Grup dan afiliasinya, lembaga, atau badan hukum
+                                    lain
+                                    baik di
+                                    dalam maupun di luar negeri) yang memiliki hubungan kerja sama dengan Penanggung
+                                    dalam
+                                    rangka
+                                    pengajuan SPAJ ini, pembayaran klaim, pelayanan nasabah, penggunaan aplikasi yang
+                                    bekerjasama dengan pihak lain maupun penawaran produk lain kepada Saya/Kami.
+                                    Saya/Kami
+                                    juga mengerti
+                                    bahwa Saya/Kami berhak melakukan koreksi atau penambahan atas informasi dan
+                                    keterangan
+                                    dengan
+                                    menghubungi Penanggung. Dalam hal terdapat perubahan data/informasi Saya/Kami akan
+                                    meng-
+                                    hubungi Penanggung.</li>
+                                <li>
+                                    Saya/Kami telah mendapatkan penjelasan lengkap terkait dengan polis dan/atau
+                                    penggantian
+                                    Polis
+                                    (pooling, churning atau twisting) dan memahami segala kewajiban dan risiko yang
+                                    timbul.
+                                </li>
+                                <li>
+                                    Saya/Kami memahami bahwa untuk tujuan audit dan/atau melakukan proses klaim,
+                                    dan/atau
+                                    keperluan
+                                    lain yang dibutuhkan oleh Penanggung Indonesia terhadap pengajuan klaim Saya/Kami
+                                    yang
+                                    telah
+                                    berhasil dilakukan, Saya/Kami dapat diminta oleh Penanggung untuk menyerahkan salah
+                                    satu
+                                    atau
+                                    semua dokumen klaim yang asli dan/atau dokumen pendukung dari perawatan
+                                    medis/layanan
+                                    terkait
+                                    dan/atau dokumen pendukung lainnya yang telah dikirimkan ke Penanggung ("Dokumen
+                                    Asli")
+                                    dalam
+                                    jangka waktu seperti yang diberitahukan, dihitung sejak tanggal penyelesaian klaim.
+                                    Jika
+                                    Saya/Kami menerima permintaan tersebut, Saya/ Kami berjanji dan setuju untuk segera
+                                    menyerahkan
+                                    Dokumen Asli ke Penanggung. Jika Saya/Kami gagal untuk menyetujui permintaan
+                                    tersebut
+                                    atau
+                                    Dokumen Asli yang dikirimkan ternyata tidak benar, palsu atau menyesatkan,
+                                    Penanggung
+                                    memiliki
+                                    semua hak termasuk namun tidak terbatas untuk tidak menerima pengajuan klaim lebih
+                                    lanjut
+                                    dari
+                                    Saya/Kami.</li>
+                                <li>
+                                    Saya/Kami menyetujui bahwa pertanggungan akan berlaku apabila SPAJ ini telah
+                                    disetujui
+                                    dan
+                                    premi
+                                    pertama telah dibayarkan lunas sesuai dengan periode pem- bayaran yang disepakati
+                                    kepada
+                                    Penanggung. </li>
+                                <li>
+                                    Saya/Kami menyetujui apabila terjadi pembatalan Asuransi, maka dengan ini Saya/Kami
+                                    bersedia
+                                    membayar biaya yang telah dikeluarkan oleh Pihak Penanggung.</li>
+                                <li>Saya/Kami menyetujui bahwa pembayaran klaim akan dibayarkan ke rekening Pemegang
+                                    Polis
+                                    atau
+                                    Pembayar Premi.</li>
+                                <li>
+                                    Saya/Kami menyetujui bahwa untuk Asuransi Jiwa, selama bukti kesehatan (sesuai
+                                    dengan
+                                    ketentuan
+                                    underwriting) belum disetujui oleh Penanggung, maka Asuransi Jiwa akan
+                                    dipertanggungkan
+                                    sebesar
+                                    Batas Pertanggungan Bebas seperti yang tercantum dalam Proposal.</li>
+                                <li>
+                                    Saya/Kami telah memberikan dan melakukan verifikasi atas seluruh salinan dari
+                                    dokumen
+                                    dan
+                                    informasi atau data yang diberikan sehubungan dengan penutupan polis ini dan
+                                    Saya/Kami
+                                    menyatakan bahwa salinan dan dokumen dan informasi atau data tersebut adalah sesuai
+                                    asli
+                                    dan
+                                    masih berlaku.</li>
+                                <li>
+                                    Saya/Kami tunduk kepada Peraturan Perundangan yang berlaku di Indonesia. </li>
+                            </ol>
+                        </div>
+                        <div
+                            style="font-weight: bold; background-color: #F3F6FC; font-size: 16px; line-height: 21.79px; ">
+                            Dengan memberikan persetujuan melalui tombol 'Setuju', Anda menunjukkan kesepakatan penuh
+                            terhadap pernyataan yang telah dijelaskan sebelumnya. </div>
                     </div>
-                    <div class="row mt-3 read2 p-3" style="background-color: #F3F6FC;">
-                        <ol start="2">
-                            <li class="step-paragraph">
-                                Apakah anda pernah/sedang menjalani perawatan oleh dokter spesialis atau
-                                subspesialis yang membutuhkan atau disarankan untuk Cangkok Organ, Pemasangan
-                                Stent Jantung, Pembedahan, Pengobatan Jangka Panjang (berturut-turut > 3 bulan)?
-                            </li>
-                        </ol>
-                        <div class="col-2"></div>
-                        <div class="col-8 text-center">
-                            <button id="next2" disabled class="btn-ya2 disabled2">Ya</button>
-                            <button id="prev2" disabled class="btn-tidak2 disabled2">Tidak</button>
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row mt-3 read3 p-3" style="background-color: #F3F6FC;">
-                        <ol start="3">
-                            <li class="step-paragraph">
-                                Dalam 12 (dua belas) bulan terakhir, apakah Anda penah melakukan Rawat Inap
-                                dalam kurun waktu 5 (lima) hari atau lebih, atau melakukan pembedahan?
-                            </li>
-                        </ol>
-                        <div class="col-2"></div>
-                        <div class="col-8 text-center">
-                            <button id="next3" disabled class="btn-ya3 disabled3">Ya</button>
-                            <button id="prev3" disabled class="btn-tidak3 disabled3">Tidak</button>
-                        </div>
-                        <div class="col-2"></div>
-                    </div>
-                    <div class="row mt-3  read4 p-3" style="background-color: #F3F6FC;">
-                        <ol start="4">
-                            <li class="step-paragraph">
-                                Apakah pengajuan asuransi Anda pernah ditolak, ditunda, dikenakan ekstra premi,
-                                diubah/dihentikan oleh perusahaan asuransi?
-                            </li>
-                        </ol>
-                        <div class="col-2"></div>
-                        <div class="col-8 text-center">
-                            <button id="next4" onclick="showDiv()" disabled class="btn-ya4 disabled4">Ya</button>
-                            <button id="prev4" onclick="hideDiv()" disabled class="btn-tidak4 disabled4">Tidak</button>
-                        </div>
-                        <div class="col-2"></div>
-                        <div class="row mt-3 p-3 step-paragraph" id="no4-hide">
-                            <p>Jelaskan alasannya</p>
-                            <textarea disabled class="form-control text-a disabled5" id="next5"
-                                placeholder="Tulis disini"></textarea>
-                        </div>
-                    </div>
-                    <div class="row mt-4">
-                        <a href="data-diri-sama.html" disabled id="next6" class="btn-lanjut ">Lanjut</a>
+                    <div class="row mt-5">
+                        <a href="pembayaran.html" id="next6" class="btn-kembali">Kembali</a>
+                        <input type="button" class="btn-lanjut" value="Setuju" id="val-button">
                     </div>
                 </div>
             </div>
@@ -337,7 +409,7 @@
     <div style="background-color: red; z-index: -9; ">
         <footer class="px-5 container">
             <div class="row pt-5 py-5 text-white">
-                <div class="col-md-5 col-footer-image">
+                <div class="col-md-5 col-footer-image   ">
                     <img class="footer-image" src="asset/icon/illustration_footer.svg" />
                 </div>
                 <div class="col-6 col-md-2  ">
@@ -429,243 +501,27 @@
             </div>
         </footer>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
     <script>
+        //HEADER
         $(document).ready(function () {
             $(".menu-icon").on("click", function () {
                 $("nav ul").toggleClass("showing");
             });
         });
-
-
         $(window).on("scroll", function () {
             if ($(window).scrollTop() >= 500) {
                 $('nav').addClass('blue');
             }
-
             else {
                 $('nav').removeClass('blue');
             }
         })
-        // ------------step-wizard-------------
-        $('document').ready(function () {
-            var count = 0;
-            $('.step').each(function () {
-                count++;
-
-            });
-            $('.step-paragraph').each(function () {
-                count++;
-
-            });
-            var i = 0;
-            //NEXT
-            $('#next1').on('click', function () {
-                $('.disabled2').removeClass('disabled2');
-                $('.btn-ya1').addClass('dis-button1-ya');
-                $('.btn-tidak1').addClass('dis-button1-tidak');
-                $('.btn-ya1').removeClass('btn-ya1');
-                $('.btn-tidak1').removeClass('btn-tidak1');
-                $('.dis-button2-ya').addClass('btn-ya2');
-                $('.dis-button2-tidak').addClass('btn-tidak2');
-
-                $('.read1').addClass('read');
-                $('.step-paragraph-active').removeClass('step-paragraph-active');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', false);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', false);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-            });
-
-            $('#next2').on('click', function () {
-                $('.disabled3').removeClass('disabled3');
-                $('.btn-tidak1').addClass('dis-button1-tidak');
-                $('.btn-ya2').addClass('dis-button2-ya');
-                $('.btn-tidak2').addClass('dis-button2-tidak');
-                $('.btn-ya2').removeClass('btn-ya2');
-                $('.btn-tidak1').removeClass('btn-tidak1');
-                $('.btn-tidak2').removeClass('btn-tidak2');
-                $('.dis-button3-ya').addClass('btn-ya3');
-                $('.dis-button3-tidak').addClass('btn-tidak3');
-
-                $('.read1').addClass('read');
-                $('.read2').addClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', false);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', false);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#next3').on('click', function () {
-                $('.disabled4').removeClass('disabled4');
-                $('.btn-ya3').addClass('dis-button3-ya');
-                $('.btn-tidak3').addClass('dis-button3-tidak');
-                $('.btn-ya3').removeClass('btn-ya3');
-                $('.btn-tidak3').removeClass('btn-tidak3');
-                $('.btn-tidak2').removeClass('btn-tidak2');
-                $('.btn-tidak2').addClass('dis-button2-tidak');
-                $('.dis-button4-ya').addClass('btn-ya4');
-                $('.dis-button4-tidak').addClass('btn-tidak4');
-
-                $('.read1').addClass('read');
-                $('.read2').addClass('read');
-                $('.read3').addClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', false);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', false);
-
-
-            });
-            $('#next4').on('click', function () {
-                $('.btn-ya4').addClass('dis-button4-ya');
-                $('.btn-ya4').removeClass('btn-ya4');
-                $('.dis-button3-tidak').addClass('dis-button3-tidak');
-                $('.btn-tidak3').removeClass('btn-tidak3');
-                $('.btn-ya3').removeClass('btn-ya3');
-                $('.dis-button4-tidak').addClass('btn-tidak4');
-                $('.disabled5').removeClass('disabled5');
-
-                $('.read1').addClass('read');
-                $('.read2').addClass('read');
-                $('.read3').addClass('read');
-                $('.read4').addClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-                $('#next5').prop('disabled', false);
-                $('#next6').prop('disabled', false);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', false);
-
-            });
-            $('#prev1').on('click', function () {
-                $('.dis-button1-ya').addClass('btn-ya1');
-                $('.btn-ya2').addClass('dis-button2-ya');
-                $('.btn-ya2').removeClass('btn-ya2');
-
-                $('.read1').addClass('step-paragraph-active');
-
-                $('.read1').removeClass('read');
-                $('.read2').removeClass('read');
-                $('.read3').removeClass('read');
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', false);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', false);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#prev2').on('click', function () {
-                $('.disabled1').removeClass('disabled1');
-                $('.dis-button1-tidak').addClass('btn-tidak1');
-                $('.dis-button2-ya').addClass('btn-ya2');
-                $('.btn-tidak2').addClass('dis-button2-tidak');
-                $('.btn-tidak2').removeClass('btn-tidak2');
-                $('.btn-ya3').addClass('dis-button3-ya');
-                $('.btn-ya3').removeClass('btn-ya3');
-
-                $('.read2').removeClass('read');
-                $('.read3').removeClass('read');
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', false);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', false);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#prev3').on('click', function () {
-                $('.disabled2').removeClass('disabled2');
-                $('.dis-button2-tidak').addClass('btn-tidak2');
-                $('.dis-button3-ya').addClass('btn-ya3');
-                $('.btn-tidak3').addClass('dis-button3-tidak');
-                $('.btn-tidak3').removeClass('btn-tidak3');
-                $('.btn-ya4').addClass('dis-button4-ya');
-                $('.btn-ya2').addClass('dis-button2-ya');
-                $('.btn-ya4').removeClass('btn-ya4');
-
-                $('.read3').removeClass('read');
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', false);
-                $('#next4').prop('disabled', true);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', false);
-                $('#prev3').prop('disabled', true);
-                $('#prev4').prop('disabled', true);
-
-            });
-            $('#prev4').on('click', function () {
-                $('.disabled3').removeClass('disabled3');
-                $('.dis-button3-tidak').addClass('btn-tidak3');
-                $('.dis-button4-ya').addClass('btn-ya4');
-                $('.btn-tidak4').addClass('dis-button4-tidak');
-                $('.btn-tidak4').removeClass('btn-tidak4');
-
-                $('.read4').removeClass('read');
-
-                $('#next1').prop('disabled', true);
-                $('#next2').prop('disabled', true);
-                $('#next3').prop('disabled', true);
-                $('#next4').prop('disabled', false);
-
-                $('#prev1').prop('disabled', true);
-                $('#prev2').prop('disabled', true);
-                $('#prev3').prop('disabled', false);
-                $('#prev4').prop('disabled', true);
-
-            });
-        });
-        function hideDiv(num) {
-            document.getElementById('no4-hide').style.display = 'none';
-        }
-        function showDiv(num) {
-            document.getElementById('no4-hide').style.display = 'block';
-        }
-
 
     </script>
-
 </body>
 
 </html>
