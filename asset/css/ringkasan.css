@@ -1,0 +1,829 @@
+.icon-center {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.bg-ringkasan1 {
+    padding-top: 400;
+    left: 0;
+    float: left;
+    width: 500px;
+    position: absolute;
+    float: left;
+    z-index: -10 !important;
+}
+
+.bg-ringkasan1 img {
+    opacity: 0.1;
+}
+
+.bg-ringkasan2 {
+    padding-top: 200;
+    right: 0;
+    float: right;
+    width: 700px;
+    position: absolute;
+    float: left;
+    z-index: -10 !important;
+}
+
+.bg-ringkasan2 img {
+    opacity: 0.1;
+}
+
+
+.btn-circle.btn-xl {
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    font-size: 24px;
+    line-height: 1.33;
+    margin-left: 10px;
+}
+
+.btn-xl:hover {
+    -webkit-transform: scale(1.1);
+    background: #1443BD;
+    color: #fff;
+}
+
+
+.btn-circle {
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 12px;
+    line-height: 1.42857;
+}
+
+/* END HEADER */
+
+/* START RINGKASAN */ 
+.ringkasan-right {
+    height: 450px;
+    padding: 20px;
+    width: 100%;
+    background-color: #F3F6FC;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.konten-data-diri {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.checkbox {
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 25px;
+    position: relative;
+    text-align: left;
+  }
+  
+  .checkbox input {
+    position: absolute;
+    left: 0;
+    top: 5;
+   }
+.ringkasan-right1 {
+    background: #0E2C7A;
+    border-radius: 5px 5px 0 0;
+    padding: 10px;
+    height: 70px;
+}
+
+.left-ringkasan-right1 {
+    float: left !important;
+    text-align: left;
+    width: 70px;
+    background-color: #0e2c7a;
+}
+
+.right-ringkasan-right1 {
+    float: left;
+    width: 200px;
+    height: 60px;
+    color: #fff;
+}
+
+.ringkasan-right2 {
+    border-radius: 0 0 5px 5px;
+    height: 70px;
+    background: #26AE77;
+
+}
+
+.right-ringkasan-right2-1 {
+    width: 40%;
+    float: left;
+    color: #fff;
+    padding: 5px;
+}
+
+.right-ringkasan-right2-2 {
+    padding-right: 10px;
+}
+
+.premi-th-ringkasan {
+    color: red;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 0px;
+    text-decoration: line-through;
+    text-align: right;
+}
+
+.premi-disc-ringkasan {
+    color: red;
+    font-size: 8px;
+    padding: 3px 0px 0px 2px;
+    text-align: left;
+}
+
+.row-manfaat-text {
+    width: 80%;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: left;
+    float: left;
+    padding: 7px 0;
+}
+
+.select-text-manfaat {
+    float: right !important;
+    color: #1443BD !important;
+    font-size: 13px !important;
+    font-weight: bold;
+    background: transparent !important;
+    border: none !important;
+}
+
+.right-ringkasan-right2-1 h5 {
+    color: red !important;
+    font-size: 8x !important;
+}
+
+/* END RINGKASAN */
+.icon-frame-desc-2 {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 26px;
+    align-items: center;
+    margin: 0 auto;
+    text-align: center;
+    color: #333333;
+
+}
+
+.caption-dashboard {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: center;
+    color: #0E2C7A;
+}
+
+/* START MANFAAT DAN RESIKO */
+.manfaat {
+    width: 48%;
+    float: left;
+}
+
+.manfaat ul {
+    --icon-size: .8em;
+    --gutter: .5em;
+    padding: 0 0 0 var(--icon-size);
+}
+
+.manfaat ul li {
+    padding-left: var(--gutter);
+    padding-right: 10px;
+    margin: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.manfaat ul li::marker {
+    content: "\f058";
+    color: #A1B4E5;
+    font-family: FontAwesome;
+    font-size: var(--icon-size);
+}
+
+.manfaat-border {
+    border-right: 3px solid #E0E0E0;
+    float: left;
+    height: 100%;
+}
+
+.resiko {
+    width: 48%;
+    float: left;
+}
+
+.resiko ul {
+    --icon-size: .8em;
+    --gutter: .5em;
+    padding: 0 0 0 var(--icon-size);
+}
+
+.resiko ul li {
+    padding-left: var(--gutter);
+    margin: 15px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.resiko ul li::marker {
+    content: "\f057";
+    color: #EFA299;
+    font-family: FontAwesome;
+    font-size: var(--icon-size);
+
+}
+
+/* END MANFAAT DAN RESIKO */
+
+/* START CAROUSEL */
+.row-jelajahi {
+    background: #0E2C7A;
+    min-height: 300px;
+}
+
+.icon-jelajahi {
+    float: left;
+    width: 50%;
+    text-align: left;
+    margin: 0 auto;
+}
+
+.text-jelajahi-produk {
+    position: relative;
+    color: #FFFFFF;
+    font-size: 30px;
+    width: 30px !important;
+    top: 80px;
+    left: 130 !important;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px !important;
+    line-height: 40px !important;
+    display: inline !important;
+}
+
+.text-jelajahi-produk span {
+    text-align: left !important;
+}
+
+.icon-jelajahi img {
+    width: 250px !important;
+    position: absolute;
+}
+
+.carousel-jelajahi {
+    text-align: center;
+    margin: 0 auto;
+    width: 50%;
+}
+
+.carousel-product {
+    margin: 0 auto;
+    text-align: center;
+    width: 70%;
+}
+
+.carousel-caption1 {
+    text-align: right;
+    float: right;
+    top: 150px;
+    width: 200px;
+    left: 250px;
+}
+
+.carousel-inner {
+    margin: 0 auto;
+    border-radius: 15px;
+    max-height: 270px;
+    text-align: center;
+    width: 100%;
+}
+
+/* END CAROUSEL */
+
+.bg-icon {
+    top: -185;
+    left: 15;
+    width: 200px;
+    position: relative;
+    float: right;
+}
+
+
+
+@media (min-width: 992px) {
+    .bg-ringkasan2 {
+        padding-top: 400px;
+        width: 400px !important;
+    }
+
+    .bg-ringkasan2 img {
+        width: 400px !important;
+    }
+
+    .icon-jelajahi img {
+        width: 100%;
+    }
+
+    .carousel-jelajahi {
+        text-align: center;
+        margin: 0 auto;
+        width: 50%;
+    }
+
+    .carousel-inner {
+        top: 20px;
+        margin: 0 auto;
+        width: 100vh;
+        height: 200px;
+        border-radius: 15px;
+        text-align: center;
+        width: 100%;
+    }
+
+    .carousel-caption1 {
+        left: 90 !important;
+        top: 100;
+    }
+
+    .carousel-caption1 h5 {
+        font-size: 14px;
+    }
+
+    .text-jelajahi-produk {
+        left: -80;
+        width: 30%;
+        font-size: 24px;
+        line-height: 24px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .row-jelajahi {
+        max-height: 300px;
+        background: #0E2C7A;
+    }
+
+    .slide {
+        margin: 0 auto !important;
+        width: 100%;
+    }
+
+    .bg-ringkasan2 {
+        padding-top: 400px;
+        width: 400px !important;
+    }
+
+    .bg-ringkasan2 img {
+        width: 400px !important;
+    }
+
+    .text-jelajahi-produk {
+        position: relative;
+        width: 100px;
+        top: 100px !important;
+        font-size: 56px;
+        display: inline !important;
+    }
+
+    .icon-jelajahi img {
+        width: 250px !important;
+        position: absolute;
+    }
+
+    .carousel-jelajahi {
+        max-height: 300px;
+    }
+
+    .text-jelajahi-produk {
+        font-size: 30px;
+        left: -20px;
+        top: -180px;
+        line-height: 30px;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 70px;
+        width: 200px;
+        left: 70px;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 600px) and (max-width: 767px) {
+    .bg-ringkasan1 {
+        padding-top: 900;
+        width: 300px !important;
+    }
+
+    .bg-ringkasan1 img {
+        width: 400px !important;
+    }
+
+    .bg-ringkasan2 {
+        padding-top: 400px;
+        width: 400px !important;
+
+    }
+
+    .bg-ringkasan2 img {
+        width: 400px !important;
+    }
+
+    .ringkasan-right {
+        float: left;
+        width: 100%;
+    }
+
+    .carousel-product {
+        top: 80;
+        width: 100% !important;
+    }
+
+    .text-jelajahi-produk {
+        position: relative;
+        width: 100px;
+        top: 90px !important;
+        left: 70;
+        font-size: 32px;
+        line-height: 32px;
+        display: inline !important;
+    }
+
+    .icon-jelajahi img {
+        width: 250px !important;
+        position: absolute;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 70px;
+        width: 200px;
+        left: 70px;
+    }
+
+}
+
+@media (max-width: 599px) {
+    .bg-ringkasan1 {
+        padding-top: 900;
+        width: 300px !important;
+    }
+
+    .bg-ringkasan1 img {
+        width: 400px !important;
+    }
+
+    .bg-ringkasan2 {
+        padding-top: 400px;
+        width: 400px !important;
+    }
+
+    .bg-ringkasan2 img {
+        width: 400px !important;
+    }
+
+    .ringkasan-right {
+        float: left;
+        width: 100%;
+    }
+
+    .premi-th-ringkasan {
+        color: red;
+        width: 70%;
+    }
+
+    .premi-disc-ringkasan {
+        width: 30% !important;
+    }
+
+    .row-jelajahi {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .icon-jelajahi {
+        width: 100%;
+        height: 250px;
+        padding: 10px;
+        float: left;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .text-jelajahi-produk span {
+        text-align: left !important;
+    }
+
+    .icon-jelajahi img {
+        position: absolute;
+        left: 110;
+        width: 200px !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .text-jelajahi-produk {
+        width: 100px;
+        top: 60px !important;
+        left: 200px !important;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        float: left;
+    }
+
+    .slide {
+        margin: 0 auto !important;
+        width: 100%;
+    }
+
+    .carousel-jelajahi {
+        width: 100%;
+        float: left;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 120px;
+        width: 200px;
+        left: 180px;
+    }
+}
+
+@media (min-width: 300px) and (max-width: 399px) {
+    .manfaat ul li {
+        font-size: 10px;
+    }
+
+    .resiko ul li {
+        font-size: 10px;
+    }
+
+    .ringkasan-right {
+        float: left;
+        width: 100%;
+        height: 620px;
+    }
+
+    .left-ringkasan-right1 {
+        width: 30%;
+        float: left;
+    }
+
+    .right-ringkasan-right1 {
+        float: left;
+        width: 70%;
+    }
+
+    .ringkasan-right2 {
+        height: 110px;
+    }
+
+    .right-ringkasan-right2-1 {
+        width: 100%;
+    }
+
+    .right-ringkasan-right2-2 {
+        width: 100%;
+    }
+
+    .text-jelajahi-produk {
+        font-size: 30px;
+        top: -180px;
+        line-height: 30px;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 30px;
+        width: 200px;
+        left: 20px;
+    }
+
+    .bg-ringkasan1 {
+        padding-top: 900;
+        width: 300px !important;
+    }
+
+    .bg-ringkasan1 img {
+        width: 300px !important;
+    }
+
+    .bg-ringkasan2 {
+        width: 200px !important;
+    }
+
+    .bg-ringkasan2 img {
+        width: 200px !important;
+    }
+
+    .resiko h5 {
+        font-size: 14px;
+    }
+
+    .manfaat h5 {
+        font-size: 14px;
+    }
+
+    .icon-center img {
+        width: 70px;
+    }
+
+    .icon-center p {
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+    .icon-jelajahi {
+        width: 100%;
+        height: 250px;
+        padding: 10px;
+        float: left;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .text-jelajahi-produk span {
+        text-align: left !important;
+    }
+
+    .icon-jelajahi img {
+        position: absolute;
+        left: 70;
+        width: 200px !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .text-jelajahi-produk {
+        width: 100px;
+        top: 60px !important;
+        left: 170px !important;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        float: left;
+    }
+}
+
+@media (max-width: 299px) {
+    .bg-ringkasan1 {
+        padding-top: 2900;
+        width: 200px !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .bg-ringkasan1 img {
+        width: 200px !important;
+    }
+
+    .bg-ringkasan2 {
+        width: 200px !important;
+        padding-right: 0 !important;
+        padding-left: 0 !important;
+    }
+
+    .bg-ringkasan2 img {
+        width: 200px !important;
+    }
+
+    .manfaat ul li {
+        font-size: 10px;
+    }
+
+    .resiko ul li {
+        font-size: 10px;
+    }
+
+    .ringkasan-right {
+        float: left;
+        width: 100%;
+        height: 680px;
+    }
+
+    .ringkasan-right {
+        float: left;
+        width: 100%;
+    }
+
+    .left-ringkasan-right1 {
+        width: 30%;
+        float: left;
+    }
+
+    .right-ringkasan-right1 {
+        float: left;
+        width: 70%;
+    }
+
+    .ringkasan-right2 {
+        height: 110px;
+    }
+
+    .right-ringkasan-right2-1 {
+        width: 100%;
+    }
+
+    .right-ringkasan-right2-2 {
+        width: 100%;
+    }
+
+    .row-manfaat-text {
+        width: 70% !important;
+    }
+
+    .caption-dashboard {
+        font-size: 14px;
+    }
+
+    .carousel-product {
+        width: 100% !important;
+    }
+
+    .carousel-caption1 {
+        font-size: 10px;
+        top: 30px;
+        width: 200px;
+        left: 20px;
+    }
+
+    .text-jelajahi-produk {
+        font-size: 30px;
+        left: 5px;
+        top: -180px;
+        line-height: 30px;
+    }
+
+    .bg-ringkasan1 {
+        padding-top: 400;
+        width: 200px !important;
+    }
+
+    .bg-ringkasan1 img {
+        width: 200px !important;
+    }
+
+    .bg-ringkasan2 {
+        padding-top: 200;
+        width: 200px !important;
+    }
+
+    .bg-ringkasan2 img {
+        width: 200px !important;
+    }
+
+    .icon-jelajahi {
+        width: 100%;
+        height: 250px;
+        padding: 10px;
+        float: left;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .text-jelajahi-produk span {
+        text-align: left !important;
+    }
+
+    .icon-jelajahi img {
+        position: absolute;
+        left: 50;
+        width: 200px !important;
+        text-align: center !important;
+        margin: 0 auto !important;
+    }
+
+    .text-jelajahi-produk {
+        width: 100px;
+        top: 60px !important;
+        left: 150px !important;
+        text-align: center;
+        font-size: 32px;
+        line-height: 32px;
+        float: left;
+    }
+}
