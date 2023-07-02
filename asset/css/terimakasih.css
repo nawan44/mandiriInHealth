@@ -1,0 +1,31 @@
+/* .accordion-button.collapsed {
+    background: blue
+  }
+   */
+
+.accordion-button {
+    text-decoration: none;
+    color: #1443BD;
+    text-align: center !important;
+    margin: 0 auto;
+    display: inline-block;
+
+}
+
+[data-bs-toggle="collapse"]:after {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    color: #1443BD;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    content: "\f078";
+    margin-left: 10px;
+    transform: rotate(-180deg) !important;
+    transition: all linear 0.25s !important;
+}
+
+[data-bs-toggle="collapse"].collapsed:after {
+    transform: rotate(0deg) !important;
+}
