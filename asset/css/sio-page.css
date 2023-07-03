@@ -276,6 +276,42 @@
 
   /* END BUTTON */
 
+  .ahrefdisabled {
+      pointer-events: none;
+      color: #fff;
+      background-color: #777777;
+      border: 1px solid #777777;
+      width: 200px;
+      padding: 5px;
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .ahrefactive {
+      pointer-events: visible;
+      color: #fff;
+      background-color: #1443BD;
+      border: 1px solid #1443BD;
+      width: 200px;
+      padding: 5px;
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+  }
+
+  .ahrefactive:hover {
+      pointer-events: visible;
+      color: #1443BD !important;
+      background-color: #fff !important;
+      border: 1px solid #1443BD;
+      width: 200px;
+      padding: 5px;
+      text-decoration: none;
+      margin: 0 auto;
+      text-align: center;
+  }
+
   @media (min-width: 992px) {
       .bg-sio1 {
           padding-top: 400px;

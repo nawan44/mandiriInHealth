@@ -10,7 +10,7 @@
     <link href="asset/css/ringkasan.css" rel="stylesheet" />
     <link href="asset/css/layout.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
-    <title>Ringkasan Autodebet</title>
+    <title>Ringkasan Virtual Account</title>
 </head>
 
 <body>
@@ -478,8 +478,8 @@
                         <div class="col-6">
                             <label for="metodePembayaranPremi"
                                 style="color:#777777; text-align: left; display:block">Metode Pembayaran Premi</label>
-                            <label value="Transfer Virtual Account" style="text-align: left; display:block">Autodebet
-                                Rekening</label>
+                            <label value="Transfer Virtual Account" style="text-align: left; display:block">Transfer
+                                Virtual Account</label>
                         </div>
                     </div>
                     <div class="row my-3">
@@ -490,16 +490,15 @@
                         </div>
                     </div>
                 </div>
-                <div class="row mt-5  px-3 btn-group" role="group">
+                <div class="row mt-5  px-3">
                     <label class="checkbox">
-                        <input class="input-checkbox messageCheckbox " name="sayaBersedia" id="checkbox" value="ya"
-                            type="checkbox">
+                        <input class="input-checkbox " name="checkbox" id="checkbox" value="1" type="checkbox">
                         Saya sudah membaca dan memahami Syarat dan Ketentuan dana Ringkasan Informasi Produk dan Layanan
                         (RIPLAY) Personal yang berlaku
                     </label>
                 </div>
                 <div class="row mt-5  px-3">
-                    <a href="terimakasih-autodebet.html" id="next6" class="btn-lanjut">Kirim</a>
+                    <a href="terimakasih-virtual-account.html" id="next6" class="btn-lanjut">Kirim</a>
                 </div>
             </div>
         </div>
@@ -607,30 +606,19 @@
             });
         });
 
+
         $(window).on("scroll", function () {
             if ($(window).scrollTop() >= 500) {
                 $('nav').addClass('blue');
             }
+
             else {
                 $('nav').removeClass('blue');
             }
         })
-    </script>
-    <script>
-
-        $('input[name="sayaBersedia"]:checked');
-
-
-
-        console.log($('input[name="sayaBersedia"]:checked').serialize());
-
-        //or
-
-        $('input[name="sayaBersedia"]:checked').each(function () {
-            console.log(this.value);
-        });
 
     </script>
+
 </body>
 
 </html>

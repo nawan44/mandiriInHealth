@@ -385,6 +385,7 @@ select option[selected] {
     cursor: pointer;
     border-radius: 12px;
     position: relative;
+    text-decoration: none;
 }
 
 .modal-button-edit {
