@@ -6,14 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"
+        integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="asset/css/data-diri.css" rel="stylesheet" />
     <link href="asset/css/layout.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
         rel="stylesheet" />
-    <link
-        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/css/bootstrap-datetimepicker.min.css"
-        rel="stylesheet">
     <title>Data Diri Sama- Pemegang Polis Calon Tertanggung</title>
 </head>
 
@@ -296,7 +297,13 @@
                             <div class="form-group mb-4 row">
                                 <div class="col-6">
                                     <label for="tanggalLahir">Tanggal Lahir</label>
-                                    <input id="datepicker" type="date" name="tanggalLahir" class="  form-control">
+                                    <div class="input-group date" data-date-format="dd/mm/yyyy">
+                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i> </span>
+                                        <div class="input-group-addon">
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="col-6">
                                     <label for="tempatLahir">Tempat Lahir</label>
@@ -447,9 +454,14 @@
                                     </select>
                                 </div>
                                 <div class="col-6">
-                                    <label for="ahliwarisTanggalLahir">Tanggal Lahir</label>
-                                    <input id="datepicker" type="date" name="ahliwarisTanggalLahir"
-                                        class="  form-control">
+                                    <label for="tanggalLahir">Tanggal Lahir</label>
+                                    <div class="input-group date" data-date-format="dd/mm/yyyy">
+                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
+                                                aria-hidden="true"></i> </span>
+                                        <div class="input-group-addon">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="row my-4 mb-5">
@@ -589,6 +601,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
+        integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         //HEADER
         $(document).ready(function () {
@@ -649,17 +665,18 @@
             alert(full_number)
 
         });
-
-
     </script>
-    <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.37/js/bootstrap-datetimepicker.min.js">
-        </script>
+
     <script type="text/javascript">
         //AHLI WARIS
         $('.datepicker').datepicker({
             format: "mm : dd : yyyy",
         });
+
+    </script>
+    <script type="text/javascript">
+        //AHLI WARIS
+        $('.input-group.date').datepicker({ format: "dd/mm/yyyy" });
 
     </script>
     <script>

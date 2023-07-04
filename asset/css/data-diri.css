@@ -74,6 +74,10 @@
     color: #1443BD;
 }
 
+table td {
+    padding: 10px;
+}
+
 @media (min-width: 992px) {
     .bg-data-diri1 {
         padding-top: 400px;
