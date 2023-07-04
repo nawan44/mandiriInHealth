@@ -14,9 +14,9 @@
 </head>
 
 <body>
-    <div class="bg-ringkasan1">
+    <!-- <div class="bg-ringkasan1">
         <img src="asset/icon/bg-ringkasan1.svg" />
-    </div>
+    </div> -->
     <header>
         <nav class="navbar-expand-xl">
             <div class="menu-icon">
@@ -47,9 +47,9 @@
         </nav>
 
     </header>
-    <div class="bg-ringkasan2">
+    <!-- <div class="bg-ringkasan2">
         <img src="asset/icon/bg-ringkasan2.svg" />
-    </div>
+    </div> -->
     <main class=" mb-5 container">
         <h3 class="text-center my-4" style="color:#1443bd">Periksa dan Konfirmasi Data Anda</h3>
         <div style="width: 60%; text-align: center; margin: 0 auto;"
@@ -492,14 +492,14 @@
                 </div>
                 <div class="row mt-5  px-3 btn-group" role="group">
                     <label class="checkbox">
-                        <input class="input-checkbox messageCheckbox " name="sayaBersedia" id="checkbox" value="ya"
-                            type="checkbox">
+                        <input id="cekBaca" class="input-checkbox messageCheckbox " name="cekBaca" id="checkbox"
+                            value="cekBaca" type="checkbox">
                         Saya sudah membaca dan memahami Syarat dan Ketentuan dana Ringkasan Informasi Produk dan Layanan
                         (RIPLAY) Personal yang berlaku
                     </label>
                 </div>
                 <div class="row mt-5  px-3">
-                    <a href="terimakasih-autodebet.html" id="next6" class="btn-lanjut">Kirim</a>
+                    <a href="terimakasih-autodebet.html" id="next6" class="rounded-pill ahrefdisabled">Kirim</a>
                 </div>
             </div>
         </div>
@@ -617,19 +617,17 @@
         })
     </script>
     <script>
-
-        $('input[name="sayaBersedia"]:checked');
-
-
-
-        console.log($('input[name="sayaBersedia"]:checked').serialize());
-
-        //or
-
-        $('input[name="sayaBersedia"]:checked').each(function () {
-            console.log(this.value);
-        });
-
+        $("#cekBaca").change(function () {
+            var sudahMembaca = $(this).is(':checked');
+            if (sudahMembaca === true) {
+                $('.ahrefdisabled').addClass('ahrefactive');
+                $('.ahrefdisabled').removeClass('ahrefdisabled');
+            }
+            else {
+                $('.ahrefactive').addClass('ahrefdisabled');
+                $('.ahrefactive').removeClass('ahrefactive');
+            }
+        })
     </script>
 </body>
 

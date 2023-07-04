@@ -61,7 +61,7 @@
 
 /* END HEADER */
 
-/* START RINGKASAN */ 
+/* START RINGKASAN */
 .ringkasan-right {
     height: 450px;
     padding: 20px;
@@ -76,19 +76,21 @@
     padding: 10px;
     border-radius: 10px;
 }
+
 .checkbox {
     display: inline-block;
     vertical-align: middle;
     padding-left: 25px;
     position: relative;
     text-align: left;
-  }
-  
-  .checkbox input {
+}
+
+.checkbox input {
     position: absolute;
     left: 0;
     top: 5;
-   }
+}
+
 .ringkasan-right1 {
     background: #0E2C7A;
     border-radius: 5px 5px 0 0;
@@ -330,6 +332,41 @@
 }
 
 
+.ahrefdisabled {
+    pointer-events: none;
+    color: #fff;
+    background-color: #777777;
+    border: 1px solid #777777;
+    width: 200px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ahrefactive {
+    pointer-events: visible;
+    color: #fff;
+    background-color: #1443BD;
+    border: 1px solid #1443BD;
+    width: 200px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ahrefactive:hover {
+    pointer-events: visible;
+    color: #1443BD !important;
+    background-color: #fff !important;
+    border: 1px solid #1443BD;
+    width: 200px;
+    padding: 5px;
+    text-decoration: none;
+    margin: 0 auto;
+    text-align: center;
+}
 
 @media (min-width: 992px) {
     .bg-ringkasan2 {

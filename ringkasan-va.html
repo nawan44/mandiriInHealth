@@ -492,13 +492,14 @@
                 </div>
                 <div class="row mt-5  px-3">
                     <label class="checkbox">
-                        <input class="input-checkbox " name="checkbox" id="checkbox" value="1" type="checkbox">
+                        <input id="cekBaca" class="input-checkbox messageCheckbox " name="cekBaca" id="checkbox"
+                            value="cekBaca" type="checkbox">
                         Saya sudah membaca dan memahami Syarat dan Ketentuan dana Ringkasan Informasi Produk dan Layanan
                         (RIPLAY) Personal yang berlaku
                     </label>
                 </div>
                 <div class="row mt-5  px-3">
-                    <a href="terimakasih-virtual-account.html" id="next6" class="btn-lanjut">Kirim</a>
+                    <a href="terimakasih-virtual-account.html" id="next6" class="rounded-pill ahrefdisabled">Kirim</a>
                 </div>
             </div>
         </div>
@@ -605,8 +606,6 @@
                 $("nav ul").toggleClass("showing");
             });
         });
-
-
         $(window).on("scroll", function () {
             if ($(window).scrollTop() >= 500) {
                 $('nav').addClass('blue');
@@ -616,9 +615,20 @@
                 $('nav').removeClass('blue');
             }
         })
-
     </script>
-
+    <script>
+        $("#cekBaca").change(function () {
+            var sudahMembaca = $(this).is(':checked');
+            if (sudahMembaca === true) {
+                $('.ahrefdisabled').addClass('ahrefactive');
+                $('.ahrefdisabled').removeClass('ahrefdisabled');
+            }
+            else {
+                $('.ahrefactive').addClass('ahrefdisabled');
+                $('.ahrefactive').removeClass('ahrefactive');
+            }
+        })
+    </script>
 </body>
 
 </html>
