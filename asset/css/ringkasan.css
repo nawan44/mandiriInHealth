@@ -4,7 +4,7 @@
 }
 
 .bg-ringkasan1 {
-    padding-top: 400;
+    padding-top: 700;
     left: 0;
     float: left;
     width: 500px;
@@ -18,10 +18,10 @@
 }
 
 .bg-ringkasan2 {
-    padding-top: 200;
+    padding-top: 100;
     right: 0;
     float: right;
-    width: 700px;
+    width: 655px;
     position: absolute;
     float: left;
     z-index: -10 !important;
@@ -369,14 +369,6 @@
 }
 
 @media (min-width: 992px) {
-    .bg-ringkasan2 {
-        padding-top: 400px;
-        width: 400px !important;
-    }
-
-    .bg-ringkasan2 img {
-        width: 400px !important;
-    }
 
     .icon-jelajahi img {
         width: 100%;
