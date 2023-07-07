@@ -18,10 +18,10 @@
 }
 
 .bg-simulasi2 {
-    padding-top: 200;
+    padding-top: 1000 !important;
     right: 0;
     float: right;
-    width: 700px;
+    width: 900px;
     position: absolute;
     float: left;
     z-index: -10 !important;
@@ -331,15 +331,6 @@
 
 
 @media (min-width: 992px) {
-    .bg-simulasi2 {
-        padding-top: 400px;
-        width: 400px !important;
-    }
-
-    .bg-simulasi2 img {
-        width: 400px !important;
-    }
-
     .icon-jelajahi img {
         width: 100%;
     }
@@ -389,7 +380,7 @@
     }
 
     .bg-simulasi2 {
-        padding-top: 400px;
+        padding-top: 1800px !important;
         width: 400px !important;
     }
 
@@ -442,7 +433,7 @@
     }
 
     .bg-simulasi2 {
-        padding-top: 400px;
+        padding-top: 2500px !important;
         width: 400px !important;
 
     }
@@ -501,7 +492,7 @@
     }
 
     .bg-simulasi2 {
-        padding-top: 400px;
+        padding-top: 2400px !important;
         width: 400px !important;
     }
 
@@ -647,6 +638,7 @@
     }
 
     .bg-simulasi2 {
+        padding-top: 3200 !important;
         width: 200px !important;
     }
 
@@ -716,9 +708,8 @@
     }
 
     .bg-simulasi2 {
+        padding-top: 3700 !important;
         width: 200px !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
     }
 
     .bg-simulasi2 img {

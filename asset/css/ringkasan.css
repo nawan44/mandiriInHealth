@@ -3,35 +3,6 @@
     margin: 0 auto;
 }
 
-.bg-ringkasan1 {
-    padding-top: 700;
-    left: 0;
-    float: left;
-    width: 500px;
-    position: absolute;
-    float: left;
-    z-index: -10 !important;
-}
-
-.bg-ringkasan1 img {
-    opacity: 0.1;
-}
-
-.bg-ringkasan2 {
-    padding-top: 100;
-    right: 0;
-    float: right;
-    width: 655px;
-    position: absolute;
-    float: left;
-    z-index: -10 !important;
-}
-
-.bg-ringkasan2 img {
-    opacity: 0.1;
-}
-
-
 .btn-circle.btn-xl {
     width: 70px;
     height: 70px;
@@ -368,45 +339,6 @@
     text-align: center;
 }
 
-@media (min-width: 992px) {
-
-    .icon-jelajahi img {
-        width: 100%;
-    }
-
-    .carousel-jelajahi {
-        text-align: center;
-        margin: 0 auto;
-        width: 50%;
-    }
-
-    .carousel-inner {
-        top: 20px;
-        margin: 0 auto;
-        width: 100vh;
-        height: 200px;
-        border-radius: 15px;
-        text-align: center;
-        width: 100%;
-    }
-
-    .carousel-caption1 {
-        left: 90 !important;
-        top: 100;
-    }
-
-    .carousel-caption1 h5 {
-        font-size: 14px;
-    }
-
-    .text-jelajahi-produk {
-        left: -80;
-        width: 30%;
-        font-size: 24px;
-        line-height: 24px;
-    }
-}
-
 @media (min-width: 768px) and (max-width: 991px) {
     .row-jelajahi {
         max-height: 300px;
@@ -416,15 +348,6 @@
     .slide {
         margin: 0 auto !important;
         width: 100%;
-    }
-
-    .bg-ringkasan2 {
-        padding-top: 400px;
-        width: 400px !important;
-    }
-
-    .bg-ringkasan2 img {
-        width: 400px !important;
     }
 
     .text-jelajahi-produk {
@@ -462,25 +385,6 @@
 @media (min-width: 768px) {}
 
 @media (min-width: 600px) and (max-width: 767px) {
-    .bg-ringkasan1 {
-        padding-top: 900;
-        width: 300px !important;
-    }
-
-    .bg-ringkasan1 img {
-        width: 400px !important;
-    }
-
-    .bg-ringkasan2 {
-        padding-top: 400px;
-        width: 400px !important;
-
-    }
-
-    .bg-ringkasan2 img {
-        width: 400px !important;
-    }
-
     .ringkasan-right {
         float: left;
         width: 100%;
@@ -516,24 +420,6 @@
 }
 
 @media (max-width: 599px) {
-    .bg-ringkasan1 {
-        padding-top: 900;
-        width: 300px !important;
-    }
-
-    .bg-ringkasan1 img {
-        width: 400px !important;
-    }
-
-    .bg-ringkasan2 {
-        padding-top: 400px;
-        width: 400px !important;
-    }
-
-    .bg-ringkasan2 img {
-        width: 400px !important;
-    }
-
     .ringkasan-right {
         float: left;
         width: 100%;
@@ -652,23 +538,6 @@
         left: 20px;
     }
 
-    .bg-ringkasan1 {
-        padding-top: 900;
-        width: 300px !important;
-    }
-
-    .bg-ringkasan1 img {
-        width: 300px !important;
-    }
-
-    .bg-ringkasan2 {
-        width: 200px !important;
-    }
-
-    .bg-ringkasan2 img {
-        width: 200px !important;
-    }
-
     .resiko h5 {
         font-size: 14px;
     }
@@ -719,26 +588,6 @@
 }
 
 @media (max-width: 299px) {
-    .bg-ringkasan1 {
-        padding-top: 2900;
-        width: 200px !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-    }
-
-    .bg-ringkasan1 img {
-        width: 200px !important;
-    }
-
-    .bg-ringkasan2 {
-        width: 200px !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-    }
-
-    .bg-ringkasan2 img {
-        width: 200px !important;
-    }
 
     .manfaat ul li {
         font-size: 10px;
@@ -805,24 +654,6 @@
         left: 5px;
         top: -180px;
         line-height: 30px;
-    }
-
-    .bg-ringkasan1 {
-        padding-top: 400;
-        width: 200px !important;
-    }
-
-    .bg-ringkasan1 img {
-        width: 200px !important;
-    }
-
-    .bg-ringkasan2 {
-        padding-top: 200;
-        width: 200px !important;
-    }
-
-    .bg-ringkasan2 img {
-        width: 200px !important;
     }
 
     .icon-jelajahi {

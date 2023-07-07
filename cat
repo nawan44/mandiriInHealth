@@ -6,25 +6,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="" />
     <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet"
+    <!-- <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/css/bootstrap-datepicker.min.css"
         integrity="sha512-34s5cpvaNG3BknEWSuOncX28vz97bRI59UnVtEEpFX536A7BtZSJHsDyFoCl8S7Dt2TPzcrCEoHBGeM4SUBDBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/css/bootstrap-datetimepicker.min.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" /> -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+
     <link href="asset/css/data-diri.css" rel="stylesheet" />
     <link href="asset/css/layout.css" rel="stylesheet" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
         rel="stylesheet" />
     <title>Data Diri Sama- Pemegang Polis Calon Tertanggung</title>
 </head>
 
 <body>
-    <div class="bg-spiral1">
-        <img src="asset/icon/bg-spiral1.svg" />
+    <!-- <div class="bg-data-diri1">
+        <img src="asset/icon/bg-data-diri1.svg" />
     </div>
-    <div class="bg-spiral2">
-        <img src="asset/icon/bg-spiral2.svg" />
-    </div>
+    <div class="bg-data-diri2">
+        <img src="asset/icon/bg-data-diri2.svg" />
+    </div> -->
     <header>
         <nav class="navbar-expand-xl">
             <div class="menu-icon">
@@ -432,11 +438,11 @@
                                 atau cacat tetap karena kecelakaan. (opsional)</p>
                         </div>
                         <div class="row mt-3  ">
+                            <input type="hidden" id="id" value="1">
+                            <div id="divTxt"></div>
                             <a href="#" onClick="addFormField(); return false;" class="btn-lanjut"><i
                                     class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
                                 Tambah Ahli Waris</a>
-                            <input type="hidden" id="id" value="1">
-                            <div id="divTxt"></div>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -444,13 +450,12 @@
                         <a href="pembayaran.html" id="next6" class="btn-lanjut">Lanjut</a>
                     </div>
                     </form>
+
                 </div>
             </div>
         </div>
         </div>
     </main>
-
-
     <div style="background-color: red; z-index: -9; ">
         <footer class="px-5 container">
             <div class="row pt-5 py-5 text-white">
@@ -519,7 +524,9 @@
                             rights reserved.
                         </div>
                     </div>
+
                 </div>
+
                 <ul class="list-unstyled d-flex pt-3">
                     <li class="ms-3 fs-5"><a class="link-body-emphasis" href="#"><i class="fa fa-slack text-white"
                                 aria-hidden="true"></i>
@@ -544,14 +551,25 @@
             </div>
         </footer>
     </div>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.15.1/moment.min.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.7.14/js/bootstrap-datetimepicker.min.js"></script>
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js">
+    </script> -->
+    <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js">
+    </script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
     <script>
         //HEADER
         $(document).ready(function () {
@@ -610,18 +628,25 @@
             var full_number = no_telepon_kantor.getNumber(intlTelInputUtils.numberFormat.E164);
             $("input[name='no-telepon-kantor[full]'").val(full_number);
             alert(full_number)
+
         });
     </script>
 
     <script type="text/javascript">
+
         let currentCount = 0;
+        // var room = 1;
 
         function addFormField() {
+
             if (currentCount < 50) {
                 currentCount += 1;
+                // room++;
+                // var name = room;
+
                 var id = document.getElementById("id").value;
                 $("#divTxt").append(
-                    "<div class= 'row mt-3' id = 'ahliwaris'>" +
+                    "<div class='row mt-3' id='ahliwaris'>" +
                     "<div class='row'><div class='col-6 h6'>Ahli Waris " + id +
                     "</div>" +
                     "<div class='col-6'>" +
@@ -646,29 +671,27 @@
                     "</div>" +
                     "<div class='col-6'>" +
                     "<label for='tanggalLahir'>Tanggal Lahir</label>" +
+                    // "<input type='text' id='datepicker'>" +
 
-                    "<div class='input-group date' data-date-format='dd/mm/yyyy'>" +
-                    "<input type='text' class='form-control' placeholder='dd/mm/yyyy'>" +
-                    "<span class='input-group-text' id='basic-addon1'><i class='fa fa-calendar' aria-hidden='true'></i> </span>" +
-                    "<div class='input-group-addon'>" +
-                    "</div>" +
-                    "</div>" +
-
-                    // "<div class='form-group'>" +
-                    // "<div class='input-group date' id='datetimepicker1' data-target-input='nearest'>" +
-                    // "<input type='text' class='form-control datetimepicker-input' data-target='#datetimepicker1' />" +
-                    // "<div class='input-group-append' data-target='#datetimepicker1' data-toggle='datetimepicker'>" +
-                    // "<div class='input-group-text'><i class='fa fa-calendar'></i></div>" +
-                    // "</div>" +
-                    // "</div>" +
-                    // "</div>" +
                     // "<div class='input-group date' data-date-format='dd/mm/yyyy'>" +
-                    // "<input type='text' class='form-control' placeholder='dd/mm/yyyy'>" +
+                    // "<input type='text' name='daterange' class='form-control' placeholder='dd/mm/yyyy'>" +
                     // "<span class='input-group-text' id='basic-addon1'>" +
+
                     // "<i class='fa fa-calendar' aria-hidden='true'></i> </span>" +
                     // "<div class='input-group-addon'>" +
                     // "</div>" +
                     // " </div>" +
+
+
+                    "<div class='form-group'>" +
+                    "<div class='input-group date' id='datetimepicker1'>" +
+                    " <input type='text' class='form-control' />" +
+                    "<span class='input-group-addon'>" +
+                    "<span class='fa fa-calendar'></span>" +
+                    " </span>" +
+                    "</div>" +
+                    "</div>" +
+
                     "</div>" +
                     "</div>" +
                     "<div class='row my-4 mb-5'>" +
@@ -693,25 +716,86 @@
                     "</div>" +
                     "</div>"
                 );
-
                 id = id - 1 + 2;
                 document.getElementById("id").value = id;
+                // assignDatePicker(name);
+
             } else {
                 alert('You can not add more then 50')
             }
         }
+        // function assignDatePicker(elementToAdd) {
+        //     $('input[name=' + elementToAdd + ']').daterangepicker({
+        //         // timePicker: true,
+        //         // startDate: moment().startOf('hour'),
+        //         // endDate: moment().startOf('hour').add(32, 'hour'),
+        //         locale: {
+        //             format: 'DD/MMMM/YYYY'
+        //         }
+        //     });
+        // }
 
         function removeFormField(id) {
             $(id).remove();
         }
+
+        $(function () {
+            var bindDatePicker = function () {
+                $(".date").datetimepicker({
+                    format: 'YYYY-MM-DD',
+                    icons: {
+                        time: "fa fa-clock-o",
+                        date: "fa fa-calendar",
+                        up: "fa fa-arrow-up",
+                        down: "fa fa-arrow-down"
+                    }
+                }).find('input:first').on("blur", function () {
+                    // check if the date is correct. We can accept dd-mm-yyyy and yyyy-mm-dd.
+                    // update the format if it's yyyy-mm-dd
+                    var date = parseDate($(this).val());
+
+                    if (!isValidDate(date)) {
+                        //create date based on momentjs (we have that)
+                        date = moment().format('YYYY-MM-DD');
+                    }
+
+                    $(this).val(date);
+                });
+            }
+
+            var isValidDate = function (value, format) {
+                format = format || false;
+                // lets parse the date to the best of our knowledge
+                if (format) {
+                    value = parseDate(value);
+                }
+
+                var timestamp = Date.parse(value);
+
+                return isNaN(timestamp) == false;
+            }
+
+            var parseDate = function (value) {
+                var m = value.match(/^(\d{1,2})(\/|-)?(\d{1,2})(\/|-)?(\d{4})$/);
+                if (m)
+                    value = m[5] + '-' + ("00" + m[3]).slice(-2) + '-' + ("00" + m[1]).slice(-2);
+
+                return value;
+            }
+
+            bindDatePicker();
+        });
+    </script>
+    <script type="text/javascript">
+        //DATE
+        // $('.input-group.date').datepicker({ format: "dd/mm/yyyy" });
     </script>
     <script>
-        //AHLI WARIS
         function hideDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'none';
+            document.getElementById('ahliwaris').style.display = 'none';
         }
         function showDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'block';
+            document.getElementById('ahliwaris').style.display = 'block';
         }</script>
 </body>
 
