@@ -10,7 +10,11 @@ header {
     background: url('../image/Header2.png') no-repeat 50% 50%;
     background-size: cover;
 }
-
+.has-error .form-control {
+    border-color: #a94442;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+}
 .line {
     border-top: 1px solid #70BD44;
     padding-top: 20px;
