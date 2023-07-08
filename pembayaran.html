@@ -413,12 +413,12 @@
                             <div class="mt-2">Metode pembayaran premi lanjutan</div>
                             <div class="row mt-2 btn-group" role="group">
                                 <label>
-                                    <input type="radio" name="cara-pembayaran" value="kartu kredit">
+                                    <input type="radio" name="cara-pembayaran" class="showPemilikRekening" value="kartu kredit">
                                     Autodebet Kartu Kredit
                                 </label>
                                 <div class="radio mt-3 mb-3">
                                     <label>
-                                        <input type="radio" name="cara-pembayaran" value="rekening">
+                                        <input type="radio" name="cara-pembayaran" class="showPemilikRekening" value="rekening">
                                         Autodebet Rekening
                                     </label>
                                     <p style="margin: 0;">
@@ -427,10 +427,9 @@
                                             Rekening (SKDR)
                                         </small>
                                     </p>
-
                                 </div>
-                                <label>
-                                    <input type="radio" name="cara-pembayaran" value="virtualAccount">
+                                <label> 
+                                    <input type="radio" name="cara-pembayaran" id="hidePemilikRekening" value="virtualAccount">
                                     Transfer Virtual Account
                                 </label>
                                 <small style="color: #F5CB39; font-size: 10px;">Wajib melampirkan
@@ -438,19 +437,21 @@
                                     Mandiri Inhealth
                                 </small>
                             </div>
-                        </div>
-                        <div class="form-group mb-4">
-                            <label for="namaPemilikRekening">Nama Pemilik Rekening</label>
-                            <input type="text" class="form-control" id="namaPemilikRekening" placeholder="Nama di Kartu
-                        ">
-                        </div>
-                        <div class="form-group mb-4">
-                            <label for="namaBank">Nama Bank</label>
-                            <input type="text" class="form-control" id="namaBank" placeholder="Nama Bank">
-                        </div>
-                        <div class="form-group mb-4">
-                            <label for="noRekening">Nomor Rekening</label>
-                            <input type="text" class="form-control" id="Rekening" placeholder="Nomor Rekening">
+                            <div class="mt-3" id="hideDivVa" >
+                                <div class="form-group mb-4" >
+                                    <label for="namaPemilikRekening">Nama Pemilik Rekening</label>
+                                    <input type="text" class="form-control" id="namaPemilikRekening" placeholder="Nama di Kartu
+                                ">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="namaBank">Nama Bank</label>
+                                    <input type="text" class="form-control" id="namaBank" placeholder="Nama Bank">
+                                </div>
+                                <div class="form-group mb-4">
+                                    <label for="noRekening">Nomor Rekening</label>
+                                    <input type="text" class="form-control" id="Rekening" placeholder="Nomor Rekening">
+                                </div>
+                            </div>
                         </div>
                         <div class="row mt-5">
                             <a href="data-diri-sama.html" id="next6" class="btn-kembali">Kembali</a>
@@ -592,6 +593,26 @@
         $(document).on('click', '#val-button', function () {
             $("input[value='virtualAccount']").trigger("buttonPembayaran");
         });
+    </script>
+      <script>
+        $("#hidePemilikRekening").change(function () {
+            var hidePemilikRekening = $(this).is(':checked');
+            if (hidePemilikRekening === true) {
+                document.getElementById('hideDivVa').style.display = 'none';
+            }
+            else {
+                document.getElementById('hideDivVa').style.display = 'block';
+            }
+        })  
+        $(".showPemilikRekening").change(function () {
+            var showPemilikRekening = $(this).is(':checked');
+            if (showPemilikRekening === true) {
+                document.getElementById('hideDivVa').style.display = 'block';
+            }
+            else {                
+                document.getElementById('hideDivVa').style.display = 'none';
+            }
+        })
     </script>
 </body>
 
