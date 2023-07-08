@@ -12,7 +12,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="asset/css/data-diri.css" rel="stylesheet" />
     <link href="asset/css/layout.css" rel="stylesheet" />
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
         rel="stylesheet" />
     <title>Data Diri Sama- Pemegang Polis Calon Tertanggung</title>
@@ -288,7 +288,8 @@
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noBpjs">Nomor Kartu BPJS</label>
-                                <input type="number" class="form-control" id="noBpjs" placeholder="1124 - 1154 - 1154">
+                                <input autocomplete="cc-csc" type="number" class="form-control" id="noBpjs"
+                                    placeholder="1124 - 1154 - 1154">
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noKtp">Nomor KTP</label>
@@ -298,7 +299,8 @@
                                 <div class="col-6">
                                     <label for="tanggalLahir">Tanggal Lahir</label>
                                     <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                        <input autocomplete="cc-csc" type="text" class="form-control"
+                                            placeholder="dd/mm/yyyy">
                                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
                                                 aria-hidden="true"></i> </span>
                                         <div class="input-group-addon">
@@ -432,11 +434,12 @@
                                 atau cacat tetap karena kecelakaan. (opsional)</p>
                         </div>
                         <div class="row mt-3  ">
-                            <a href="#" onClick="addFormField(); return false;" class="btn-lanjut"><i
-                                    class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
-                                Tambah Ahli Waris</a>
                             <input type="hidden" id="id" value="1">
-                            <div id="divTxt"></div>
+                            <div id="divTxt">
+                            </div>
+                            <a href="#" onClick="addFormField(); return false;" class="btn-lanjut"><i
+                                class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
+                            Tambah Ahli Waris</a>
                         </div>
                     </div>
                     <div class="row mt-5">
@@ -548,10 +551,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.10.0/js/bootstrap-datepicker.min.js"
         integrity="sha512-LsnSViqQyaXpD4mBBdRYeP6sRwJiJveh2ZIbW41EBrNmKxgr/LFZIiWT6yr+nycvhvauz8c2nYMhrP80YhG7Cw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
     <script>
         //HEADER
         $(document).ready(function () {
@@ -610,18 +613,18 @@
             var full_number = no_telepon_kantor.getNumber(intlTelInputUtils.numberFormat.E164);
             $("input[name='no-telepon-kantor[full]'").val(full_number);
             alert(full_number)
+
         });
     </script>
-
     <script type="text/javascript">
+        //TAMBAH AHLI WARIS
         let currentCount = 0;
-
         function addFormField() {
             if (currentCount < 50) {
                 currentCount += 1;
                 var id = document.getElementById("id").value;
                 $("#divTxt").append(
-                    "<div class= 'row mt-3' id = 'ahliwaris'>" +
+                    "<div class= 'row mt-3 p-3' id = 'ahliwaris'>" +
                     "<div class='row'><div class='col-6 h6'>Ahli Waris " + id +
                     "</div>" +
                     "<div class='col-6'>" +
@@ -646,29 +649,12 @@
                     "</div>" +
                     "<div class='col-6'>" +
                     "<label for='tanggalLahir'>Tanggal Lahir</label>" +
-
                     "<div class='input-group date' data-date-format='dd/mm/yyyy'>" +
-                    "<input type='text' class='form-control' placeholder='dd/mm/yyyy'>" +
+                    "<input autocomplete='cc-csc' type='text' class='inputdate  form-control' placeholder='dd/mm/yyyy' >" +
                     "<span class='input-group-text' id='basic-addon1'><i class='fa fa-calendar' aria-hidden='true'></i> </span>" +
-                    "<div class='input-group-addon'>" +
+                    "<div class='input-group-addon' >" +
                     "</div>" +
                     "</div>" +
-
-                    // "<div class='form-group'>" +
-                    // "<div class='input-group date' id='datetimepicker1' data-target-input='nearest'>" +
-                    // "<input type='text' class='form-control datetimepicker-input' data-target='#datetimepicker1' />" +
-                    // "<div class='input-group-append' data-target='#datetimepicker1' data-toggle='datetimepicker'>" +
-                    // "<div class='input-group-text'><i class='fa fa-calendar'></i></div>" +
-                    // "</div>" +
-                    // "</div>" +
-                    // "</div>" +
-                    // "<div class='input-group date' data-date-format='dd/mm/yyyy'>" +
-                    // "<input type='text' class='form-control' placeholder='dd/mm/yyyy'>" +
-                    // "<span class='input-group-text' id='basic-addon1'>" +
-                    // "<i class='fa fa-calendar' aria-hidden='true'></i> </span>" +
-                    // "<div class='input-group-addon'>" +
-                    // "</div>" +
-                    // " </div>" +
                     "</div>" +
                     "</div>" +
                     "<div class='row my-4 mb-5'>" +
@@ -693,7 +679,10 @@
                     "</div>" +
                     "</div>"
                 );
+                $("#divTxt").find(".inputdate").datepicker({
+                    format: "dd/mm/yyyy"
 
+                });
                 id = id - 1 + 2;
                 document.getElementById("id").value = id;
             } else {
@@ -706,13 +695,9 @@
         }
     </script>
     <script>
-        //AHLI WARIS
-        function hideDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'none';
-        }
-        function showDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'block';
-        }</script>
+        //DATE
+        $('.input-group.date').datepicker({ format: "dd/mm/yyyy" });
+    </script>
 </body>
 
 </html>

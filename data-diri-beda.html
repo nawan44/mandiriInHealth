@@ -300,10 +300,10 @@
                                 <div class="col-6">
                                     <label for="tanggalLahir">Tanggal Lahir</label>
                                     <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                        <input autocomplete="cc-csc" type="text" class="form-control" placeholder="dd/mm/yyyy" >
                                         <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
                                                 aria-hidden="true"></i> </span>
-                                        <div class="input-group-addon">
+                                        <div class="input-group-addon" >
                                         </div>
                                     </div>
                                 </div>
@@ -446,7 +446,7 @@
                                     <div class="col-6">
                                         <label for="tanggalLahir">Tanggal Lahir</label>
                                         <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                            <input type="text" class="form-control" placeholder="dd/mm/yyyy">
+                                            <input autocomplete="cc-csc" type="text" class="form-control" placeholder="dd/mm/yyyy">
                                             <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
                                                     aria-hidden="true"></i> </span>
                                             <div class="input-group-addon">
@@ -551,66 +551,18 @@
                                 kematian
                                 atau cacat tetap karena kecelakaan. (opsional)</p>
                         </div>
-                        <div class="row mt-3 ahliwaris-hide " id="ahliwaris-hide">
-                            <div class="row">
-                                <div class="col-6 h6">Ahli Waris 1</div>
-                                <div class="col-6">
-                                    <i onclick="hideDiv()" class="fa fa-trash-o h6" style="float: right; color: red;"
-                                        aria-hidden="true">Hapus</i>
-                                </div>
+                        <div class="row mt-3  ">
+                            <input type="hidden" id="id" value="1">
+                            <div id="divTxt">
                             </div>
-                            <div class="row my-4">
-                                <label for="namaLengkap">Nama Lengkap</label>
-                                <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap">
-                            </div>
-                            <div class="row my-4">
-                                <div class="col-6">
-                                    <label for="ahliwarisJenisKelamin">Jenis Kelamin</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Laki-laki">Laki - laki</option>
-                                        <option value="Perempuan">Perempuan</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <label for="tanggalLahir">Tanggal Lahir</label>
-                                    <div class="input-group date" data-date-format="dd/mm/yyyy">
-                                        <input type="text" class="form-control" placeholder="dd/mm/yyyy">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
-                                                aria-hidden="true"></i> </span>
-                                        <div class="input-group-addon">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row my-4 mb-5">
-                                <div class="col-6">
-                                    <label for="ahliwarisHubungan">Hubungan</label>
-                                    <select class="form-select">
-                                        <option value="" selected disabled>Silahkan Dipilih</option>
-                                        <option value="Keluarga">Keluarga</option>
-                                        <option value="Bukan Keluarga">Bukan Keluarga</option>
-                                    </select>
-                                </div>
-                                <div class="col-6">
-                                    <label for="ahliwarisPresentase">Presentase</label>
-                                    <div class="input-group">
-                                        <input type="number" name="ahliwarisPresentase" class="form-control">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text">%</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <a href="#" onClick="addFormField(); return false;" class="btn-lanjut"><i
+                                class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
+                            Tambah Ahli Waris</a>
                         </div>
-                        <a id="next6" onclick="showDiv()" class="btn-block btn-lanjut  " onclick="add_fields();">
-                            <i class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
-                            Tambah Ahli Waris
-                        </a>
                     </div>
                     <div class="row mt-5">
                         <a href="sio-page.html" id="next6" class="btn-kembali">Kembali</a>
-                        <button id="next6" class="btn-lanjut">Lanjut</button>
+                        <a href="pembayaran.html" id="next6" class="btn-lanjut">Lanjut</a>
                     </div>
                     </form>
 
@@ -787,43 +739,88 @@
 
 
     </script>
+     <script type="text/javascript">
+        //TAMBAH AHLI WARIS
+        let currentCount = 0;
+        function addFormField() {
+            if (currentCount < 50) {
+                currentCount += 1;
+                var id = document.getElementById("id").value;
+                $("#divTxt").append(
+                    "<div class= 'row mt-3 p-3' id = 'ahliwaris'>" +
+                    "<div class='row'><div class='col-6 h6'>Ahli Waris " + id +
+                    "</div>" +
+                    "<div class='col-6'>" +
+                    "<a href='#' onClick='removeFormField(\"#ahliwaris" +
+                    "\"); return false;'>" +
+                    "<i class='fa fa-trash-o h6' style='float: right; color: red;' aria-hidden='true'>Hapus</i>" +
+                    "</a>" +
+                    "</div>" +
+                    "</div >" +
+                    "<div class='row my-4'>" +
+                    "<label for='namaLengkap'>Nama Lengkap</label>" +
+                    "<input type='text' class='form-control' id='namaLengkap' placeholder='Nama Lengkap'>" +
+                    "</div>" +
+                    "<div class='row my-4'>" +
+                    "<div class='col-6'>" +
+                    "<label for='ahliwarisJenisKelamin'>Jenis Kelamin</label>" +
+                    "<select class='form-select'>" +
+                    "<option value='' selected disabled>Silahkan Dipilih</option>" +
+                    "<option value='Laki-laki'>Laki - laki</option>" +
+                    "<option value='Perempuan'>Perempuan</option>" +
+                    "</select>" +
+                    "</div>" +
+                    "<div class='col-6'>" +
+                    "<label for='tanggalLahir'>Tanggal Lahir</label>" +
+                    "<div class='input-group date' data-date-format='dd/mm/yyyy'>" +
+                    "<input autocomplete='cc-csc' type='text' class='inputdate  form-control' placeholder='dd/mm/yyyy' >" +
+                    "<span class='input-group-text' id='basic-addon1'><i class='fa fa-calendar' aria-hidden='true'></i> </span>" +
+                    "<div class='input-group-addon' >" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "<div class='row my-4 mb-5'>" +
+                    "<div class='col-6'>" +
+                    " <label for='ahliwarisHubungan'>Hubungan</label>" +
+                    "<select class='form-select'>" +
+                    "<option value='' selected disabled>Silahkan Dipilih</option>" +
+                    "<option value='Keluarga'>Keluarga</option>" +
+                    "<option value='Bukan Keluarga'>Bukan Keluarga</option>" +
+                    "</select>" +
+                    "</div>" +
+                    "<div class='col-6'>" +
+                    "<label for='ahliwarisPresentase'>Presentase</label>" +
+                    "<div class='input-group'>" +
+                    "<input type='number' name='ahliwarisPresentase' class='form-control'>" +
+                    "<div class='input-group-append'>" +
+                    "<span class='input-group-text'>%</span>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>" +
+                    "</div>"
+                );
+                $("#divTxt").find(".inputdate").datepicker({
+                    format: "dd/mm/yyyy"
 
-
-    <script type="text/javascript">
-        //AHLI WARIS
-        $('.add').on('click', add);
-        $('.remove').on('click', remove);
-
-        function add() {
-            var new_chq_no = parseInt($('#total_chq').val()) + 1;
-            var new_input = "<input type='text' id='new_" + new_chq_no + "'>";
-
-            $('#new_chq').append(new_input);
-
-            $('#total_chq').val(new_chq_no);
-        }
-
-        function remove() {
-            var last_chq_no = $('#total_chq').val();
-
-            if (last_chq_no > 1) {
-                $('#new_' + last_chq_no).remove();
-                $('#total_chq').val(last_chq_no - 1);
+                });
+                id = id - 1 + 2;
+                document.getElementById("id").value = id;
+            } else {
+                alert('You can not add more then 50')
             }
         }
 
-        //DATE
-        $('.input-group.date').datepicker({ format: "dd/mm/yyyy" });
-
+        function removeFormField(id) {
+            $(id).remove();
+        }
     </script>
     <script>
-        //AHLI WARIS
-        function hideDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'none';
-        }
-        function showDiv(num) {
-            document.getElementById('ahliwaris-hide').style.display = 'block';
-        }</script>
+        //DATE
+        $('.input-group.date').datepicker({ format: "dd/mm/yyyy" });
+    </script>
 </body>
 
 </html>
