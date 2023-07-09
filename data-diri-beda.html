@@ -276,7 +276,7 @@
                             <a href="data-diri-beda.html" id="next6" class="btn-tidak">Tidak</a>
                         </div>
                     </div>
-                    <form class="was-validated">
+                    <form class="was-validated" action="pembayaran.html">
 
                         <div class="row mt-3 read2 p-3" style="background-color: #F3F6FC;">
                             <div class="my-4" style="color:#1443BD;">
@@ -293,16 +293,16 @@
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noBpjs">Nomor Kartu BPJS</label>
-                                <input type="number" required pattern=".{12,12}" autocomplete="cc-csc"
-                                    class="form-control" id="noBpjs" placeholder="1124 - 1154 - 1154">
+                                <input type="text"  autocomplete="cc-csc" pattern="[\d]{12}" maxlength="12" 
+                                    class="form-control" id="noBpjs" placeholder="1124 - 1154 - 1154" required>
                                 <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Tidak Boleh Kosong</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong - Harus 12 Angka</div>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noKtp">Nomor KTP</label>
-                                <input type="number" class="form-control" id="noKtp" placeholder="No. KTP" required>
+                                <input  type="text" class="form-control" pattern="[\d]{16}" maxlength="16" id="noKtp" placeholder="No. KTP" required>
                                 <div class="valid-feedback">Valid.</div>
-                                <div class="invalid-feedback">Tidak Boleh Kosong</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong - Harus 16 Angka</div>
                             </div>
                             <div class="form-group mb-4 row">
                                 <div class="col-6">
@@ -489,16 +489,16 @@
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="noBpjs">Nomor Kartu BPJS</label>
-                                    <input type="number" class="form-control" id="noBpjs"
+                                    <input class="form-control" id="noBpjs"  type="text"  autocomplete="cc-csc" pattern="[\d]{12}" maxlength="12" 
                                         placeholder="1124 - 1154 - 1154" required>
                                     <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong - Harus 12 Angka</div>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="noKtp">Nomor KTP</label>
-                                    <input type="number" class="form-control" id="noKtp" placeholder="No. KTP" required>
+                                    <input  type="text"  autocomplete="cc-csc" pattern="[\d]{16}" maxlength="16"  class="form-control" id="noKtp" placeholder="No. KTP" required>
                                     <div class="valid-feedback">Valid.</div>
-                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong - Harus 16 Angka</div>
                                 </div>
                                 <div class="form-group mb-4 row">
                                     <div class="col-6">
@@ -654,8 +654,8 @@
                         </div>
                         <div class="row mt-5">
                             <a href="sio-page.html" id="next6" class="btn-kembali">Kembali</a>
-                            <a href="pembayaran.html " type="submit" id="next6" class="btn-lanjut">Lanjut</a>
-                            <button type="submit">AAAA</button>
+                             <button type="submit" 
+                            id="next6" class="btn-lanjut">Lanjut</button>
                         </div>
                     </form>
                 </div>
@@ -918,6 +918,10 @@
         //DATE
         $('.input-group.date').datepicker({ format: "dd/mm/yyyy" });
     </script>
+        <script>
+            // noKtp
+             
+        </script>
 </body>
 
 </html>
