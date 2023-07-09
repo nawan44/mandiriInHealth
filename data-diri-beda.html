@@ -291,14 +291,14 @@
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noBpjs">Nomor Kartu BPJS</label>
-                                <input type="text" autocomplete="cc-csc" pattern="[\d]{12,12}" maxlength="12"
+                                <input type="text" autocomplete="cc-csc" pattern="[\d]{12,12}" minlength="12" maxlength="12"
                                     class="form-control" id="noBpjs" placeholder="1124 - 1154 - 1154" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Tidak Boleh Kosong - Harus 12 Angka</div>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noKtp">Nomor KTP</label>
-                                <input type="text" class="form-control" pattern="[\d]{16,16}" maxlength="16" id="noKtp"
+                                <input type="text" class="form-control" pattern="[\d]{16,16}" minlength="16" maxlength="16" id="noKtp"
                                     placeholder="No. KTP" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Tidak Boleh Kosong - Harus 16 Angka</div>
@@ -397,7 +397,7 @@
                             <div class="my-2">
                                 <label for="no-hp">Nomor HP</label>
                                 <div>
-                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8, 12}" minlength="8"
+                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8,12}" minlength="8"
                                         maxlength="12" class="form-control" name="no-hp[main]" id="no-hp" required>
                                 </div>
                                 <div id="valid-no-hp">Valid.</div>
@@ -406,7 +406,7 @@
                             <div class="my-2">
                                 <label for="no-telepon-rumah">Nomor Telepon Rumah</label>
                                 <div>
-                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8, 12}" minlength="8"
+                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8,12}" minlength="8"
                                         maxlength="12" class="form-control" name="no-telepon-rumah[main]"
                                         id="no-telepon-rumah" required>
                                 </div>
@@ -416,7 +416,7 @@
                             <div class="my-2">
                                 <label for="no-telepon-kantor">Nomor Telepon Kantor</label>
                                 <div>
-                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8, 12}" minlength="8"
+                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8,12}" minlength="8"
                                         maxlength="12" class="form-control" name="no-telepon-kantor[main]"
                                         id="no-telepon-kantor" required>
                                     <div id="valid-no-telepon-kantor">Valid.</div>
@@ -490,13 +490,13 @@
                             <div class="form-group mb-4">
                                 <label for="noBpjs">Nomor Kartu BPJS</label>
                                 <input class="form-control" id="noBpjs" type="text" autocomplete="cc-csc"
-                                    pattern="[\d]{12, 12}" maxlength="12" placeholder="1124 - 1154 - 1154" required>
+                                    pattern="[\d]{12,12}" minlength="12" maxlength="12" placeholder="1124 - 1154 - 1154" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Tidak Boleh Kosong - Harus 12 Angka</div>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noKtp">Nomor KTP</label>
-                                <input type="text" autocomplete="cc-csc" pattern="[\d]{16, 16}" maxlength="16"
+                                <input type="text" autocomplete="cc-csc" pattern="[\d]{16,16}" minlength="16" maxlength="16"
                                     class="form-control" id="noKtp" placeholder="No. KTP" required>
                                 <div class="valid-feedback">Valid.</div>
                                 <div class="invalid-feedback">Tidak Boleh Kosong - Harus 16 Angka</div>
