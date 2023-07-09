@@ -38,6 +38,33 @@ header {
     color: #fff;
 }
 
+#invalid-no-hp {
+    color: #DC3545;
+    font-size: 14px;
+}
+#valid-no-hp {
+    color: #438B74;
+     font-size: 14px;
+     /* display: none; */
+ }
+
+ #invalid-no-telepon-rumah {
+    color: #DC3545;
+    font-size: 14px;
+}
+#valid-no-telepon-rumah {
+    color: #438B74;
+     font-size: 14px;
+ }
+
+ #invalid-no-telepon-kantor {
+    color: #DC3545;
+    font-size: 14px;
+}
+#valid-no-telepon-kantor {
+    color: #438B74;
+     font-size: 14px;
+ }
 /* START BACKGROUND */
 .bg-spiral1 {
     padding-top: 700;
@@ -276,11 +303,12 @@ select option[selected] {
 
 .right-main-right2-2 {
     padding-right: 10px;
+     
 }
 
 .premi-th {
     color: red;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     padding: 0px 5px;
     text-decoration: line-through;
@@ -340,7 +368,7 @@ select option[selected] {
 
 .count-premi {
     float: right;
-    font-size: 25px;
+    font-size: 22px;
     font-weight: bold;
 }
 
@@ -543,8 +571,8 @@ select option[selected] {
 
 @media (min-width: 992px) {
     .main-right2 {
-        padding: 15px 0 0 5px !important;
-        height: 100px;
+        padding: 5px 0 0 5px !important;
+        height: 80px;
     }
 
     .main-left {
@@ -562,8 +590,6 @@ select option[selected] {
     .premi-th {
         padding: 0 0 0 5px;
     }
-
-
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

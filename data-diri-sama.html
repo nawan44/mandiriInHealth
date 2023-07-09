@@ -84,7 +84,7 @@
                         </div>
                     </div>
                     <div class="right-main-right2-2">
-                        <div class="text-white pt-2" style="float: right; font-size:25px; font-weight: bold;">
+                        <div class="text-white pt-2 count-premi">
                             Rp 2.000.000
                         </div>
                     </div>
@@ -275,60 +275,75 @@
                             <a href="data-diri-beda.html" id="next6" class="btn-tidak">Tidak</a>
                         </div>
                     </div>
-                    <div class="row mt-3 read2 p-3" style="background-color: #F3F6FC;">
-                        <div class="my-4" style="color:#1443BD;">
-                            <h5><i class="fa fa-address-book-o" aria-hidden="true"></i>
-                                <span class="pl-4 font-weight-bold">Informasi Data Diri Pemegang Polis</span>
-                            </h5>
-                        </div>
-                        <form>
+                    <form class="was-validated" action="pembayaran.html">
+                        <div class="row mt-3 read2 p-3" style="background-color: #F3F6FC;">
+                            <div class="my-4" style="color:#1443BD;">
+                                <h5><i class="fa fa-address-book-o" aria-hidden="true"></i>
+                                    <span class="pl-4 font-weight-bold">Informasi Data Diri Pemegang Polis</span>
+                                </h5>
+                            </div>
                             <div class="form-group mb-4">
                                 <label for="namaLengkap">Nama Lengkap</label>
-                                <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap">
+                                <input type="text" class="form-control" id="namaLengkap" placeholder="Nama Lengkap"
+                                    required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong</div>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noBpjs">Nomor Kartu BPJS</label>
-                                <input autocomplete="cc-csc" type="number" class="form-control" id="noBpjs"
-                                    placeholder="1124 - 1154 - 1154">
+                                <input type="text" autocomplete="cc-csc" pattern="[\d]{12, 12}" maxlength="12"
+                                    class="form-control" id="noBpjs" placeholder="1124 - 1154 - 1154" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong - Harus 12 Angka</div>
                             </div>
                             <div class="form-group mb-4">
                                 <label for="noKtp">Nomor KTP</label>
-                                <input type="number" class="form-control" id="noKtp" placeholder="No. KTP">
+                                <input type="text" class="form-control" pattern="[\d]{16,16}" maxlength="16" id="noKtp"
+                                    placeholder="No. KTP" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong - Harus 16 Angka</div>
                             </div>
                             <div class="form-group mb-4 row">
                                 <div class="col-6">
                                     <label for="tanggalLahir">Tanggal Lahir</label>
                                     <div class="input-group date" data-date-format="dd/mm/yyyy">
                                         <input autocomplete="cc-csc" type="text" class="form-control"
-                                            placeholder="dd/mm/yyyy">
-                                        <span class="input-group-text" id="basic-addon1"><i class="fa fa-calendar"
-                                                aria-hidden="true"></i> </span>
+                                            placeholder="dd/mm/yyyy" required> <span class="input-group-text"><i
+                                                class="fa fa-calendar" aria-hidden="true"></i> </span>
                                         <div class="input-group-addon">
                                         </div>
+                                        <div class="valid-feedback">Valid.</div>
+                                        <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                     </div>
                                 </div>
                                 <div class="col-6">
                                     <label for="tempatLahir">Tempat Lahir</label>
                                     <input placeholder="Tempat Lahir" type="text" name="tempatLahir"
-                                        class="form-control">
+                                        class="form-control" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                             </div>
                             <div class="form-group mb-4 row">
                                 <div class="col-6">
                                     <label for="jenisKelamin">Jenis Kelamin</label>
-                                    <select class="form-select">
+                                    <select class="form-select" required>
                                         <option value="" selected disabled>Silahkan Dipilih</option>
                                         <option value="Laki-laki">Laki - laki</option>
                                         <option value="Perempuan">Perempuan</option>
                                     </select>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                                 <div class="col-6">
                                     <label for="statusPerkawinan">Status Perkawinan</label>
-                                    <select class="form-select">
+                                    <select class="form-select" required>
                                         <option value="" selected disabled>Silahkan Dipilih</option>
                                         <option value="Sudah Kawin">Sudah Kawin</option>
                                         <option value="Belum Kawin">Belum Kawin</option>
                                     </select>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                             </div>
                             <div class="form-group mb-4 row">
@@ -336,116 +351,153 @@
                                     <label for="statusPerkawinan">
                                         Alamat Korespondensi <span style="color: #777777;">(sesuai identitas)</span>
                                     </label>
-                                    <textarea class="form-select"
-                                        placeholder="Jalan, nomor rumah/unit, RT/RW, kelurahan, kecamatan, "></textarea>
+                                    <textarea placeholder="Jalan, nomor rumah/unit, RT/RW, kelurahan, kecamatan, "
+                                        class="form-control" id="abc_textarea" name="abc_textarea" required=""
+                                        autocomplete="off" pattern=".*\S+.*"></textarea>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                                 <div class="col-4">
                                     <label for="provinsi">Provinsi</label>
-                                    <select class="form-select">
+                                    <select class="form-select" required>
                                         <option value="" selected disabled>Silahkan Dipilih</option>
                                         <option value="Jakarta">Jakarta</option>
                                         <option value="Jawa Barat">Jawa Barat</option>
                                     </select>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                                 <div class="col-4">
                                     <label for="kota">Kota</label>
-                                    <select class="form-select">
+                                    <select class="form-select" required>
                                         <option value="" selected disabled>Silahkan Dipilih</option>
                                         <option value="Jakarta Selatan">Jakarta Selatan</option>
                                         <option value="Bekasi">Bekasi</option>
                                     </select>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                                 <div class="col-4">
                                     <label for="kodePos">Kode Pos</label>
-                                    <select class="form-select">
+                                    <select class="form-select" required>
+
                                         <option value="" selected disabled>Silahkan Dipilih</option>
                                         <option value="12345">12345</option>
                                         <option value="67890">67890</option>
                                     </select>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                             </div>
-                            <hr class="hr-border" />
-                            <div class="my-4" style="color:#1443BD;">
+                            <hr class="hr-border mt-3" />
+                            <div class="my-2" style="color:#1443BD;">
                                 <h5><i class="fa fa-volume-control-phone" aria-hidden="true"></i>
                                     <span class="pl-4 font-weight-bold">Kontak</span>
                                 </h5>
                             </div>
-                            <div class="my-3">
+                            <div class="my-2">
                                 <label for="no-hp">Nomor HP</label>
-                                <p>
-                                    <input type="tel" class="form-control" name="no-hp[main]" id="no-hp" />
-                                </p>
+                                <div>
+                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8, 12}" minlength="8"
+                                        maxlength="12" class="form-control" name="no-hp[main]" id="no-hp" required>
+                                </div>
+                                <div id="valid-no-hp">Valid.</div>
+                                <div id="invalid-no-hp">Tidak Boleh Kosong - Harus 8 - 13 Angka</div>
                             </div>
-                            <div class="my-3">
+                            <div class="my-2">
                                 <label for="no-telepon-rumah">Nomor Telepon Rumah</label>
-                                <p>
-                                    <input type="tel" class="form-control" name="no-telepon-rumah[main]"
-                                        id="no-telepon-rumah" />
-                                </p>
+                                <div>
+                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8, 12}" minlength="8"
+                                        maxlength="12" class="form-control" name="no-telepon-rumah[main]"
+                                        id="no-telepon-rumah" required>
+                                </div>
+                                <div id="valid-no-telepon-rumah">Valid.</div>
+                                <div id="invalid-no-telepon-rumah">Tidak Boleh Kosong - Harus 8 - 13 Angka</div>
                             </div>
-                            <div class="my-3">
+                            <div class="my-2">
                                 <label for="no-telepon-kantor">Nomor Telepon Kantor</label>
-                                <p>
-                                    <input type="tel" class="form-control" name="no-telepon-kantor[main]"
-                                        id="no-telepon-kantor" />
-                                </p>
+                                <div>
+                                    <input type="text" autocomplete="cc-csc" pattern="[\d]{8, 12}" minlength="8"
+                                        maxlength="12" class="form-control" name="no-telepon-kantor[main]"
+                                        id="no-telepon-kantor" required>
+                                    <div id="valid-no-telepon-kantor">Valid.</div>
+                                    <div id="invalid-no-telepon-kantor">Tidak Boleh Kosong - Harus 8 - 13 Angka</div>
+                                </div>
                             </div>
-                            <label for="email1">Alamat Email</label>
-                            <input type="email" class="form-control" id="email1" placeholder="Enter email">
-                            <hr class="hr-border" />
-                            <div class="my-4" style="color:#1443BD;">
+                            <div class="mt-3">
+                                <label for="email1">Alamat Email</label>
+                                <input type="email" class="form-control" id="email1" placeholder="Enter email" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong</div>
+                            </div>
+                            <hr class="hr-border mt-4" />
+                            <div class="my-2" style="color:#1443BD;">
                                 <h5><i class="fa fa-building-o" aria-hidden="true"></i>
                                     <span class="pl-4 font-weight-bold">Pekerjaan</span>
                                 </h5>
                             </div>
-                            <label for="pekerjaan">Pekerjaan</label>
-                            <input type="text" class="form-control" id="pekerjaan" placeholder="Pekerjaan">
+                            <div class="mt-3">
+                                <label for="pekerjaan">Pekerjaan</label>
+                                <input type="text" class="form-control" id="pekerjaan" placeholder="Pekerjaan" required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong</div>
+                            </div>
                             <div class="mt-3">
                                 <label for="perusahaan">Perusahaan</label>
-                                <input type="text" class="form-control" id="perusahaan" placeholder="Perusahaan">
+                                <input type="text" class="form-control" id="perusahaan" placeholder="Perusahaan"
+                                    required>
+                                <div class="valid-feedback">Valid.</div>
+                                <div class="invalid-feedback">Tidak Boleh Kosong</div>
                             </div>
                             <div class="my-4 row">
                                 <div class="col-6">
                                     <label for="jabatan">Jabatan</label>
-                                    <select class="form-select">
+                                    <select class="form-select" required>
+
                                         <option value="" selected disabled>Silahkan Dipilih</option>
                                         <option value="Jabatan1">Jabatan1</option>
                                         <option value="Jabatan2">Jabatan2</option>
                                     </select>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                                 <div class="col-6">
                                     <label for="bidangUsaha">Bidang Usaha</label>
-                                    <select class="form-select">
+                                    <select class="form-select" required>
+
                                         <option value="" selected disabled>Silahkan Dipilih</option>
                                         <option value="Bidang Usaha1">Bidang Usaha1</option>
                                         <option value="Bidang Usaha2">Bidang Usaha2</option>
                                     </select>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                             </div>
-                    </div>
-                    <div class="row mb-4 read3 pb-3 mt-3" style=" background-color: #F3F6FC;">
-                        <div class="my-4" style="color:#1443BD;">
-                            <h5><i class="fa fa-file-text" aria-hidden="true"></i>
-                                <span class="pl-4 font-weight-bold">Ahli Waris</span>
-                            </h5>
-                            <p style="color: #777777; font-size: 14px;">Tambahkan Ahli Waris (Penerima Manfaat) untuk
-                                menerima santunan
-                                kematian
-                                atau cacat tetap karena kecelakaan. (opsional)</p>
                         </div>
-                        <div class="row mt-3  ">
-                            <input type="hidden" id="id" value="1">
-                            <div id="divTxt">
+                        <div class="row mb-4 read3 pb-3 mt-3" style=" background-color: #F3F6FC;">
+                            <div class="my-4" style="color:#1443BD;">
+                                <h5><i class="fa fa-file-text" aria-hidden="true"></i>
+                                    <span class="pl-4 font-weight-bold">Ahli Waris</span>
+                                </h5>
+                                <p style="color: #777777; font-size: 14px;">Tambahkan Ahli Waris (Penerima Manfaat)
+                                    untuk
+                                    menerima santunan
+                                    kematian
+                                    atau cacat tetap karena kecelakaan. (opsional)</p>
                             </div>
-                            <a href="#" onClick="addFormField(); return false;" class="btn-lanjut"><i
-                                class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
-                            Tambah Ahli Waris</a>
+                            <div class="row mt-3">
+                                <input type="hidden" id="id" value="1">
+                                <div id="divTxt">
+                                </div>
+                                <a href="#" onClick="addFormField(); return false;" class="btn-lanjut"><i
+                                        class="fa fa-plus-circle mr-3" aria-hidden="true"></i>
+                                    Tambah Ahli Waris</a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row mt-5">
-                        <a href="sio-page.html" id="next6" class="btn-kembali">Kembali</a>
-                        <a href="pembayaran.html" id="next6" class="btn-lanjut">Lanjut</a>
-                    </div>
+                        <div class="row mt-5">
+                            <a href="sio-page.html" id="next6" class="btn-kembali">Kembali</a>
+                            <button type="submit" id="next6" class="btn-lanjut">Lanjut</button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -614,6 +666,45 @@
             alert(full_number)
         });
     </script>
+    <script>
+        document.getElementById("valid-no-hp").style.display = 'none';
+        document.getElementById("invalid-no-hp").style.display = 'block';
+        document.getElementById("valid-no-telepon-rumah").style.display = 'none';
+        document.getElementById("invalid-no-telepon-rumah").style.display = 'block';
+        document.getElementById("valid-no-telepon-kantor").style.display = 'none';
+        document.getElementById("invalid-no-telepon-kantor").style.display = 'block';
+
+        $('#no-hp').on('input', function () {
+            if ($(this).val().length < 8) {
+                document.getElementById("valid-no-hp").style.display = 'none';
+                document.getElementById("invalid-no-hp").style.display = 'block';
+            }
+            else if ($(this).val().length >= 8) {
+                document.getElementById("valid-no-hp").style.display = 'block';
+                document.getElementById("invalid-no-hp").style.display = 'none';
+            }
+        })
+        $('#no-telepon-rumah').on('input', function () {
+            if ($(this).val().length < 8) {
+                document.getElementById("valid-no-telepon-rumah").style.display = 'none';
+                document.getElementById("invalid-no-telepon-rumah").style.display = 'block';
+            }
+            else if ($(this).val().length >= 8) {
+                document.getElementById("valid-no-telepon-rumah").style.display = 'block';
+                document.getElementById("invalid-no-telepon-rumah").style.display = 'none';
+            }
+        })
+        $('#no-telepon-kantor').on('input', function () {
+            if ($(this).val().length < 8) {
+                document.getElementById("valid-no-telepon-kantor").style.display = 'none';
+                document.getElementById("invalid-no-telepon-kantor").style.display = 'block';
+            }
+            else if ($(this).val().length >= 8) {
+                document.getElementById("valid-no-telepon-kantor").style.display = 'block';
+                document.getElementById("invalid-no-telepon-kantor").style.display = 'none';
+            }
+        })
+    </script>
     <script type="text/javascript">
         //TAMBAH AHLI WARIS
         let currentCount = 0;
@@ -622,7 +713,7 @@
                 currentCount += 1;
                 var id = document.getElementById("id").value;
                 $("#divTxt").append(
-                    "<div class= 'row mt-3 p-3' id = 'ahliwaris'>" +
+                    "<div class= 'row p-3' id = 'ahliwaris'>" +
                     "<div class='row'><div class='col-6 h6'>Ahli Waris " + id +
                     "</div>" +
                     "<div class='col-6'>" +
@@ -632,45 +723,55 @@
                     "</a>" +
                     "</div>" +
                     "</div >" +
-                    "<div class='row my-4'>" +
+                    "<div class='row my-2'>" +
                     "<label for='namaLengkap'>Nama Lengkap</label>" +
-                    "<input type='text' class='form-control' id='namaLengkap' placeholder='Nama Lengkap'>" +
+                    "<input type='text' class='form-control' id='namaLengkap' placeholder='Nama Lengkap' required>" +
+                    "<div class='valid-feedback'>Valid.</div>" +
+                    "<div class='invalid-feedback'>Tidak Boleh Kosong</div>" +
                     "</div>" +
-                    "<div class='row my-4'>" +
+                    "<div class='row my-2'>" +
                     "<div class='col-6'>" +
                     "<label for='ahliwarisJenisKelamin'>Jenis Kelamin</label>" +
-                    "<select class='form-select'>" +
+                    "<select class='form-select' required>" +
                     "<option value='' selected disabled>Silahkan Dipilih</option>" +
                     "<option value='Laki-laki'>Laki - laki</option>" +
                     "<option value='Perempuan'>Perempuan</option>" +
                     "</select>" +
+                    "<div class='valid-feedback'>Valid.</div>" +
+                    "<div class='invalid-feedback'>Tidak Boleh Kosong</div>" +
                     "</div>" +
                     "<div class='col-6'>" +
                     "<label for='tanggalLahir'>Tanggal Lahir</label>" +
                     "<div class='input-group date' data-date-format='dd/mm/yyyy'>" +
-                    "<input autocomplete='cc-csc' type='text' class='inputdate  form-control' placeholder='dd/mm/yyyy' >" +
+                    "<input autocomplete='cc-csc' type='text' class='inputdate  form-control' placeholder='dd/mm/yyyy'  required>" +
                     "<span class='input-group-text' id='basic-addon1'><i class='fa fa-calendar' aria-hidden='true'></i> </span>" +
                     "<div class='input-group-addon' >" +
                     "</div>" +
+                    "<div class='valid-feedback'>Valid.</div>" +
+                    "<div class='invalid-feedback'>Tidak Boleh Kosong</div>" +
                     "</div>" +
                     "</div>" +
                     "</div>" +
-                    "<div class='row my-4 mb-5'>" +
+                    "<div class='row my-2 mb-5'>" +
                     "<div class='col-6'>" +
                     " <label for='ahliwarisHubungan'>Hubungan</label>" +
-                    "<select class='form-select'>" +
+                    "<select class='form-select' required>" +
                     "<option value='' selected disabled>Silahkan Dipilih</option>" +
                     "<option value='Keluarga'>Keluarga</option>" +
                     "<option value='Bukan Keluarga'>Bukan Keluarga</option>" +
                     "</select>" +
+                    "<div class='valid-feedback'>Valid.</div>" +
+                    "<div class='invalid-feedback'>Tidak Boleh Kosong</div>" +
                     "</div>" +
                     "<div class='col-6'>" +
                     "<label for='ahliwarisPresentase'>Presentase</label>" +
                     "<div class='input-group'>" +
-                    "<input type='number' name='ahliwarisPresentase' class='form-control'>" +
+                    "<input type='number' name='ahliwarisPresentase' class='form-control' required>" +
                     "<div class='input-group-append'>" +
                     "<span class='input-group-text'>%</span>" +
                     "</div>" +
+                    "<div class='valid-feedback'>Valid.</div>" +
+                    "<div class='invalid-feedback '>Tidak Boleh Kosong</div>" +
                     "</div>" +
                     "</div>" +
                     "</div>" +
