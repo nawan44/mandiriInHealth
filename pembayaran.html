@@ -7,6 +7,7 @@
     <meta name="description" content="" />
     <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="asset/css/layout.css" rel="stylesheet" />
+    <!-- <link href="asset/css/pembayaran.css" rel="stylesheet" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
         rel="stylesheet" />
@@ -153,114 +154,122 @@
                 </div>
             </div>
             <div class="main-right mb-5">
-                <form>
-                    <div class="container">
-                        <div class="row mb-2 mt-5 text-center" style="margin: 0 auto;">
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-4 "></div>
-                                    <div class=" col-4 ">
-                                        <div class="step">
-                                            <i class="fa fa-plus" aria-hidden="true"></i>
-                                        </div>
+                <div class="container">
+                    <div class="row mb-2 mt-5 text-center" style="margin: 0 auto;">
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-4 "></div>
+                                <div class=" col-4 ">
+                                    <div class="step">
+                                        <i class="fa fa-plus" aria-hidden="true"></i>
                                     </div>
-                                    <div class="col-4 p-0">
-                                        <div class="fa-line2"></div>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <div class="fa-line2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-4 p-0">
+                                    <div class="fa-line1"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="step">
+                                        <i class="fa fa-user" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <div class="fa-line2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-4 p-0">
+                                    <div class="fa-line1"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="step active">
+                                        <i class="fa fa-money" aria-hidden="true"></i>
+                                    </div>
+                                </div>
+                                <div class="col-4 p-0">
+                                    <div class="fa-line2"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-4 p-0">
+                                    <div class="fa-line1"></div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="step">
+                                        <i class="fa fa-file-text-o" aria-hidden="true"></i>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-4 p-0">
-                                        <div class="fa-line1"></div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="step">
-                                            <i class="fa fa-user" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 p-0">
-                                        <div class="fa-line2"></div>
-                                    </div>
+
+                        </div>
+                    </div>
+                    <div class="row mt-4 text-center" style=" margin: 0 auto;">
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-2">
+                                </div>
+                                <div class="col-8 stepText">
+                                    <h6>Langkah 1</h6>
+                                    <h5>Kesehatan</h5>
+                                </div>
+                                <div class="col-2">
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-4 p-0">
-                                        <div class="fa-line1"></div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="step active">
-                                            <i class="fa fa-money" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 p-0">
-                                        <div class="fa-line2"></div>
-                                    </div>
+                        </div>
+                        <div class="col-3  ">
+                            <div class="row">
+                                <div class="col-2">
+                                </div>
+                                <div class="col-8 stepText">
+                                    <h6>Langkah 2</h6>
+                                    <h5>Data Diri</h5>
+                                </div>
+                                <div class="col-2">
                                 </div>
                             </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-4 p-0">
-                                        <div class="fa-line1"></div>
-                                    </div>
-                                    <div class="col-4">
-                                        <div class="step">
-                                            <i class="fa fa-file-text-o" aria-hidden="true"></i>
-                                        </div>
-                                    </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-2">
+                                </div>
+                                <div class="col-8 stepText">
+                                    <h6>Langkah 3</h6>
+                                    <h5>Pembayaran</h5>
+                                </div>
+                                <div class="col-2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="row">
+                                <div class="col-2">
+                                </div>
+                                <div class=" col-8 stepText">
+                                    <h6>Langkah 4</h6>
+                                    <h5>Pernyataan</h5>
                                 </div>
 
                             </div>
                         </div>
-                        <div class="row mt-4 text-center" style=" margin: 0 auto;">
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                    </div>
-                                    <div class="col-8 stepText">
-                                        <h6>Langkah 1</h6>
-                                        <h5>Kesehatan</h5>
-                                    </div>
-                                    <div class="col-2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3  ">
-                                <div class="row">
-                                    <div class="col-2">
-                                    </div>
-                                    <div class="col-8 stepText">
-                                        <h6>Langkah 2</h6>
-                                        <h5>Data Diri</h5>
-                                    </div>
-                                    <div class="col-2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                    </div>
-                                    <div class="col-8 stepText">
-                                        <h6>Langkah 3</h6>
-                                        <h5>Pembayaran</h5>
-                                    </div>
-                                    <div class="col-2">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-3">
-                                <div class="row">
-                                    <div class="col-2">
-                                    </div>
-                                    <div class=" col-8 stepText">
-                                        <h6>Langkah 4</h6>
-                                        <h5>Pernyataan</h5>
-                                    </div>
-
-                                </div>
-                            </div>
+                    </div>
+                    <form class="was-validated">
+                        <!-- <form onsubmit="return handleData()" method="post" action="https://postman-echo.com/post"></form> -->
+                        <div class="custom-control custom-checkbox mb-3">
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+                            <label class="custom-control-label" for="customControlValidation1">Check 1</label>
+                            <input type="checkbox" class="custom-control-input" id="customControlValidation2" required>
+                            <label class="custom-control-label" for="customControlValidation2">Check 2</label>
+                            <div class="invalid-feedback">Example invalid feedback text</div>
                         </div>
                         <div class="row mt-3 read1 p-3" style="background-color: #F3F6FC;">
                             <div class="my-2" style="color:#1443BD;">
@@ -270,113 +279,149 @@
                             </div>
                             <div class="mt-2">Tujuan pengajuan asuransi</div>
                             <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                            <div class="row mt-2 mb-2 btn-group" role="group">
-                                <div class="col-4"><label>
-                                        <input class="form-check-input" onclick='handleClick(this);'
-                                            id="tujuanPengajuan" name="tujuanPengajuan" type="checkbox"
-                                            value="proteksi">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Proteksi
-                                    </label></div>
-                                <div class="col-4"> <label>
-                                        <input class="form-check-input" onclick='handleClick(this);'
-                                            name="tujuanPengajuan" id="tujuanPengajuan" type="checkbox" value="lainnya">
-                                        <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                        Lainnya
-                                    </label></div>
+                            <div class="row mt-2 mb-2 btn-group checkbox-group required" role="group">
+                                <!-- <div class="col-4"> -->
+                                <label>
+                                    <input class="form-check-input" onclick='handleClick(this);' id="tujuanPengajuan"
+                                        name="tujuanPengajuan[]" type="checkbox" value="proteksi">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Proteksi
+                                </label>
+                                <!-- </div>
+                                <div class="col-4">  -->
+                                <label>
+                                    <input class="form-check-input" onclick='handleClick(this);'
+                                        name="tujuanPengajuan[]" id="tujuanPengajuan" type="checkbox" value="lainnya">
+                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                    Lainnya
+                                </label>
+                                <!-- </div> -->
+                                <div style="visibility:hidden; color:red; " id="chk_option_error">
+                                    Please select at least one option.
+                                </div>
                             </div>
                             <div class="mt-2">Sumber penghasilan pembayar premi </div>
                             <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                            <div class="btn-group" role="group">
-                                <div class="row mt-2">
-                                    <div class="col-4">
-                                        <label>
-                                            <input class="form-check-input" type="checkbox" value="gaji">
-                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                            Gaji
-                                        </label>
-
+                            <!-- <div class="custom-control custom-checkbox "> -->
+                            <div class="row mt-2 custom-control custom-checkbox">
+                                <div class="col-4 mt-3">
+                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
+                                        id="customControlValidation1" value="gaji" required>
+                                    <label class="custom-control-label" for="customControlValidation1">
+                                        Gaji
+                                    </label>
+                                    <div class="invalid-feedback">
+                                        Harus Memilih Salah Satu
                                     </div>
-                                    <div class="col-4"> <label>
-                                            <input class="form-check-input" type="checkbox" value="pasangan">
-                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                            Pasangan (suami/istri)
-                                        </label></div>
-                                    <div class="col-4"> <label>
-                                            <input class="form-check-input" type="checkbox" value="hasil investasi">
-                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                            Hasil investasi
-                                        </label></div>
                                 </div>
-                                <div class="row mt-2 mb-2">
-                                    <div class="col-4">
-                                        <label>
-                                            <input class="form-check-input" type="checkbox" value="bisnis pribadi">
-                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                            Bisnis pribadi
-                                        </label>
+                                <div class="col-4 mt-3">
+                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
+                                        id="customControlValidation2" value="pasangan" required>
+                                    <label class="custom-control-label" for="customControlValidation2">
+                                        Pasangan (suami/istri)
+                                    </label>
 
-                                    </div>
-                                    <div class="col-4"> <label>
-                                            <input class="form-check-input" type="checkbox" value="bonus">
-                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                            Bonus/Insentif/Komisi
-                                        </label></div>
-                                    <div class="col-4"> <label>
-                                            <input class="form-check-input" type="checkbox" value="lainnya">
-                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                            Lainnya
-                                        </label></div>
+                                </div>
+                                <div class="col-4  mt-3">
+                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
+                                        id="customControlValidation3" value="hasilInvestasi" required>
+                                    <label class="custom-control-label" for="customControlValidation3">
+                                        Hasil Investasi
+                                    </label>
                                 </div>
                             </div>
-
-                            <div class="mt-2">Jumlah penghasilan kotor per tahun </div>
-                            <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                            <div class="row align-items-end mt-2 btn-group" role="group">
-                                <div class="col-4">
-                                    <label>
-                                        <input type="radio" name="jumlah-penghasilan" value="-10">
-                                        &#60; Rp10 juta
+                            <!-- <div class="row mt-2 mb-2">
+                                <div class="col-4  mt-3">
+                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
+                                        id="customControlValidation4" value="bisnisPribadi" required>
+                                    <label class="custom-control-label" for="customControlValidation4">
+                                        Bisnis Pribadi
                                     </label>
-                                    <div class="radio mt-3 mb-3">
-                                        <label>
-                                            <input type="radio" name="jumlah-penghasilan" value="25-50">
+                                    <div class="invalid-feedback">
+                                        Harus Memilih Salah Satu
+                                    </div>
+                                </div>
+                                <div class="col-4 mt-3">
+                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
+                                        id="customControlValidation5" value="bonus" required>
+                                    <label class="custom-control-label" for="customControlValidation15">
+                                        Bonus/Insentif/Komisi
+                                    </label>
+                                </div>
+                                <div class="col-4  mt-3">
+                                    <input class="custom-control-input" type="checkbox" id="customControlValidation6"
+                                        name="sumberPenghasilan" value="lainnya" required>
+                                    <label class="custom-control-label" for="customControlValidation6">
+                                        Lainnya
+                                    </label>
+                                </div>
+                            </div> -->
+                            <!-- </div> -->
+                            <div class="mt-4">Jumlah penghasilan kotor per tahun </div>
+                            <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
+                            <div class="row align-items-end mt-2 form-group">
+                                <div class="col-4">
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                            value="-10Juta" required>
+                                        <label class="form-check-label" for="-10Juta">
+                                            &#60; Rp10 juta
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                            value="25-50" required>
+                                        <label class="form-check-label" for="25-50">
                                             Rp25 juta - Rp50 juta
                                         </label>
                                     </div>
-                                    <label>
-                                        <input type="radio" name="jumlah-penghasilan" value="100-250">
-                                        Rp100 juta - Rp250 juta
-                                    </label>
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                            value="100-250" required>
+                                        <label class="form-check-label" for="100-250">
+                                            Rp100 juta - Rp250 juta
+                                        </label>
 
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <label>
-                                        <input type="radio" name="jumlah-penghasilan" value="10-25">
-                                        Rp10 juta - Rp25 juta
-                                    </label>
-                                    <div class="radio mt-3 mb-3">
-                                        <label>
-                                            <input type="radio" name="jumlah-penghasilan" value="50-100">
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                            value="10-25" required>
+                                        <label class="form-check-label" for="10-25">
+                                            Rp10 juta - Rp25 juta
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                            value="50-100" required>
+                                        <label class="form-check-label" for="50-100">
                                             Rp50 juta - Rp100 juta
                                         </label>
                                     </div>
-                                    <label>
-                                        <input type="radio" name="jumlah-penghasilan" value="250-500">
-                                        Rp250 juta - Rp500 juta
-                                    </label>
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                            value="250-500" required>
+                                        <label class="form-check-label" for="250-500">
+                                            Rp250 juta - Rp500 juta
+                                        </label>
+                                    </div>
                                 </div>
                                 <div class="col-4">
-                                    <div class="radio">
-                                        <label>
-                                            <input type="radio" name="jumlah-penghasilan" value="lainnya">
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                            value="lainnya" required>
+                                        <label class="form-check-label" for="lainnya">
                                             Lainnya
                                         </label>
+                                        <div class="invalid-feedback">
+                                            Harus Memilih Salah Satu
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="row mt-3 read2 p-3" style="background-color: #F3F6FC;">
+                        <div class="row mt-1 read2 p-3" style="background-color: #F3F6FC;">
                             <div class="my-4" style="color:#1443BD;">
                                 <h5><i class="fa fa-credit-card-alt" aria-hidden="true"></i>
                                     <span class="pl-4 font-weight-bold">Cara Pembayaran Premi
@@ -384,41 +429,56 @@
                                 </h5>
                             </div>
                             <div class="mt-2">Cara Bayar</div>
-                            <div class="row mt-2 btn-group" role="group">
+                            <div class="form-group row mt-2">
                                 <div class="col-4">
-                                    <label>
-                                        <input type="radio" name="cara-bayar" value="tahunan">
-                                        Tahunan
-                                    </label>
-                                    <div class="radio mt-3 mb-3">
-                                        <label>
-                                            <input type="radio" name="cara-bayar" value="triwulan">
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="choiceCaraBayar"
+                                            value="tahunan" required>
+                                        <label class="form-check-label" for="tahunan">
+                                            Tahunan
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="choiceCaraBayar"
+                                            value="triwulan" required>
+                                        <label class="form-check-label" for="triwulan">
                                             Triwulan
                                         </label>
+                                        <div class="invalid-feedback">
+                                            Harus Memilih Salah Satu
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-4">
-                                    <label>
-                                        <input type="radio" name="cara-bayar" value="semester">
-                                        Semester
-                                    </label>
-                                    <div class="radio mt-3 mb-3">
-                                        <label>
-                                            <input type="radio" name="cara-bayar" value="bulanan">
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="choiceCaraBayar"
+                                            value="semester" required>
+                                        <label class="form-check-label" for="semester">
+                                            Semester
+                                        </label>
+                                    </div>
+                                    <div class="form-check mt-3">
+                                        <input class="form-check-input" type="radio" name="choiceCaraBayar"
+                                            value="bulanan" required>
+                                        <label class="form-check-label" for="bulanan">
                                             Bulanan
                                         </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-2">Metode pembayaran premi lanjutan</div>
-                            <div class="row mt-2 btn-group" role="group">
-                                <label>
-                                    <input type="radio" name="cara-pembayaran" class="showPemilikRekening" value="kartu kredit">
-                                    Autodebet Kartu Kredit
-                                </label>
-                                <div class="radio mt-3 mb-3">
-                                    <label>
-                                        <input type="radio" name="cara-pembayaran" class="showPemilikRekening" value="rekening">
+                            <div class="mt-4">Metode pembayaran premi lanjutan</div>
+                            <div class="form-group">
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input showPemilikRekening" type="radio"
+                                        name="choiceMetodePembayaran" value="autodebetKartuKredit" required>
+                                    <label class="form-check-label" for="autodebetKartuKredit">
+                                        Autodebet Kartu Kredit
+                                    </label>
+                                </div>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input showPemilikRekening" type="radio"
+                                        name="choiceMetodePembayaran" value="autodebetRekening" required>
+                                    <label class="form-check-label" for="autodebetRekening">
                                         Autodebet Rekening
                                     </label>
                                     <p style="margin: 0;">
@@ -428,37 +488,55 @@
                                         </small>
                                     </p>
                                 </div>
-                                <label> 
-                                    <input type="radio" name="cara-pembayaran" id="hidePemilikRekening" value="virtualAccount">
-                                    Transfer Virtual Account
-                                </label>
-                                <small style="color: #F5CB39; font-size: 10px;">Wajib melampirkan
-                                    Pembayaran premi asuransi akan dianggap sah apabila sudah diterima penuh oleh
-                                    Mandiri Inhealth
-                                </small>
+                                <div class="form-check mt-3">
+                                    <input class="form-check-input" type="radio" name="choiceMetodePembayaran"
+                                        id="hidePemilikRekening" value="transferVirtualAccount" required>
+                                    <label class="form-check-label" for="transferVirtualAccount">
+                                        Transfer Virtual Account
+                                    </label>
+                                    <p style="margin: 0;">
+                                        <small style="color: #F5CB39; font-size: 10px;">Wajib melampirkan
+                                            Pembayaran premi asuransi akan dianggap sah apabila sudah diterima penuh
+                                            oleh
+                                            Mandiri Inhealth
+                                        </small>
+                                    </p>
+                                    <div class="invalid-feedback">
+                                        Harus Memilih Salah Satu
+                                    </div>
+                                </div>
                             </div>
-                            <div class="mt-3" id="hideDivVa" >
-                                <div class="form-group mb-4" >
+                            <div class="mt-4" id="hideDivVa">
+                                <div class="form-group mb-4">
                                     <label for="namaPemilikRekening">Nama Pemilik Rekening</label>
                                     <input type="text" class="form-control" id="namaPemilikRekening" placeholder="Nama di Kartu
-                                ">
+                                " required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="namaBank">Nama Bank</label>
-                                    <input type="text" class="form-control" id="namaBank" placeholder="Nama Bank">
+                                    <input type="text" class="form-control" id="namaBank" placeholder="Nama Bank"
+                                        required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                                 <div class="form-group mb-4">
                                     <label for="noRekening">Nomor Rekening</label>
-                                    <input type="text" class="form-control" id="Rekening" placeholder="Nomor Rekening">
+                                    <input type="text" class="form-control" id="Rekening" placeholder="Nomor Rekening"
+                                        required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Tidak Boleh Kosong</div>
                                 </div>
                             </div>
                         </div>
                         <div class="row mt-5">
                             <a href="data-diri-sama.html" id="next6" class="btn-kembali">Kembali</a>
-                            <input type="button" class="btn-lanjut" value="Lanjut" id="val-button">
+                            <button type="submit" name="submit" value="Submit" id="next6"
+                                class="btn-lanjut">Lanjut</button>
                         </div>
-                    </div>
-                </form>
+                    </form>
+                </div>
             </div>
         </div>
         </div>
@@ -515,7 +593,6 @@
                                 guidelines</a></li>
                     </ul>
                 </div>
-
             </div>
             <div class="d-flex flex-column flex-sm-row justify-content-between p-4 my-4  medsos">
                 <div style=" width: 90%;">
@@ -533,7 +610,6 @@
                     </div>
 
                 </div>
-
                 <ul class="list-unstyled d-flex pt-3">
                     <li class="ms-3 fs-5"><a class="link-body-emphasis" href="#"><i class="fa fa-slack text-white"
                                 aria-hidden="true"></i>
@@ -594,7 +670,7 @@
             $("input[value='virtualAccount']").trigger("buttonPembayaran");
         });
     </script>
-      <script>
+    <script>
         $("#hidePemilikRekening").change(function () {
             var hidePemilikRekening = $(this).is(':checked');
             if (hidePemilikRekening === true) {
@@ -603,16 +679,35 @@
             else {
                 document.getElementById('hideDivVa').style.display = 'block';
             }
-        })  
+        })
         $(".showPemilikRekening").change(function () {
             var showPemilikRekening = $(this).is(':checked');
             if (showPemilikRekening === true) {
                 document.getElementById('hideDivVa').style.display = 'block';
             }
-            else {                
+            else {
                 document.getElementById('hideDivVa').style.display = 'none';
             }
         })
+    </script>
+    <script>
+            (function () {
+                'use strict';
+                window.addEventListener('load', function () {
+                    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                    var forms = document.getElementsByClassName('needs-validation');
+                    // Loop over them and prevent submission
+                    var validation = Array.prototype.filter.call(forms, function (form) {
+                        form.addEventListener('submit', function (event) {
+                            if (form.checkValidity() === false) {
+                                event.preventDefault();
+                                event.stopPropagation();
+                            }
+                            form.classList.add('was-validated');
+                        }, false);
+                    });
+                }, false);
+            })();
     </script>
 </body>
 
