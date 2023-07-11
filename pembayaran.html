@@ -7,7 +7,7 @@
     <meta name="description" content="" />
     <link href="bootstrap-5.3.0-dist/css/bootstrap.min.css" rel="stylesheet" />
     <link href="asset/css/layout.css" rel="stylesheet" />
-    <!-- <link href="asset/css/pembayaran.css" rel="stylesheet" /> -->
+    <link href="asset/css/pembayaran.css" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/css/intlTelInput.min.css"
         rel="stylesheet" />
@@ -262,15 +262,7 @@
                             </div>
                         </div>
                     </div>
-                    <form class="was-validated">
-                        <!-- <form onsubmit="return handleData()" method="post" action="https://postman-echo.com/post"></form> -->
-                        <div class="custom-control custom-checkbox mb-3">
-                            <input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
-                            <label class="custom-control-label" for="customControlValidation1">Check 1</label>
-                            <input type="checkbox" class="custom-control-input" id="customControlValidation2" required>
-                            <label class="custom-control-label" for="customControlValidation2">Check 2</label>
-                            <div class="invalid-feedback">Example invalid feedback text</div>
-                        </div>
+                    <form role="form" id="myform" class="was-validated">
                         <div class="row mt-3 read1 p-3" style="background-color: #F3F6FC;">
                             <div class="my-2" style="color:#1443BD;">
                                 <h5><img src="asset/icon/fun-icon.svg" />
@@ -279,147 +271,149 @@
                             </div>
                             <div class="mt-2">Tujuan pengajuan asuransi</div>
                             <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                            <div class="row mt-2 mb-2 btn-group checkbox-group required" role="group">
-                                <!-- <div class="col-4"> -->
-                                <label>
-                                    <input class="form-check-input" onclick='handleClick(this);' id="tujuanPengajuan"
-                                        name="tujuanPengajuan[]" type="checkbox" value="proteksi">
-                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                    Proteksi
-                                </label>
-                                <!-- </div>
-                                <div class="col-4">  -->
-                                <label>
-                                    <input class="form-check-input" onclick='handleClick(this);'
-                                        name="tujuanPengajuan[]" id="tujuanPengajuan" type="checkbox" value="lainnya">
-                                    <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
-                                    Lainnya
-                                </label>
-                                <!-- </div> -->
-                                <div style="visibility:hidden; color:red; " id="chk_option_error">
-                                    Please select at least one option.
+                            <div class="row mt-2 mb-2 checkbox-group required px-4">
+                                <div class="col-4 form-check form-checkbox">
+                                    <input type="checkbox" class="form-check-input" id="proteksi" value="proteksi"
+                                        name="proteksi" required>
+                                    <label class="form-check-label" for="proteksi">
+                                        Proteksi</label>
+                                    <div class="invalid-feedback">
+                                        Harus Memilih Salah Satu
+                                    </div>
+                                </div>
+                                <div class="col-4 form-check form-checkbox">
+                                    <input type="checkbox" class="form-check-input" id="lainnya" value="lainnya"
+                                        name="lainnya" required>
+                                    <label class="form-check-label" for="lainnya">Lainnya</label>
                                 </div>
                             </div>
                             <div class="mt-2">Sumber penghasilan pembayar premi </div>
                             <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                            <!-- <div class="custom-control custom-checkbox "> -->
-                            <div class="row mt-2 custom-control custom-checkbox">
-                                <div class="col-4 mt-3">
-                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
-                                        id="customControlValidation1" value="gaji" required>
-                                    <label class="custom-control-label" for="customControlValidation1">
-                                        Gaji
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        Harus Memilih Salah Satu
+                            <div class=" checkbox-group required ">
+                                <div class="row mt-2 mb-2 px-2">
+                                    <div class="col-4 form-check form-checkbox">
+                                        <input type="checkbox" class="form-check-input" id="gaji" value="gaji"
+                                            name="gaji" required>
+                                        <label class="form-check-label" for="gaji">
+                                            Gaji</label>
+                                    </div>
+                                    <div class="col-4 form-check form-checkbox">
+                                        <input type="checkbox" class="form-check-input" id="pasangan" value="pasangan"
+                                            name="pasangan" required>
+                                        <label class="form-check-label" for="pasangan">Pasangan (suami/istri)</label>
+                                    </div>
+                                    <div class="col-4 form-check form-checkbox">
+                                        <input type="checkbox" class="form-check-input" id="hasilInvestasi"
+                                            value="hasilInvestasi" name="hasilInvestasi" required>
+                                        <label class="form-check-label" for="hasilInvestasi">Hasil Investasi</label>
                                     </div>
                                 </div>
-                                <div class="col-4 mt-3">
-                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
-                                        id="customControlValidation2" value="pasangan" required>
-                                    <label class="custom-control-label" for="customControlValidation2">
-                                        Pasangan (suami/istri)
-                                    </label>
-
-                                </div>
-                                <div class="col-4  mt-3">
-                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
-                                        id="customControlValidation3" value="hasilInvestasi" required>
-                                    <label class="custom-control-label" for="customControlValidation3">
-                                        Hasil Investasi
-                                    </label>
-                                </div>
-                            </div>
-                            <!-- <div class="row mt-2 mb-2">
-                                <div class="col-4  mt-3">
-                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
-                                        id="customControlValidation4" value="bisnisPribadi" required>
-                                    <label class="custom-control-label" for="customControlValidation4">
-                                        Bisnis Pribadi
-                                    </label>
-                                    <div class="invalid-feedback">
-                                        Harus Memilih Salah Satu
-                                    </div>
-                                </div>
-                                <div class="col-4 mt-3">
-                                    <input class="custom-control-input" type="checkbox" name="sumberPenghasilan"
-                                        id="customControlValidation5" value="bonus" required>
-                                    <label class="custom-control-label" for="customControlValidation15">
-                                        Bonus/Insentif/Komisi
-                                    </label>
-                                </div>
-                                <div class="col-4  mt-3">
-                                    <input class="custom-control-input" type="checkbox" id="customControlValidation6"
-                                        name="sumberPenghasilan" value="lainnya" required>
-                                    <label class="custom-control-label" for="customControlValidation6">
-                                        Lainnya
-                                    </label>
-                                </div>
-                            </div> -->
-                            <!-- </div> -->
-                            <div class="mt-4">Jumlah penghasilan kotor per tahun </div>
-                            <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
-                            <div class="row align-items-end mt-2 form-group">
-                                <div class="col-4">
-                                    <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
-                                            value="-10Juta" required>
-                                        <label class="form-check-label" for="-10Juta">
-                                            &#60; Rp10 juta
-                                        </label>
-                                    </div>
-                                    <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
-                                            value="25-50" required>
-                                        <label class="form-check-label" for="25-50">
-                                            Rp25 juta - Rp50 juta
-                                        </label>
-                                    </div>
-                                    <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
-                                            value="100-250" required>
-                                        <label class="form-check-label" for="100-250">
-                                            Rp100 juta - Rp250 juta
-                                        </label>
-
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
-                                            value="10-25" required>
-                                        <label class="form-check-label" for="10-25">
-                                            Rp10 juta - Rp25 juta
-                                        </label>
-                                    </div>
-                                    <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
-                                            value="50-100" required>
-                                        <label class="form-check-label" for="50-100">
-                                            Rp50 juta - Rp100 juta
-                                        </label>
-                                    </div>
-                                    <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
-                                            value="250-500" required>
-                                        <label class="form-check-label" for="250-500">
-                                            Rp250 juta - Rp500 juta
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-4">
-                                    <div class="form-check mt-3">
-                                        <input class="form-check-input" type="radio" name="jumlahPenghasilan"
-                                            value="lainnya" required>
-                                        <label class="form-check-label" for="lainnya">
-                                            Lainnya
-                                        </label>
+                                <div class="row mt-2 mb-2 px-2">
+                                    <div class="col-4 form-check form-checkbox">
+                                        <input type="checkbox" class="form-check-input" id="bisnisPribadi"
+                                            value="bisnisPribadi" name="bisnisPribadi" required>
+                                        <label class="form-check-label" for="bisnisPribadi">
+                                            Bisnis Pribadi</label>
                                         <div class="invalid-feedback">
                                             Harus Memilih Salah Satu
                                         </div>
                                     </div>
+                                    <div class="col-4 form-check form-checkbox">
+                                        <input type="checkbox" class="form-check-input" id="bonus" value="bonus"
+                                            name="bonus" required>
+                                        <label class="form-check-label" for="bonus">Bonus/Insentif/Komisi</label>
+                                    </div>
+                                    <div class="col-4 form-check form-checkbox">
+                                        <input type="checkbox" class="form-check-input" id="lainnya" value="lainnya"
+                                            name="lainnya" required>
+                                        <label class="form-check-label" for="lainnya">Lainnya</label>
+                                    </div>
                                 </div>
                             </div>
+                            <div class="mt-4">Jumlah penghasilan kotor per tahun </div>
+                            <small style="color: #777777; font-size: 12px;">Pilihan dapat lebih dari satu</small>
+                            <div class=" form-group">
+                                <div class="row  mt-2  ">
+                                    <div class="col-4">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                                value="-10Juta" required>
+                                            <label class="form-check-label" for="-10Juta">
+                                                &#60; Rp10 juta
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                                value="10-25" required>
+                                            <label class="form-check-label" for="10-25">
+                                                Rp10 juta - Rp25 juta
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                </div>
+
+                                <div class="row  mt-2  ">
+                                    <div class="col-4">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                                value="25-50" required>
+                                            <label class="form-check-label" for="25-50">
+                                                Rp25 juta - Rp50 juta
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                                value="50-100" required>
+                                            <label class="form-check-label" for="50-100">
+                                                Rp50 juta - Rp100 juta
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+
+                                    </div>
+                                </div>
+                                <div class="row  mt-2  ">
+                                    <div class="col-4">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                                value="100-250" required>
+                                            <label class="form-check-label" for="100-250">
+                                                Rp100 juta - Rp250 juta
+                                            </label>
+                                            <div class="invalid-feedback">
+                                                Harus Memilih Salah Satu
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                                value="250-500" required>
+                                            <label class="form-check-label" for="250-500">
+                                                Rp250 juta - Rp500 juta
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-4">
+                                        <div class="form-check mt-3">
+                                            <input class="form-check-input" type="radio" name="jumlahPenghasilan"
+                                                value="lainnya" required>
+                                            <label class="form-check-label" for="lainnya">
+                                                Lainnya
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
                         <div class="row mt-1 read2 p-3" style="background-color: #F3F6FC;">
                             <div class="my-4" style="color:#1443BD;">
@@ -638,6 +632,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.3/js/intlTelInput.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.bundle.min.js"></script>
     <script src="bootstrap-5.3.0-dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.14.0/additional-methods.min.js"></script>
+
     <script>
         //HEADER
         $(document).ready(function () {
@@ -671,6 +668,7 @@
         });
     </script>
     <script>
+        //Show / Hide Data Pemilik Rekening
         $("#hidePemilikRekening").change(function () {
             var hidePemilikRekening = $(this).is(':checked');
             if (hidePemilikRekening === true) {
@@ -691,6 +689,7 @@
         })
     </script>
     <script>
+            //Validasi Radio Button
             (function () {
                 'use strict';
                 window.addEventListener('load', function () {
@@ -708,6 +707,15 @@
                     });
                 }, false);
             })();
+    </script>
+    <script>
+        //Validasi Checkbox group
+        $('#myForm .checkbox-group').on('change', 'input[type="checkbox"]', function (e) {
+            var $checkbox = $(this)
+            var $group = $checkbox.parents('.checkbox-group')
+            var checkedItems = $('input[type="checkbox"]:checked').length
+            $('input[type=checkbox]', $group).attr('required', checkedItems === 0)
+        })
     </script>
 </body>
 
