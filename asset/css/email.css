@@ -1,14 +1,31 @@
 header {
-    width: 100%;
+    width: 900px;
     height: 70vh;
     background: url('../image/Header2.png') no-repeat 50% 50%;
     background-size: cover;
+    z-index: -20 !important;
+    margin: 0 auto !important;
+    text-align: center !important;
+}
+
+header img {
+    width: 700px;
+    height: 300px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+main {
+    z-index: 30;
+    width: 800px !important;
+    margin: 0 auto;
+    margin-top: -100;
+    text-align: center;
+    z-index: 10 !important;
 }
 
 .logo {
-    position: relative;
-    top: 30;
-    margin: 16px 46px;
+    margin: 6px 46px;
     text-align: center;
     margin: 0 auto;
 }
@@ -22,15 +39,17 @@ header {
 .bg-wave {
     text-align: center;
     margin: 0 auto;
+    margin-top: -250px !important;
+    width: 900px;
+
 }
 
 .bg-wave img {
-    text-align: center;
-    margin: 0 auto;
+    text-align: center !important;
+    margin: 0 auto !important;
     width: 900px;
     height: 300px;
-    margin-top: 82;
-    position: relative;
+    margin-top: 52;
 }
 
 .icon-sosmed {
@@ -44,109 +63,14 @@ header {
     padding: 6px 0 0 0;
 }
 
-.accordion-button {
-    text-decoration: none;
-    color: #1443BD;
-    text-align: center !important;
-    margin: 0 auto;
-    display: inline-block;
-
-}
-
-[data-bs-toggle="collapse"]:after {
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    color: #1443BD;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    content: "\f078";
-    margin-left: 10px;
-    transform: rotate(-180deg) !important;
-    transition: all linear 0.25s !important;
-}
-
-[data-bs-toggle="collapse"].collapsed:after {
-    transform: rotate(0deg) !important;
-}
-
 ol li {
     font-size: 14px;
     text-align: left;
-}
-
-.bg-terimakasih {
-    padding: 600 0 0 0 !important;
-    right: 0;
-    float: right;
-    position: absolute;
-    z-index: -10 !important;
-}
-
-.bg-terimakasih img {
-    opacity: 0.1;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
     .row .col-md-9 {
         width: 100%;
         font-size: 11px;
-    }
-
-    .bg-terimakasih {
-        padding-top: 400px;
-        width: 400px !important;
-    }
-
-    .bg-terimakasih img {
-        width: 400px !important;
-    }
-
-}
-
-@media (min-width: 600px) and (max-width: 767px) {
-    .bg-terimakasih {
-        padding-top: 400px;
-        width: 400px !important;
-
-    }
-
-    .bg-terimakasih img {
-        width: 400px !important;
-    }
-}
-
-
-@media (max-width: 599px) {
-    .bg-terimakasih {
-        padding-top: 400px;
-        width: 400px !important;
-    }
-
-    .bg-terimakasih img {
-        width: 400px !important;
-    }
-}
-
-@media (min-width: 300px) and (max-width: 399px) {
-    .bg-terimakasih {
-        width: 200px !important;
-    }
-
-    .bg-terimakasih img {
-        width: 200px !important;
-    }
-}
-
-@media (max-width: 299px) {
-    .bg-terimakasih {
-        width: 200px !important;
-        padding-right: 0 !important;
-        padding-left: 0 !important;
-    }
-
-    .bg-terimakasih img {
-        width: 200px !important;
     }
 }
