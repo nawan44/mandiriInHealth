@@ -10,11 +10,13 @@ header {
     background: url('../image/Header2.png') no-repeat 50% 50%;
     background-size: cover;
 }
+
 .has-error .form-control {
     border-color: #a94442;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
 }
+
 .line {
     border-top: 1px solid #70BD44;
     padding-top: 20px;
@@ -42,29 +44,33 @@ header {
     color: #DC3545;
     font-size: 14px;
 }
+
 #valid-no-hp {
     color: #438B74;
-     font-size: 14px;
-     /* display: none; */
- }
+    font-size: 14px;
+    /* display: none; */
+}
 
- #invalid-no-telepon-rumah {
+#invalid-no-telepon-rumah {
     color: #DC3545;
     font-size: 14px;
 }
+
 #valid-no-telepon-rumah {
     color: #438B74;
-     font-size: 14px;
- }
+    font-size: 14px;
+}
 
- #invalid-no-telepon-kantor {
+#invalid-no-telepon-kantor {
     color: #DC3545;
     font-size: 14px;
 }
+
 #valid-no-telepon-kantor {
     color: #438B74;
-     font-size: 14px;
- }
+    font-size: 14px;
+}
+
 /* START BACKGROUND */
 .bg-spiral1 {
     padding-top: 700;
@@ -303,7 +309,7 @@ select option[selected] {
 
 .right-main-right2-2 {
     padding-right: 10px;
-     
+
 }
 
 .premi-th {
@@ -568,6 +574,20 @@ select option[selected] {
 }
 
 /* END BUTTON */
+@media (min-width: 992px) and (max-width: 1200px) {
+    .right-main-right2-1 select {
+        font-size: 11px !important;
+    }
+
+    .premi-th {
+        font-size: 11px;
+    }
+
+    .count-premi {
+        font-size: 16px;
+    }
+
+}
 
 @media (min-width: 992px) {
     .main-right2 {
