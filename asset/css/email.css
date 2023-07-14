@@ -68,6 +68,25 @@ ol li {
     text-align: left;
 }
 
+.btn-lanjut {
+    width: 200px;
+    border: 2px solid #1443BD;
+    background-color: #1443BD;
+    color: #fff;
+    padding: 5px 0;
+    border-radius: 20px;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-lanjut:hover {
+    background-color: #fff;
+    border: 2px solid #1443BD;
+    color: #1443BD;
+}
+
+
 @media (min-width: 768px) and (max-width: 991px) {
     .row .col-md-9 {
         width: 100%;
