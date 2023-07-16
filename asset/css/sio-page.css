@@ -34,7 +34,11 @@
       background: #70BD44;
       color: #000;
   }
-
+  .active {
+    background: #70BD44;
+    width: 50px;
+    height: 50px;
+}
   .dis-button1-ya {
       background: #777777;
       color: #FFFFFF;

@@ -4,3 +4,8 @@
     color: red;
     padding-top: 5px;
 }
+.active {
+    background: #70BD44;
+    width: 50px;
+    height: 50px;
+}
