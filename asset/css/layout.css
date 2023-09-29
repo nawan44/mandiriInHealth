@@ -149,7 +149,9 @@ nav.blue ul {
     height: 80px;
     background: #0E2C7A !important;
 }
-
+nav.panjang ul{
+    height: auto;
+}
 nav ul li {
     display: inline-block;
     padding: 16px 30px;
